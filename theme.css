@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-    content: "Theme version: v0.6 Alpha";
+    content: "Theme version: v0.7.1 Alpha";
     margin-right: 1rem;
 }
 
@@ -1847,7 +1847,7 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 }
 
 .guilds-wrapper .guild.guilds-add:after {
-    background-color: #27ae60;
+    background-color: #3498db;
     -webkit-transition: all 200ms ease!important;
     transition: all 200ms ease!important;
     position: absolute;
@@ -1867,7 +1867,7 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 
 .guilds-wrapper .guild.guilds-add:hover:after {
     box-shadow: 0 10px 15px rgba(0, 0, 0, .4), 0 -1px 0px rgba(0, 0, 0, 0.2) inset, 0 2px 1px rgba(255, 255, 255, 0.2) inset;
-    background-color: #2ecc71;
+    background-color: #2980b9;
 }
 
 .guilds-wrapper .guilds .guild.guilds-add:hover {
@@ -1888,6 +1888,14 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
     background: -webkit-linear-gradient(top, rgba(48, 48, 48, 0) 0%, rgba(48, 48, 48, 1) 60%, rgba(48, 48, 48, 1) 100%);
     background: linear-gradient(to bottom, rgba(48, 48, 48, 0) 0%, rgba(48, 48, 48, 1) 60%, rgba(48, 48, 48, 1) 100%);
     pointer-events: none;
+}
+
+.guild:not(.guilds-add):last-of-type {
+    margin-bottom: 60px!important
+}
+
+.dms .guild:not(.guilds-add):last-of-type {
+    margin-bottom: 0px!important
 }
 
 .channel-members .avatar-small .status {
@@ -2128,7 +2136,13 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 }
 
 .messages-wrapper .messages .divider span {
-    background: #2B2B2B!important
+    background: rgba(0, 0, 0, 0.1)!important;
+    border-radius: 5px;
+    padding: 3px 20px;
+}
+
+.chat .messages-wrapper+form .channel-textarea-inner {
+    z-index: 1000;
 }
 
 #friends,
@@ -2411,6 +2425,214 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 
 /* The chat */
 
+.edit-message.edit-first-message .avatar-large {
+    visibility: hidden;
+}
+
+.message-group .edit-message .channel-textarea-inner,
+.message-group .edit-message .channel-textarea {
+    border-radius: 3px!important;
+    background: transparent!important;
+    box-shadow: none!important;
+    opacity: 1!important
+}
+
+.upload-modal .inner .comment .channel-textarea {
+    border-radius: 5px!important;
+    width: 448px;
+    box-shadow: none
+}
+
+.message-group:last-of-type {
+    margin-bottom: 20px!important;
+}
+
+.message-group .edit-message .channel-textarea textarea {
+    opacity: 1!important
+}
+
+.message-group .edit-message .channel-textarea {
+    margin-top: 0;
+}
+
+.message-group .edit-message .channel-textarea-inner {
+    padding: 0px!important;
+    padding-bottom: 5px!important
+}
+
+.message-group .edit-message textarea {
+    padding: 0
+}
+
+.message-group:not(.hide-overflow) .comment {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
+    border-radius: 3px!important;
+    background: rgba(0, 0, 0, .2);
+}
+
+.message-group:not(.hide-overflow) .comment:before {
+    opacity: 0;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.message-group .btn-option {
+    visibility: visible!important;
+    opacity: 0;
+    -webkit-transition: 50ms ease;
+    transition: 50ms ease;
+}
+
+.message:hover .btn-option {
+    visibility: visible!important;
+    opacity: 0.2;
+}
+
+.comment {
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease
+}
+
+.channel-textarea-inner {
+    border-radius: 0px!important;
+    border: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.chat form {
+    border: none!important;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, .1) 0 0 20px
+}
+
+.guild-header {
+    background: #212121;
+}
+
+.channel-textarea-inner textarea {
+    color: #fff;
+    opacity: 0.8;
+    -webkit-transition: all 100ms ease;
+    transition: all 100ms ease;
+    margin-left: 10px;
+    padding: 26px 0px;
+    margin-left: 25px;
+    margin-right: 0;
+    max-height: 200px
+}
+
+.channel-textarea-inner textarea:focus {
+    color: #fff;
+    opacity: 1;
+}
+
+.channel-textarea-upload+textarea {
+    margin-left: 5px;
+}
+
+.channel-textarea {
+    color: #212121;
+    margin: 0px;
+    border-radius: 0px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+    z-index: 3;
+}
+
+.channel-textarea-inner {
+    border-radius: 4px;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+    opacity: 0.8;
+}
+
+.channel-textarea-inner:hover {
+    opacity: 1;
+}
+
+.channel-textarea-inner .channel-textarea-upload {
+    border-radius: 0px !important;
+    color: #fff !important;
+    border-right-color: rgba(255, 255, 255, 0) !important;
+    padding: 0 !important;
+    opacity: 0.3;
+    height: 100%!important;
+    width: 80px;
+    background-size: 21px !important;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTIgMTIuNUMyIDkuNDYgNC40NiA3IDcuNSA3SDE4YzIuMjEgMCA0IDEuNzkgNCA0cy0xLjc5IDQtNCA0SDkuNUM4LjEyIDE1IDcgMTMuODggNyAxMi41UzguMTIgMTAgOS41IDEwSDE3djJIOS40MWMtLjU1IDAtLjU1IDEgMCAxSDE4YzEuMSAwIDItLjkgMi0ycy0uOS0yLTItMkg3LjVDNS41NyA5IDQgMTAuNTcgNCAxMi41UzUuNTcgMTYgNy41IDE2SDE3djJINy41QzQuNDYgMTggMiAxNS41NCAyIDEyLjV6Ii8+ICAgIDxwYXRoIGQ9Ik0wIDBoMjR2MjRIMFYweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
+    -webkit-transition: all 100ms ease!important;
+    transition: all 100ms ease!important;
+    display: inline-block!important;
+    margin: 0;
+    background-position: 50%;
+}
+
+.channel-textarea-inner .channel-textarea-upload:hover {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTIgMTIuNUMyIDkuNDYgNC40NiA3IDcuNSA3SDE4YzIuMjEgMCA0IDEuNzkgNCA0cy0xLjc5IDQtNCA0SDkuNUM4LjEyIDE1IDcgMTMuODggNyAxMi41UzguMTIgMTAgOS41IDEwSDE3djJIOS40MWMtLjU1IDAtLjU1IDEgMCAxSDE4YzEuMSAwIDItLjkgMi0ycy0uOS0yLTItMkg3LjVDNS41NyA5IDQgMTAuNTcgNCAxMi41UzUuNTcgMTYgNy41IDE2SDE3djJINy41QzQuNDYgMTggMiAxNS41NCAyIDEyLjV6Ii8+ICAgIDxwYXRoIGQ9Ik0wIDBoMjR2MjRIMFYweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
+    opacity: 1;
+    background-color: transparent!important;
+    background-position: 50%;
+}
+
+.chat form .typing {
+    background: #333333 !important;
+    bottom: 100%;
+    padding-left: 20px;
+    z-index: 0;
+    -webkit-animation: opacity 300ms ease;
+    animation: opacity 300ms ease;
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    width: auto;
+    padding-right: 20px;
+    padding-top: 0px;
+    border-radius: 5px 5px 0 0;
+    margin-left: 15px;
+    color: #fff;
+    box-shadow: 0 -3px 20px rgba(0, 0, 0, .1);
+    opacity: .95;
+    -webkit-transition: all 200ms ease!important;
+    transition: all 200ms ease!important;
+}
+
+.typing .text {
+    line-height: 26px
+}
+
+.typing .ellipsis {
+    height: 31px
+}
+
+.chat form .typing:hover {
+    opacity: 1;
+}
+
+.private-channels .channel:hover.channel-muted:before,
+.private-channels .channel:hover:not(.unread):before,
+.guild-channels .channel-text:hover.channel-muted:before,
+.guild-channels .channel-text:hover:not(.unread):before {
+    border-left: 4px solid #fff;
+    -webkit-transition: all 100ms ease;
+    transition: all 100ms ease;
+}
+
+.private-channels .channel.selected:before,
+.guild-channels .channel-text.selected:before {
+    border-left: 2px solid #fff;
+    -webkit-transition: all 100ms ease;
+    transition: all 100ms ease;
+}
+
+.channel-textarea-emoji {
+    margin: 0;
+    height: 100%;
+    width: 75px
+}
+
 .channel-textarea-autocomplete-inner {
     border: 2px solid #212121!important;
     background-color: #212121!important;
@@ -2446,33 +2668,6 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 
 .channel-textarea-autocomplete-inner:after {
     border-bottom: 0px!important;
-}
-
-.chat form .typing {
-    background: transparent !important;
-    -webkit-animation: opacity 300ms ease;
-    animation: opacity 300ms ease;
-    -webkit-transform-origin: bottom left;
-    transform-origin: bottom left;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    width: auto;
-    color: #fff;
-    opacity: .95;
-    -webkit-transition: all 200ms ease!important;
-    transition: all 200ms ease!important;
-}
-
-.typing .text {
-    line-height: 26px
-}
-
-.typing .ellipsis {
-    height: 31px
-}
-
-.chat form .typing:hover {
-    opacity: 1;
 }
 
 /* END OF: The chat */
