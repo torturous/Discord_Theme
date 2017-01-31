@@ -1079,8 +1079,8 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
   width: 0px;
 }
 
-.premium-features ~ .premium-features {
-  background: none;
+.premium-feature ~ .premium-feature {
+  background: none !important;
 }
 
 .premium-feature{
