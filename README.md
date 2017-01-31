@@ -5,9 +5,9 @@ This theme does also **force** you to Dark Theme, be aware of that<br>
 ## FAQ
 **The theme looks weird...**<br>There is a reason why it's on alpha stage ;)
 
-**Where can I talk with you?**<br>Here: https://discord.gg/qG44FUz
+**Where can I talk with you?**<br>Here: [Discord Invite:](https://discord.gg/qG44FUz)
 
-**How do I use the theme?**<br>https://github.com/leovoel/BeautifulDiscord should be useful
+**How do I use the theme?**<br>[BeautifulDiscord](https://github.com/leovoel/BeautifulDiscord) should be useful
 
 **Does it support BetterDiscord?**<br>**no, just... no... [How to install beautifuldiscord](https://github.com/beautiful-discord-community/resources/wiki/Installing-BeautifulDiscord)**
 
