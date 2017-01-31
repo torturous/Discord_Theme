@@ -9,7 +9,7 @@ This theme does also **force** you to Dark Theme, be aware of that<br>
 
 **How do I use the theme?**<br>https://github.com/leovoel/BeautifulDiscord should be useful
 
-**Does it support BetterDiscord?**<br>**Who even uses that piece of shit anymore... no**
+**Does it support BetterDiscord?**<br>**no, just... no... [How to install beautifuldiscord]https://github.com/beautiful-discord-community/resources/wiki/Installing-BeautifulDiscord**
 
 **I found a bug, what do I do?**<br>Either tell me the problem or make a Pull Request / Issue</a>
 
