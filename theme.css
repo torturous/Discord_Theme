@@ -273,7 +273,7 @@
 
 .settings .settings-header {
     background: #141414;
-}
+
 
 .settings .settings-actions {
     background: #252525;
@@ -311,6 +311,10 @@
 
 .user-settings-modal .checkbox .checkbox-inner input[type=checkbox]+span:before {
     border-color: #212121;
+}
+    
+.guild-header header {
+    border-bottom: 1px solid #141414;
 }
 
 .form .Select-control {
