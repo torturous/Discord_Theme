@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-    content: "Theme version: v0.5 Alpha";
+    content: "Theme version: v0.6 Alpha";
     margin-right: 1rem;
 }
 
@@ -2261,6 +2261,36 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 
 /* Popout messages */
 
+.message-reactions-modal {
+    background: #212121
+}
+
+.message-reactions-modal .message-reactions-list-inner .reaction .count {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.message-reactions-modal .message-reactions-reactors .reactor .name {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+}
+
+.message-reactions-modal .message-reactions-reactors .reactor {
+    box-shadow: none!important;
+}
+
+.message-reactions-modal .message-reactions-list-inner, .message-reactions-modal .message-reactions-list .scroller {
+    background: #303030;
+    border-radius: 0px;
+}
+
+.message-reactions-modal .message-reactions-list-inner .reaction.selected {
+    background: rgba(255, 255, 255, .1)
+}
+
+.message-reactions-modal .message-reactions-list-inner .reaction:hover:not(.selected) {
+    background: rgba(255, 255, 255, .03)
+}
+
 .private-channel-recipients-invite .body {
     background: #212121
 }
@@ -2380,6 +2410,43 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 /* END OF: Popout messages */
 
 /* The chat */
+
+.channel-textarea-autocomplete-inner {
+    border: 2px solid #212121!important;
+    background-color: #212121!important;
+    border-radius: 5px;
+    border-bottom: 0px;
+    margin-bottom: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.channel-textarea-autocomplete-inner header {
+    background-color: #212121!important;
+    border-bottom: 0px;
+    margin-bottom: 5px;
+}
+
+.channel-textarea-autocomplete-inner ul {
+    background-color: #212121!important;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 0px!important;
+}
+
+.channel-textarea-autocomplete-inner li.active {
+    background-color: #303030!important;
+    border-radius: 0px;
+}
+
+.channel-textarea-autocomplete-inner li {
+    background-color: #212121!important;
+    border-radius: 0px;
+    margin-bottom: 2px;
+}
+
+.channel-textarea-autocomplete-inner:after {
+    border-bottom: 0px!important;
+}
 
 .chat form .typing {
     background: transparent !important;
