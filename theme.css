@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-    content: "Theme version: v0.3.9 Alpha";
+    content: "Theme version: v0.4 Alpha";
     margin-right: 1rem;
 }
 
@@ -801,16 +801,6 @@ form:not(.user-settings-modal) .tab-bar.SIDE .tab-bar-item:before,
     color: rgba(255, 255, 255, .4)
 }
 
-.channel-mute-button {
-    background: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgMjJjMS4xIDAgMi0uOSAyLTJoLTRjMCAxLjEuOSAyIDIgMnptNi02di01YzAtMy4wNy0xLjYzLTUuNjQtNC41LTYuMzJWNGMwLS44My0uNjctMS41LTEuNS0xLjVzLTEuNS42Ny0xLjUgMS41di42OEM3LjY0IDUuMzYgNiA3LjkyIDYgMTF2NWwtMiAydjFoMTZ2LTFsLTItMnptLTIgMUg4di02YzAtMi40OCAxLjUxLTQuNSA0LTQuNXM0IDIuMDIgNCA0LjV2NnoiLz48L3N2Zz4=) 50% no-repeat;
-    background-size: 120%
-}
-
-.channel-mute-button.muted {
-    background: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMjAgMTguNjlMNy44NCA2LjE0IDUuMjcgMy40OSA0IDQuNzZsMi44IDIuOHYuMDFjLS41Mi45OS0uOCAyLjE2LS44IDMuNDJ2NWwtMiAydjFoMTMuNzNsMiAyTDIxIDE5LjcybC0xLTEuMDN6TTEyIDIyYzEuMTEgMCAyLS44OSAyLTJoLTRjMCAxLjExLjg5IDIgMiAyem02LTcuMzJWMTFjMC0zLjA4LTEuNjQtNS42NC00LjUtNi4zMlY0YzAtLjgzLS42Ny0xLjUtMS41LTEuNXMtMS41LjY3LTEuNSAxLjV2LjY4Yy0uMTUuMDMtLjI5LjA4LS40Mi4xMi0uMS4wMy0uMi4wNy0uMy4xMWgtLjAxYy0uMDEgMC0uMDEgMC0uMDIuMDEtLjIzLjA5LS40Ni4yLS42OC4zMSAwIDAtLjAxIDAtLjAxLjAxTDE4IDE0LjY4eiIvPjwvc3ZnPg==) 50% no-repeat;
-    background-size: 120%
-}
-
 .instant-invite-modal,
 #instant-invite-modal-advanced .form-actions,
 .form .form-inner,
@@ -977,69 +967,111 @@ form:not(.user-settings-modal) .tab-bar.SIDE .tab-bar-item:before,
 }
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(2):before {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_person_white_24px.svg);
+  /* Account */
+  content: url('https://discordapp.com/assets/a77e0fdf1c1dddb8de08f3b67a971bff.svg');
+  width: 24px;
+  margin-top: 6px;
 }
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(3):before {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_favorite_white_24px.svg);
+  /* Nitro */
+  content: url('https://discordapp.com/assets/dcbf6274f0ce0f393d064a72db2c8913.svg');
+  width: 24px;
+  margin-top: 6px;
 }
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(4):before {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_signal_wifi_4_bar_white_24px.svg);
+  /* Connections */
+  content: url('https://discordapp.com/assets/7e3eb3c8296980ab00ba40fa033cbaab.svg');
+  width: 24px;
+  margin-top: 6px;
 }
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(5):before {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_group_white_24px.svg);
+  /* Friends */
+  content: url('https://discordapp.com/assets/5a1b5dcd927cc2f1905c61dd3d9ddedd.svg');
+  width: 24px;
+  margin-top: 6px;
 }
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(6):before {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_chat_white_24px.svg);
+  /* Text & Images */
+  content: url('https://discordapp.com/assets/0b6fc9f58ca3827977d546a6ee0ca3e7.svg');
+  width: 24px;
+  margin-top: 6px;
 }
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(7):before {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_white_24px.svg);
+  /* Voice */
+  content: url('https://discordapp.com/assets/269f6e131a6014360770f946afb002e9.svg');
+  width: 24px;
+  margin-top: 6px;
 }
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(8):before {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_notifications_white_24px.svg);
+  /* Notifications */
+  content: url('https://discordapp.com/assets/c2cde9981ca78feeaeaaa4ae23c4d955.svg');
+  width: 24px;
+  margin-top: 6px;
 }
 
 div.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9):before,
 div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9):before {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_white_24px.svg);
+  /* Keybinds */
+  content: url('https://discordapp.com/assets/f21f7f8b3a3f188d267438d936be035f.svg');
+  width: 24px;
+  margin-top: 6px;
 }
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9):before,
 div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10):before,
 div.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10):before {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_palette_white_24px.svg);
+  /* Appearance */
+  content: url('https://discordapp.com/assets/35665b6147e6ea2d0a8c6cb759d4a281.svg');
+  width: 24px;
+  margin-top: 6px;
 }
 
 div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11):before,
 div.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11):before {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_games_white_24px.svg);
+  /* Games */
+  content: url('https://discordapp.com/assets/7d600babcd1bddfd7a7d35acc1ed4cd3.svg');
+  width: 24px;
+  margin-top: 6px;
 }
 
 div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(12):before {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_desktop_windows_white_24px.svg);
+  /* Overlay */
+  content: url('https://discordapp.com/assets/e2154b14424ed3161ed7a51b0f06d07e.svg');
+  width: 24px;
+  margin-top: 6px;
 }
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10):before,
 div.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(12):before,
 div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(13):before {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_language_white_24px.svg);
+  /* Locale */
+  content: url('https://discordapp.com/assets/e40b15e51f4fa295d6576ef6aff1128f.svg');
+  width: 24px;
+  margin-top: 6px;
 }
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11):before,
 div.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(13):before,
 div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(14):before {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_videocam_white_24px.svg);
+  /* Streamer Mode */
+  content: url('https://discordapp.com/assets/57aea9031650f92408cb1d43f355fc74.svg');
+  width: 24px;
+  margin-top: 6px;
 }
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(12):before,
 div.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(14):before,
 div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15):before {
-    content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_security_white_24px.svg);
+  /* Security */
+  content: url('https://discordapp.com/assets/55c17959c1bb6b0891a94ccde3ba996b.svg');
+  width: 24px;
+  margin-top: 6px;
 }
 
 /* END OF: Server/Client Settings */
@@ -2031,6 +2063,26 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
     opacity: 0.6;
 }
 
+.icon-deafened,
+.account .btn-deafen.disabled:after {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE2LjUgMTJjMC0xLjc3LTEuMDItMy4yOS0yLjUtNC4wM3YyLjIxbDIuNDUgMi40NWMuMDMtLjIuMDUtLjQxLjA1LS42M3ptMi41IDBjMCAuOTQtLjIgMS44Mi0uNTQgMi42NGwxLjUxIDEuNTFDMjAuNjMgMTQuOTEgMjEgMTMuNSAyMSAxMmMwLTQuMjgtMi45OS03Ljg2LTctOC43N3YyLjA2YzIuODkuODYgNSAzLjU0IDUgNi43MXpNNC4yNyAzTDMgNC4yNyA3LjczIDlIM3Y2aDRsNSA1di02LjczbDQuMjUgNC4yNWMtLjY3LjUyLTEuNDIuOTMtMi4yNSAxLjE4djIuMDZjMS4zOC0uMzEgMi42My0uOTUgMy42OS0xLjgxTDE5LjczIDIxIDIxIDE5LjczbC05LTlMNC4yNyAzek0xMiA0TDkuOTEgNi4wOSAxMiA4LjE4VjR6Ii8+ICAgIDxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=) !important;
+}
+
+.account .btn-mute:after {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTEyIDE0YzEuNjYgMCAyLjk5LTEuMzQgMi45OS0zTDE1IDVjMC0xLjY2LTEuMzQtMy0zLTNTOSAzLjM0IDkgNXY2YzAgMS42NiAxLjM0IDMgMyAzem01LjMtM2MwIDMtMi41NCA1LjEtNS4zIDUuMVM2LjcgMTQgNi43IDExSDVjMCAzLjQxIDIuNzIgNi4yMyA2IDYuNzJWMjFoMnYtMy4yOGMzLjI4LS40OCA2LTMuMyA2LTYuNzJoLTEuN3oiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==) !important;
+    opacity: 0.2!important;
+    zoom: 1.2;
+}
+
+.account .btn-mute:hover:after {
+    opacity: 0.6!important;
+}
+
+.icon-muted,
+.account .btn-mute.disabled:after {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgwem0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz4gICAgPHBhdGggZD0iTTE5IDExaC0xLjdjMCAuNzQtLjE2IDEuNDMtLjQzIDIuMDVsMS4yMyAxLjIzYy41Ni0uOTguOS0yLjA5LjktMy4yOHptLTQuMDIuMTdjMC0uMDYuMDItLjExLjAyLS4xN1Y1YzAtMS42Ni0xLjM0LTMtMy0zUzkgMy4zNCA5IDV2LjE4bDUuOTggNS45OXpNNC4yNyAzTDMgNC4yN2w2LjAxIDYuMDFWMTFjMCAxLjY2IDEuMzMgMyAyLjk5IDMgLjIyIDAgLjQ0LS4wMy42NS0uMDhsMS42NiAxLjY2Yy0uNzEuMzMtMS41LjUyLTIuMzEuNTItMi43NiAwLTUuMy0yLjEtNS4zLTUuMUg1YzAgMy40MSAyLjcyIDYuMjMgNiA2LjcyVjIxaDJ2LTMuMjhjLjkxLS4xMyAxLjc3LS40NSAyLjU0LS45TDE5LjczIDIxIDIxIDE5LjczIDQuMjcgM3oiLz48L3N2Zz4=) !important;
+}
+
 .account {
     background: #141414;
 }
@@ -2139,6 +2191,27 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 .messages-wrapper .messages .message-group .comment .markup code.inline,
 .messages-wrapper .messages .message-group .comment .markup pre code {
     background: #212121!important;
+}
+
+.message-group-blocked {
+    background: #303030!important;
+    border: 0px solid #181818!important;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease
+}
+
+.message-group-blocked:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2)!important
+}
+
+.friends-table .messages .message-group-blocked .message-group-blocked-btn,
+.messages-wrapper .messages .message-group-blocked .message-group-blocked-btn {
+    background: #212121!important;
+    color: rgba(255, 255, 255, .5)!important;
+    border-radius: 3px;
+    opacity: .6
 }
 
 /* END OF: Discord chat background */
