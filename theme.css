@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-    content: "Theme version: v0.8.1 Alpha";
+    content: "Theme version: v0.8.2 Alpha";
     margin-right: 1rem;
 }
 
@@ -2082,6 +2082,10 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
     background-position: 50%;
     background-repeat: no-repeat;
     opacity: 0.4;
+}
+
+.private-channels .channel .close {
+  padding-left: 35px;
 }
 
 .title-wrap,
