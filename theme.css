@@ -116,6 +116,40 @@
 
 /* End of: The beginning */
 
+/* Down dirty in the DMs */
+
+.private-channels .channel .icon-friends {
+	opacity: 0.2;
+}
+
+.private-channels .channel:hover .icon-friends,
+.private-channels .channel.selected .icon-friends {
+	opacity: 1;
+}
+
+.private-channels .channel .icon-friends, 
+.private-channels .channel:hover .icon-friends,
+.private-channels .channel.selected .icon-friends {
+	background: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_account_circle_white_36px.svg') center no-repeat;
+	background-size: 90%;
+}
+
+.private-channels header {
+	color: #ffffff !important;
+	font-weight: bold;
+}
+
+.private-channels .scroller::-webkit-scrollbar {
+	display: none;
+}
+
+.private-channels .channel .channel-activity {
+	color: #ffffff;
+	opacity: 0.3;
+}
+
+/* End of: Down dirty in the DMs */
+
 /* Status picker */
 
 .status-picker .popout-menu-item {
