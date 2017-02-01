@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-    content: "Theme version: v0.8.4 Alpha";
+    content: "Theme version: v0.8.6 Alpha";
     margin-right: 1rem;
 }
 
@@ -2872,3 +2872,176 @@ a[href="/channels/@me"] .badge {
 }
 
 /* END OF: Markdown pack */
+
+/* Invite button */
+
+.form .btn-clear,
+.guild-settings-modal .emoji-row .btn,
+.guild-settings-modal .member-buttons .btn,
+.instant-invites .instant-invite-buttons .btn {
+    background: #303030;
+    border: none;
+    color: rgba(255, 255, 255, .3)
+}
+
+.form .btn-clear:hover,
+.guild-settings-modal .emoji-row .btn:hover,
+.guild-settings-modal .member-buttons .btn:hover,
+.instant-invites .instant-invite-buttons .btn:hover {
+    background: #738BD7;
+    color: #fff
+}
+
+
+.guild-settings-modal .emoji-row .btn.btn-danger,
+.guild-settings-modal .member-buttons .btn.btn-danger,
+.instant-invites .instant-invite-buttons .btn.btn-danger {
+    border: none;
+}
+
+.guild-settings-modal .emoji-row .btn.btn-danger:hover,
+.guild-settings-modal .member-buttons .btn.btn-danger:hover,
+.instant-invites .instant-invite-buttons .btn.btn-danger:hover {
+    background: #F04747;
+    color: #fff;
+}
+
+.invite-button {
+    background: #212121!important;
+    border: 0px solid #141414!important;
+    border-radius: 3px;
+    padding: 15px 20px;
+    -webkit-transition: all 0ms ease!important;
+    transition: all 0ms ease!important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1), 0 1px 2px rgba(255, 255, 255, .05) inset;
+}
+
+.invite-button:hover {
+    background: #141414!important;
+    border: 0px solid #212121!important;
+    width: 240px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .3), 0 1px 3px rgba(255, 255, 255, .1) inset;
+    -webkit-transition: all 200ms ease!important;
+    transition: all 200ms ease!important;
+}
+
+.invite-button:active {
+    background: #1565C0!important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .3), 0 1px 3px rgba(255, 255, 255, .1) inset, 0 2px 10px rgba(21, 101, 192, .3);
+    -webkit-transition: 0ms!important;
+    transition: 0ms!important
+}
+
+.invite-button:active .invite-button-body,
+.invite-button:active .invite-button-header {
+    color: #fff!important
+}
+
+.invite-button-header {
+    height: 20px
+}
+
+.invite-button .invite-button-body {
+    margin-top: 0
+}
+
+.invite-button .invite-button-body,
+.invite-button .invite-button-header {
+    -webkit-transition: all 300ms ease!important;
+    transition: all 300ms ease!important;
+}
+
+.invite-button:hover .invite-button-body,
+.invite-button:hover .invite-button-header {
+    width: 180px;
+}
+
+.invite-button-icon.accepted:before {
+    border: none;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE5IDEzaC02djZoLTJ2LTZINXYtMmg2VjVoMnY2aDZ2MnoiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
+    background-size: 100%;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    left: 0px;
+    top: 0px;
+    -webkit-transform: scale(0.76);
+    transform: scale(0.76);
+    -webkit-transition: all 300ms cubic-bezier(0, .34, 0, 1.54);
+    transition: all 300ms cubic-bezier(0, .34, 0, 1.54)
+}
+
+.invite-button-icon.join:before {
+    border: none;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgNGwtMS40MSAxLjQxTDE2LjE3IDExSDR2MmgxMi4xN2wtNS41OCA1LjU5TDEyIDIwbDgtOHoiLz48L3N2Zz4=);
+    background-size: 100%;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    left: 0px;
+    top: 0px;
+    -webkit-transform: scale(0.60);
+    transform: scale(0.60);
+    -webkit-transition: all 300ms cubic-bezier(0, .34, 0, 1.54);
+    transition: all 300ms cubic-bezier(0, .34, 0, 1.54)
+}
+
+.invite-button-icon.accepted:before {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNOSAxNi4xN0w0LjgzIDEybC0xLjQyIDEuNDFMOSAxOSAyMSA3bC0xLjQxLTEuNDF6Ii8+PC9zdmc+);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.invite-button:hover .invite-button-icon.join:before {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgNGwtMS40MSAxLjQxTDE2LjE3IDExSDR2MmgxMi4xN2wtNS41OCA1LjU5TDEyIDIwbDgtOHoiLz48L3N2Zz4=);
+    -webkit-transform: scale(0.55);
+    transform: scale(0.50)translate(10px);
+}
+
+.invite-button:hover .invite-button-icon.join {
+    -webkit-transform: translate(-5px)scale(1.2);
+    transform: translate(-5px)scale(1.2)
+}
+
+.invite-button.expired {
+    cursor: not-allowed;
+}
+
+.invite-button-icon {
+    -webkit-transform: translate(-5px);
+    transform: translate(-5px)
+}
+
+.invite-button-icon.join {
+    background: #fff;
+    border: none;
+    -webkit-transition: all 300ms cubic-bezier(0, .34, 0, 1.54);
+    transition: all 300ms cubic-bezier(0, .34, 0, 1.54);
+    -webkit-transform: translate(-5px);
+    transform: translate(-5px)
+}
+
+.accessory .invite-button:hover .invite-button-icon.join {
+    background: #fff!important
+}
+
+.accessory .invite-button:active .invite-button-icon.join {
+    background: #1976D2!important;
+    -webkit-transition: 0ms;
+    transition: 0ms
+}
+
+.accessory .invite-button:active .invite-button-icon {
+    background: #1976D2!important;
+    -webkit-transition: 0ms;
+    transition: 0ms;
+    border-color: transparent!important;
+}
+
+.accessory .invite-button:active .invite-button-icon.join:before {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgNGwtMS40MSAxLjQxTDE2LjE3IDExSDR2MmgxMi4xN2wtNS41OCA1LjU5TDEyIDIwbDgtOHoiLz48L3N2Zz4=);
+    -webkit-transition: 0ms;
+    transition: 0ms
+}
+
+/* END OF: Invite button */
