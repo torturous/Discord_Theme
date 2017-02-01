@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-    content: "Theme version: v0.8.3 Alpha";
+    content: "Theme version: v0.8.4 Alpha";
     margin-right: 1rem;
 }
 
@@ -1044,110 +1044,82 @@ form:not(.user-settings-modal) .tab-bar.SIDE .tab-bar-item:before,
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(2):before {
   /* Account */
-  content: url('https://discordapp.com/assets/a77e0fdf1c1dddb8de08f3b67a971bff.svg');
-  width: 24px;
-  margin-top: 6px;
+  content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_person_white_24px.svg);
 }
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(3):before {
   /* Nitro */
-  content: url('https://discordapp.com/assets/dcbf6274f0ce0f393d064a72db2c8913.svg');
-  width: 24px;
-  margin-top: 6px;
+  content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_favorite_white_24px.svg);
 }
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(4):before {
   /* Connections */
-  content: url('https://discordapp.com/assets/7e3eb3c8296980ab00ba40fa033cbaab.svg');
-  width: 24px;
-  margin-top: 6px;
+  content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_signal_wifi_4_bar_white_24px.svg);
 }
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(5):before {
   /* Friends */
-  content: url('https://discordapp.com/assets/5a1b5dcd927cc2f1905c61dd3d9ddedd.svg');
-  width: 24px;
-  margin-top: 6px;
+  content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_group_white_24px.svg);
 }
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(6):before {
   /* Text & Images */
-  content: url('https://discordapp.com/assets/0b6fc9f58ca3827977d546a6ee0ca3e7.svg');
-  width: 24px;
-  margin-top: 6px;
+  content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_chat_white_24px.svg);
 }
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(7):before {
   /* Voice */
-  content: url('https://discordapp.com/assets/269f6e131a6014360770f946afb002e9.svg');
-  width: 24px;
-  margin-top: 6px;
+  content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_white_24px.svg);
 }
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(8):before {
   /* Notifications */
-  content: url('https://discordapp.com/assets/c2cde9981ca78feeaeaaa4ae23c4d955.svg');
-  width: 24px;
-  margin-top: 6px;
+  content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_notifications_white_24px.svg);
 }
 
 div.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9):before,
 div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9):before {
   /* Keybinds */
-  content: url('https://discordapp.com/assets/f21f7f8b3a3f188d267438d936be035f.svg');
-  width: 24px;
-  margin-top: 6px;
+  content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_white_24px.svg);
 }
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(9):before,
 div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10):before,
 div.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10):before {
   /* Appearance */
-  content: url('https://discordapp.com/assets/35665b6147e6ea2d0a8c6cb759d4a281.svg');
-  width: 24px;
-  margin-top: 6px;
+  content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_palette_white_24px.svg);
 }
 
 div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11):before,
 div.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11):before {
   /* Games */
-  content: url('https://discordapp.com/assets/7d600babcd1bddfd7a7d35acc1ed4cd3.svg');
-  width: 24px;
-  margin-top: 6px;
+  content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_games_white_24px.svg);
 }
 
 div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(12):before {
   /* Overlay */
-  content: url('https://discordapp.com/assets/e2154b14424ed3161ed7a51b0f06d07e.svg');
-  width: 24px;
-  margin-top: 6px;
+  content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_desktop_windows_white_24px.svg);
 }
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(10):before,
 div.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(12):before,
 div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(13):before {
   /* Locale */
-  content: url('https://discordapp.com/assets/e40b15e51f4fa295d6576ef6aff1128f.svg');
-  width: 24px;
-  margin-top: 6px;
+  content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_language_white_24px.svg);
 }
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(11):before,
 div.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(13):before,
 div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(14):before {
   /* Streamer Mode */
-  content: url('https://discordapp.com/assets/57aea9031650f92408cb1d43f355fc74.svg');
-  width: 24px;
-  margin-top: 6px;
+  content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_videocam_white_24px.svg);
 }
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(12):before,
 div.platform-osx .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(14):before,
 div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15):before {
   /* Security */
-  content: url('https://discordapp.com/assets/55c17959c1bb6b0891a94ccde3ba996b.svg');
-  width: 24px;
-  margin-top: 6px;
+  content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_security_white_24px.svg);
 }
 
 /* END OF: Server/Client Settings */
