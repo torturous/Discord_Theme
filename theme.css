@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-    content: "Theme version: v0.8.6 Alpha";
+    content: "Theme version: v0.8.7 Alpha";
     margin-right: 1rem;
 }
 
@@ -1040,6 +1040,10 @@ form:not(.user-settings-modal) .tab-bar.SIDE .tab-bar-item:before,
     padding-top: 10px;
     opacity: .3;
     color: #fff;
+}
+
+.tab-bar.SIDE {
+  margin-right: -17px;
 }
 
 .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(2):before {
