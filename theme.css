@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-    content: "Theme version: v0.8.2 Alpha";
+    content: "Theme version: v0.8.3 Alpha";
     margin-right: 1rem;
 }
 
@@ -2190,15 +2190,56 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
     transition: all 200ms ease!important
 }
 
+#voice-connection {
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0.1));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0.1));
+    background-color: #141414;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+#voice-connection .btn-group {
+    background: rgba(0, 0, 0, 0);
+    border: 0px;
+}
+
+#voice-connection .btn {
+    background: rgba(0, 0, 0, 0);
+    border-right: 0px!important;
+    box-shadow: inset 1px 0 0 #141414;
+    border-radius: 50%;
+    -webkit-transition: all 100ms ease;
+    transition: all 100ms ease;
+}
+
+#voice-connection .btn-disconnect {
+    box-shadow: inset 1px 0 0 #141414;
+}
+
+#voice-connection .btn-info {
+    box-shadow: inset 1px 0 0 #141414;
+}
+
 #voice-connection .btn-group,
 .account .btn-group, .account .btn-mute,
 .account .btn-deafen, .account .btn-settings {
     background: #141414;
-    border: transparent;
 }
 
-.account .btn-mute:after {
-    background-image: none;
+.account .btn-deafen,
+.account .btn-mute,
+.account .btn-settings {
+  border-right: 0 solid;
+  border-radius: 50%;
+  box-shadow: inset 0px 0 0 #141414;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.account .btn-group {
+    border-radius: 10px;
+    border: 0;
+    padding-left: 2px
 }
 
 .friends-table .messages .divider:not(.red) div,
