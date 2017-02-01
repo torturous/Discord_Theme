@@ -5,7 +5,10 @@ This theme does also **force** you to Dark Theme, be aware of that<br>
 ## FAQ
 **Where can I talk with you?**<br>Here: https://discord.gg/qG44FUz
 
-**How do I use the theme?**<br>[BeautifulDiscord](https://github.com/beautiful-discord-community/resources/wiki/Installing-BeautifulDiscord) should be useful
+**What should I use, theme.css or autotheme.css?**<br>That really depends on you. If you are a developer and want
+to change stuff, download the theme.css, however if you wish for a theme that updates, use autotheme.css :P
+
+**How do I use the theme?**<br>[BeautifulDiscord](https://github.com/beautiful-discord-community/resources/wiki/Installing-BeautifulDiscord) should be useful to use the skin
 
 **Does it support BetterDiscord?**<br>**no, just... no... [How to install beautifuldiscord](https://github.com/beautiful-discord-community/resources/wiki/Installing-BeautifulDiscord)**
 
@@ -14,4 +17,4 @@ This theme does also **force** you to Dark Theme, be aware of that<br>
 **I found a bug, what do I do?**<br>Either tell me the problem or make a Pull Request / Issue</a>
 
 ## Screenshots
-Coming soon
+[Preview1](https://i.mify.pw/5d0d65.png) [Preview2](https://i.mify.pw/62161e.png) [Preview3](https://i.mify.pw/155085.png) [Preview4](https://i.mify.pw/a21aa9.png) [Preview5](https://i.mify.pw/271422.png)
