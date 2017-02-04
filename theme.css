@@ -113,6 +113,15 @@
     background-size: cover;
 }
 
+.form.settings.user-settings-modal .settings-actions:before,
+.lastversion:after {
+    position: absolute;
+    left: 24rem;
+    top: 34rem;
+    font-weight: bold;
+    width: 24rem;
+}
+
 /* End of: The beginning */
 
 /* Down dirty in the DMs */
@@ -145,14 +154,6 @@
 .private-channels .channel .channel-activity {
 	color: #ffffff;
 	opacity: 0.3;
-}
-
-.form.settings.user-settings-modal .settings-actions:before,
-.lastversion:after {
-    position: absolute;
-    left: 36.8rem;
-    top: 34rem;
-    font-weight: bold;
 }
 
 /* End of: Down dirty in the DMs */
