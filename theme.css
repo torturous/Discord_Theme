@@ -1340,6 +1340,10 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
     border: none;
 }
 
+.theme-dark .search-result-wrap .search-result-message.hit .action-buttons {
+    transform: translateX(0px);
+}
+
 .search-results-wrap .search-result .search-result-message {
     border-radius: 3px;
     background: transparent;
