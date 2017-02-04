@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-  content: "Theme version: v0.8.9.4 Alpha";
+  content: "Theme version: v0.9.1 Alpha";
 }
 
 /* The beginning */
@@ -1316,7 +1316,7 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 }
 
 .theme-dark .search .search-bar {
-    background-color: rgba(255, 255, 255, 0.0980392) !important;
+    background: transparent!important;
 }
 
 .theme-dark .search-results-wrap .search-result:before {
