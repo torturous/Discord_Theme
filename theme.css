@@ -1304,6 +1304,53 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 
 /* END OF: Nitro */
 
+/* Keyboard Combos by Archer (https://github.com/AmazingArcher23 , Discord archer#9341) */
+
+.keyboard-shortcuts-modal {
+    position: relative;
+    background-color: #272626;
+}
+.keybind-shortcut span {
+    border: 1px solid #272626;
+    box-shadow: inset 0 -4px 0 #171717;
+    color: grey;
+}
+.keyboard-shortcuts-modal .modal-title {
+    color: white;
+}
+.keyboard-shortcuts-modal .keyboard-shortcut-list .keybind-group .keybind-description {
+    color: grey;
+}
+.keybind-shortcut {
+    color: grey;
+}
+.keybind-shortcut span:active {
+    box-shadow: inset 0 -2px 0 #171717;
+    border: 1px solid #272626;
+    color: grey;
+}
+.keybind-shortcut span:active g {
+    fill: grey;
+}
+
+.keybind-shortcut.dim span {
+    color: grey;
+}
+
+.keybind-shortcut.dim span .bind-arrow g {
+    fill: grey;
+}
+
+.keybind-shortcut.dim span:active {
+    color: grey;
+}
+
+.keybind-shortcut.dim span:active .bind-arrow g {
+    fill: grey;
+}
+
+/* End of Keyboard Combos */
+
 /* Search */
 
 .private-channels .search-bar {
