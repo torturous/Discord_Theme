@@ -1388,6 +1388,60 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
     transform: translate(-30px, 11px)
 }
 
+/* Dark Search By Archer#9341 */
+
+.search-popout .option.selected:after {
+    background: linear-gradient(90deg,hsla(0,0%,95%,0) 0,#303030 50%)
+}
+.search-popout .option:after {
+    background: #212121;
+}
+.search-popout .option.selected {
+    background-color: #303030;
+}
+.search-popout {
+    background-color: #212121;
+    color: white;
+}
+.react-datepicker {
+    background-color: #212121;
+    color: white;
+}
+.react-datepicker .react-datepicker__day.react-datepicker__day--selected {
+    color: white;
+}
+.react-datepicker .react-datepicker__header {
+    background-color: #212121;
+    color: white;
+
+}
+.react-datepicker__day,.react-datepicker__day-name {
+    color: white;
+}
+.react-datepicker .react-datepicker__current-month {
+    color: white;
+}
+.react-datepicker .react-datepicker__day {
+    color: white;
+}
+.react-datepicker .react-datepicker__day.react-datepicker__day--selected:hover,.react-datepicker .react-datepicker__day:hover {
+    color: white;
+    background-color: #212121
+}
+.react-datepicker .react-datepicker__day.react-datepicker__day--selected, .react-datepicker .react-datepicker__day {
+    background-color: #303030
+}
+.react-datepicker .react-datepicker__day.react-datepicker__day--disabled,.react-datepicker .react-datepicker__day.react-datepicker__day--disabled:hover {
+    background-color: rgba(0,0,0,.05);
+    color: grey;
+}
+.react-datepicker .react-datepicker__day--disabled,.react-datepicker .react-datepicker__day--outside-month {
+    background-color: #272626;
+    color: white
+}
+
+/* End of Dark Search */
+
 /* END OF: Search */
 
 /* Help / F1 Section */
