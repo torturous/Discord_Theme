@@ -2546,7 +2546,7 @@ a[href="/channels/@me"] .badge {
 }
 
 .theme-dark .message-group .embed {
-    background-color: transparent!important;
+    background-color: rgba(0,0,0,0.3) !important;
     border: none!important;
     border-radius: 3px!important;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
