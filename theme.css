@@ -1311,7 +1311,11 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 
 .search-results-wrap,
 .search-results-wrap .search-header {
-    background: #141414!important
+    background: #202020 !important;
+}
+
+.theme-dark .search .search-bar {
+    background-color: rgba(255, 255, 255, 0.0980392) !important;
 }
 
 .theme-dark .search-results-wrap .search-result:before {
@@ -1355,6 +1359,14 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 
 .theme-dark .search-results-wrap .channel-separator .channel-name {
     background: transparent;
+}
+
+.search-result.expanded .search-result-message:not(.hit) {
+    background-color: #252525 !important;
+}
+
+.search-result .search-result-message:not(.hit) {
+    background-color: #202020 !important;
 }
 
 .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar {
@@ -3175,6 +3187,10 @@ a[href="/channels/@me"] .badge {
     background: #303030;
     border: none;
     color: rgba(255, 255, 255, .3)
+}
+
+.instant-invite.clipboard-input .clipboard-input-inner input {
+    background-color: #252525 !important;
 }
 
 .form .btn-clear:hover,
