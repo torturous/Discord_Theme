@@ -164,6 +164,7 @@
 .tooltip.tooltip-right.tooltip-normal, .tooltip.tooltip-bottom.tooltip-normal, .tooltip.tooltip-top.tooltip-normal {
     background: rgba(22,22,22,0.6);
     color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.9);
 }
 
 .tooltip.tooltip-right.tooltip-normal:after, .tooltip.tooltip-bottom:after, .tooltip.tooltip-top:after {
