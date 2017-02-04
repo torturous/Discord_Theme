@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-  content: "Theme version: v0.8.9.3 Alpha";
+  content: "Theme version: v0.8.9.4 Alpha";
 }
 
 /* The beginning */
@@ -116,10 +116,10 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
     position: absolute;
-    left: 24rem;
-    top: 34rem;
+    left: 22rem;
+    top: 31rem;
     font-weight: bold;
-    width: 24rem;
+    width: 26rem;
 }
 
 /* End of: The beginning */
