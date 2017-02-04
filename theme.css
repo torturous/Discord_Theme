@@ -1,7 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-    content: "Theme version: v0.8.7 Alpha";
-    margin-right: 1rem;
+  content: "Theme version: v0.8.9 Alpha";
 }
 
 /* The beginning */
@@ -148,6 +147,14 @@
 	opacity: 0.3;
 }
 
+.form.settings.user-settings-modal .settings-actions:before,
+.lastversion:after {
+    position: absolute;
+    left: 36.8rem;
+    top: 34rem;
+    font-weight: bold;
+}
+
 /* End of: Down dirty in the DMs */
 
 /* Tooltips */
@@ -266,25 +273,6 @@
 }
 
 /* End of: Image Modal */
-
-/* Server Settings Bubble */
-/* Contributed by Snazzah (https://github.com/SnazzyPine25 , Discord Snazzah#0371) */
-
-.theme-dark .popout-bottom:not(.no-arrow):not(.search-popout) {
-    top: 57px !important;
-    left: 190px !important;
-    width: 240px !important;
-    margin-top: 0px;
-}
-
-.theme-dark .popout:not(.no-arrow):not(.search-popout) .popout-menu {
-    top: 44px;
-    left: 178px;
-    width: 240px;
-    border-radius: 0;
-}
-
-/* End of: Server Settings Bubble */
 
 /* Status picker */
 
@@ -443,6 +431,10 @@
 
 .settings .settings-header {
     background: #141414;
+}
+
+.guild-settings-modal-emoji .no-emoji p {
+  color: #fff;
 }
 
 .settings .settings-actions {
@@ -2597,6 +2589,33 @@ a[href="/channels/@me"] .badge {
 /* END OF: Emoji picker */
 
 /* Popout messages */
+
+/* Server Settings Bubble */
+/* Contributed by Snazzah (https://github.com/SnazzyPine25 , Discord Snazzah#0371) */
+.theme-dark .popout-bottom:not(.no-arrow):not(.search-popout) {
+    top: 57px !important;
+    left: 190px !important;
+    width: 240px !important;
+    margin-top: 0px;
+}
+
+.theme-dark .popout:not(.no-arrow):not(.search-popout) .popout-menu {
+    top: 44px;
+    left: 178px;
+    width: 240px;
+    border-radius: 0;
+    background: #141414;
+}
+/* End of: Server Settings Bubble */
+
+.popout-menu .popout-menu-item {
+    color: #fff;
+}
+
+.popout-menu .popout-menu-item:hover {
+    background: #212121;
+    color: #fff;
+}
 
 .message-reactions-modal {
     background: #212121
