@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-  content: "Theme version: v0.8.9.2 Alpha";
+  content: "Theme version: v0.8.9.3 Alpha";
 }
 
 /* The beginning */
@@ -418,11 +418,9 @@
     background-position: 50%;
 }
 
-.status-picker .popout-menu-separator {
-    display: none
-}
-
-.status-icon-text .status {
+.status-picker .popout-menu-separator,
+.status-icon-text .status-text,
+.status-picker .status {
     display: none;
 }
 
