@@ -270,14 +270,14 @@
 /* Server Settings Bubble */
 /* Contributed by Snazzah (https://github.com/SnazzyPine25 , Discord Snazzah#0371) */
 
-.theme-dark .popout-bottom:not(.no-arrow) {
+.theme-dark .popout-bottom:not(.no-arrow):not(.search-popout) {
     top: 57px !important;
     left: 190px !important;
     width: 240px !important;
     margin-top: 0px;
 }
 
-.theme-dark .popout .popout-menu {
+.theme-dark .popout:not(.no-arrow):not(.search-popout) .popout-menu {
     top: 44px;
     left: 178px;
     width: 240px;
