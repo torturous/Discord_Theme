@@ -150,6 +150,142 @@
 
 /* End of: Down dirty in the DMs */
 
+/* Tooltips */
+/* Contributed by Snazzah (https://github.com/SnazzyPine25 , Discord Snazzah#0371) */
+
+.tooltip.tooltip-right.tooltip-normal, .tooltip.tooltip-bottom.tooltip-normal, .tooltip.tooltip-top.tooltip-normal {
+    background: rgba(22,22,22,0.6);
+    color: #fff;
+}
+
+.tooltip.tooltip-right.tooltip-normal:after, .tooltip.tooltip-bottom:after, .tooltip.tooltip-top:after {
+    opacity: 0;
+}
+
+.tooltip.tooltip-top {
+    -webkit-animation: tooltip-top-anim 200ms ease-in-out;
+    animation: tooltip-top-anim 200ms ease-in-out;
+}
+
+.tooltip.tooltip-bottom {
+    -webkit-animation: tooltip-bottom-anim 200ms ease-in-out;
+    animation: tooltip-bottom-anim 200ms ease-in-out;
+}
+
+.tooltip.tooltip-right {
+    -webkit-animation: tooltip-right-anim 200ms ease-in-out;
+    animation: tooltip-right-anim 200ms ease-in-out;
+}
+
+@-webkit-keyframes tooltip-top-anim {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes tooltip-top-anim {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes tooltip-bottom-anim {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes tooltip-bottom-anim {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes tooltip-right-anim {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes tooltip-right-anim {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* End of: Tooltips */
+
+/* Image Modal */
+/* Contributed by Snazzah (https://github.com/SnazzyPine25 , Discord Snazzah#0371) */
+
+.modal .modal-inner .modal-image a {
+    background: #212121;
+    padding-left: 10px;
+    border-top: 2px solid rgba(0,0,0,0.2);
+}
+
+.modal .modal-inner .modal-image a:hover {
+    background: #212121;
+    color: #2196F3;
+    opacity: 1;
+    padding-left: 20px;
+}
+
+.callout-backdrop {
+    opacity: 0.6 !important;
+}
+
+/* End of: Image Modal */
+
+/* Server Settings Bubble */
+/* Contributed by Snazzah (https://github.com/SnazzyPine25 , Discord Snazzah#0371) */
+
+.theme-dark .popout-bottom:not(.no-arrow):not(.search-popout) {
+    top: 57px !important;
+    left: 190px !important;
+    width: 240px !important;
+    margin-top: 0px;
+}
+
+.theme-dark .popout:not(.no-arrow):not(.search-popout) .popout-menu {
+    top: 44px;
+    left: 178px;
+    width: 240px;
+    border-radius: 0;
+}
+
+/* End of: Server Settings Bubble */
+
 /* Status picker */
 
 .status-picker .popout-menu-item {
@@ -2227,6 +2363,53 @@ a[href="/channels/@me"] .badge {
     background: #141414;
 }
 
+#voice-connection .voice-connection-status-connecting {
+    -webkit-animation: voice-connecting-flash 1000ms ease-in-out infinite;
+    animation: voice-connecting-flash 1000ms ease-in-out infinite;
+}
+
+@-webkit-keyframes voice-connecting-flash {
+    0% {
+        color: #faa61a;
+    }
+    50% {
+        color: #ffbd70;
+    }
+    100% {
+        color: #faa61a;
+    }
+}
+
+@keyframes voice-connecting-flash {
+    0% {
+        color: #faa61a;
+    }
+    50% {
+        color: #ffbd70;
+    }
+    100% {
+        color: #faa61a;
+    }
+}
+
+.guild-channels .channel-voice-states li.speaking .avatar-small {
+    box-shadow: inset 0 0 0 1px #2e3136 !important;
+}
+
+.channel-voice.audio .speaking {
+    background: #43b581;
+    width: 220px;
+    -webkit-transition: all 100ms ease-in-out !important;
+    border-left: 2px solid rgba(0,0,0,0.2);
+}
+
+.channel-voice.audio.collapsed .speaking  {
+    background: initial;
+    width: initial;
+    -webkit-transition: initial;
+    border-left: initial;
+}
+
 .account .btn-deafen,
 .account .btn-mute,
 .account .btn-settings {
@@ -2292,6 +2475,12 @@ a[href="/channels/@me"] .badge {
 
 .new-messages-indicator-guild {
     z-index: 1000
+}
+
+.new-messages-indicator {
+    width: 100% !important;
+    left: 0% !important;
+    border-radius: 0 !important;
 }
 
 .theme-dark .message-group .embed {
