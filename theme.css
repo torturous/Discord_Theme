@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-  content: "Theme version: v0.8.9 Alpha";
+  content: "Theme version: v0.8.9.2 Alpha";
 }
 
 /* The beginning */
@@ -2599,6 +2599,15 @@ a[href="/channels/@me"] .badge {
     margin-top: 0px;
 }
 
+/* End of: Server Settings Bubble */
+
+.popout-menu .popout-menu-separator {
+  width: 70%;
+  border-bottom: 1px solid #212121;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .theme-dark .popout:not(.no-arrow):not(.search-popout) .popout-menu {
     top: 44px;
     left: 178px;
@@ -2606,7 +2615,6 @@ a[href="/channels/@me"] .badge {
     border-radius: 0;
     background: #141414;
 }
-/* End of: Server Settings Bubble */
 
 .popout-menu .popout-menu-item {
     color: #fff;
