@@ -1,7 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-    content: "Theme version: v0.8.7 Alpha";
-    margin-right: 1rem;
+  content: "Theme version: v0.8.9.4 Alpha";
 }
 
 /* The beginning */
@@ -114,6 +113,15 @@
     background-size: cover;
 }
 
+.form.settings.user-settings-modal .settings-actions:before,
+.lastversion:after {
+    position: absolute;
+    left: 22rem;
+    top: 31rem;
+    font-weight: bold;
+    width: 26rem;
+}
+
 /* End of: The beginning */
 
 /* Down dirty in the DMs */
@@ -149,6 +157,123 @@
 }
 
 /* End of: Down dirty in the DMs */
+
+/* Tooltips */
+/* Contributed by Snazzah (https://github.com/SnazzyPine25 , Discord Snazzah#0371) */
+
+.tooltip.tooltip-right.tooltip-normal, .tooltip.tooltip-bottom.tooltip-normal, .tooltip.tooltip-top.tooltip-normal {
+    background: rgba(22,22,22,0.6);
+    color: #fff;
+}
+
+.tooltip.tooltip-right.tooltip-normal:after, .tooltip.tooltip-bottom:after, .tooltip.tooltip-top:after {
+    opacity: 0;
+}
+
+.tooltip.tooltip-top {
+    -webkit-animation: tooltip-top-anim 200ms ease-in-out;
+    animation: tooltip-top-anim 200ms ease-in-out;
+}
+
+.tooltip.tooltip-bottom {
+    -webkit-animation: tooltip-bottom-anim 200ms ease-in-out;
+    animation: tooltip-bottom-anim 200ms ease-in-out;
+}
+
+.tooltip.tooltip-right {
+    -webkit-animation: tooltip-right-anim 200ms ease-in-out;
+    animation: tooltip-right-anim 200ms ease-in-out;
+}
+
+@-webkit-keyframes tooltip-top-anim {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes tooltip-top-anim {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes tooltip-bottom-anim {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes tooltip-bottom-anim {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes tooltip-right-anim {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes tooltip-right-anim {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* End of: Tooltips */
+
+/* Image Modal */
+/* Contributed by Snazzah (https://github.com/SnazzyPine25 , Discord Snazzah#0371) */
+
+.modal .modal-inner .modal-image a {
+    background: #212121;
+    padding-left: 10px;
+    border-top: 2px solid rgba(0,0,0,0.2);
+}
+
+.modal .modal-inner .modal-image a:hover {
+    background: #212121;
+    color: #2196F3;
+    opacity: 1;
+    padding-left: 20px;
+}
+
+.callout-backdrop {
+    opacity: 0.6 !important;
+}
+
+/* End of: Image Modal */
 
 /* Status picker */
 
@@ -293,11 +418,9 @@
     background-position: 50%;
 }
 
-.status-picker .popout-menu-separator {
-    display: none
-}
-
-.status-icon-text .status {
+.status-picker .popout-menu-separator,
+.status-icon-text .status-text,
+.status-picker .status {
     display: none;
 }
 
@@ -307,6 +430,10 @@
 
 .settings .settings-header {
     background: #141414;
+}
+
+.guild-settings-modal-emoji .no-emoji p {
+  color: #fff;
 }
 
 .settings .settings-actions {
@@ -1260,6 +1387,60 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
     -webkit-transform: translate(-30px, 11px);
     transform: translate(-30px, 11px)
 }
+
+/* Dark Search By Archer#9341 */
+
+.search-popout .option.selected:after {
+    background: linear-gradient(90deg,hsla(0,0%,95%,0) 0,#303030 50%)
+}
+.search-popout .option:after {
+    background: #212121;
+}
+.search-popout .option.selected {
+    background-color: #303030;
+}
+.search-popout {
+    background-color: #212121;
+    color: white;
+}
+.react-datepicker {
+    background-color: #212121;
+    color: white;
+}
+.react-datepicker .react-datepicker__day.react-datepicker__day--selected {
+    color: white;
+}
+.react-datepicker .react-datepicker__header {
+    background-color: #212121;
+    color: white;
+
+}
+.react-datepicker__day,.react-datepicker__day-name {
+    color: white;
+}
+.react-datepicker .react-datepicker__current-month {
+    color: white;
+}
+.react-datepicker .react-datepicker__day {
+    color: white;
+}
+.react-datepicker .react-datepicker__day.react-datepicker__day--selected:hover,.react-datepicker .react-datepicker__day:hover {
+    color: white;
+    background-color: #212121
+}
+.react-datepicker .react-datepicker__day.react-datepicker__day--selected, .react-datepicker .react-datepicker__day {
+    background-color: #303030
+}
+.react-datepicker .react-datepicker__day.react-datepicker__day--disabled,.react-datepicker .react-datepicker__day.react-datepicker__day--disabled:hover {
+    background-color: rgba(0,0,0,.05);
+    color: grey;
+}
+.react-datepicker .react-datepicker__day--disabled,.react-datepicker .react-datepicker__day--outside-month {
+    background-color: #272626;
+    color: white
+}
+
+/* End of Dark Search */
 
 /* END OF: Search */
 
@@ -2227,6 +2408,53 @@ a[href="/channels/@me"] .badge {
     background: #141414;
 }
 
+#voice-connection .voice-connection-status-connecting {
+    -webkit-animation: voice-connecting-flash 1000ms ease-in-out infinite;
+    animation: voice-connecting-flash 1000ms ease-in-out infinite;
+}
+
+@-webkit-keyframes voice-connecting-flash {
+    0% {
+        color: #faa61a;
+    }
+    50% {
+        color: #ffbd70;
+    }
+    100% {
+        color: #faa61a;
+    }
+}
+
+@keyframes voice-connecting-flash {
+    0% {
+        color: #faa61a;
+    }
+    50% {
+        color: #ffbd70;
+    }
+    100% {
+        color: #faa61a;
+    }
+}
+
+.guild-channels .channel-voice-states li.speaking .avatar-small {
+    box-shadow: inset 0 0 0 1px #2e3136 !important;
+}
+
+.channel-voice.audio .speaking {
+    background: #43b581;
+    width: 220px;
+    -webkit-transition: all 100ms ease-in-out !important;
+    border-left: 2px solid rgba(0,0,0,0.2);
+}
+
+.channel-voice.audio.collapsed .speaking  {
+    background: initial;
+    width: initial;
+    -webkit-transition: initial;
+    border-left: initial;
+}
+
 .account .btn-deafen,
 .account .btn-mute,
 .account .btn-settings {
@@ -2292,6 +2520,12 @@ a[href="/channels/@me"] .badge {
 
 .new-messages-indicator-guild {
     z-index: 1000
+}
+
+.new-messages-indicator {
+    width: 100% !important;
+    left: 0% !important;
+    border-radius: 0 !important;
 }
 
 .theme-dark .message-group .embed {
@@ -2408,6 +2642,41 @@ a[href="/channels/@me"] .badge {
 /* END OF: Emoji picker */
 
 /* Popout messages */
+
+/* Server Settings Bubble */
+/* Contributed by Snazzah (https://github.com/SnazzyPine25 , Discord Snazzah#0371) */
+.theme-dark .popout-bottom:not(.no-arrow):not(.search-popout) {
+    top: 57px !important;
+    left: 190px !important;
+    width: 240px !important;
+    margin-top: 0px;
+}
+
+/* End of: Server Settings Bubble */
+
+.popout-menu .popout-menu-separator {
+  width: 70%;
+  border-bottom: 1px solid #212121;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.theme-dark .popout:not(.no-arrow):not(.search-popout) .popout-menu {
+    top: 44px;
+    left: 178px;
+    width: 240px;
+    border-radius: 0;
+    background: #141414;
+}
+
+.popout-menu .popout-menu-item {
+    color: #fff;
+}
+
+.popout-menu .popout-menu-item:hover {
+    background: #212121;
+    color: #fff;
+}
 
 .message-reactions-modal {
     background: #212121
