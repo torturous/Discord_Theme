@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-  content: "Theme version: v0.9.4 Alpha";
+  content: "Theme version: v0.9.4.1 Alpha";
   padding-right: 1rem;
 }
 
@@ -1621,13 +1621,27 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
     box-shadow: none
 }
 
+.note textarea:focus {
+    background: #262626;
+    color: #fff
+}
+
+.note textarea {
+    -webkit-transition: 100ms ease;
+    transition: 100ms ease
+}
+
+.quick-message.isBlocked {
+  background: transparent;
+}
+
 .quick-message {
     border: 0;
     color: #fff;
     opacity: .5!important;
     -webkit-transition: all 100ms ease;
     transition: all 100ms ease;
-    border-bottom: 2px solid #fff;
+    border-bottom: 0;
     background: transparent;
     border-radius: 0
 }
