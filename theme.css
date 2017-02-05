@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-  content: "Theme version: v0.9.1 Alpha";
+  content: "Theme version: v0.9.2 Alpha";
   padding-right: 1rem;
 }
 
@@ -2723,6 +2723,37 @@ a[href="/channels/@me"] .badge {
 
 /* End of: Server Settings Bubble */
 
+.alert.form.has-icon:before {
+  background-image: url('/assets/1ac6fb17c60570343eec4e81fe1e4073.svg');
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.alert.form.has-icon h4 {
+  color: #fff;
+}
+
+.alert.form .form-inner .btn {
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.alert.form .form-inner .cancel {
+  background-color: #e74c3c;
+}
+
+.alert.form .form-inner .cancel:hover {
+  background-color: #c0392b;
+}
+
+.form .btn-primary {
+  background-color: #2ecc71;
+}
+
+.form .btn-primary:hover {
+  background-color: #27ae60;
+}
+
 .popout-menu .popout-menu-separator {
   width: 70%;
   border-bottom: 1px solid #212121;
@@ -2798,6 +2829,28 @@ a[href="/channels/@me"] .badge {
     border-radius: 8px!important;
 }
 
+@-webkit-keyframes sub-contextmenu-anim {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes sub-contextmenu-anim {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
 .context-menu {
     background: #212121!important;
     border-radius: 2px;
@@ -2807,6 +2860,11 @@ a[href="/channels/@me"] .badge {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3)!important;
     -webkit-animation: opacity 100ms ease;
     animation: opacity 100ms ease
+}
+
+.context-menu, .context-menu .context-menu {
+  -webkit-animation: sub-contextmenu-anim 200ms ease-in-out;
+  animation: sub-contextmenu-anim 200ms ease-in-out;
 }
 
 .theme-dark.context-menu .item-group {
