@@ -2754,19 +2754,47 @@ a[href="/channels/@me"] .badge {
   background-color: #27ae60;
 }
 
+@-webkit-keyframes popout-menu {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes popout-menu {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.popout-menu {
+  -webkit-animation: popout-menu 300ms ease-in-out;
+  animation: popout-menu 300ms ease-in-out;
+}
+
 .popout-menu .popout-menu-separator {
-  width: 70%;
-  border-bottom: 1px solid #212121;
+  border-bottom: 0;
   margin-left: auto;
   margin-right: auto;
 }
 
 .popout-menu .popout-menu-item {
     color: #fff;
+    background: #212121;
+    transition: all 300ms ease;
 }
 
 .popout-menu .popout-menu-item:hover {
-    background: #212121;
+    background: #3D3D3D;
     color: #fff;
 }
 
