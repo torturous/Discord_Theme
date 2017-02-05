@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-  content: "Theme version: v0.9.4.1 Alpha";
+  content: "Theme version: v0.9.4.2 Alpha";
   padding-right: 1rem;
 }
 
@@ -2698,7 +2698,30 @@ a[href="/channels/@me"] .badge {
     margin-bottom: -20px;
 }
 
+@-webkit-keyframes emoji-picker {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes emoji-picker {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
 .popout .emoji-picker {
+    animation: emoji-picker 300ms;
     background: #212121!important;
     border: 1px solid #212121;
     border-radius: 0 0 3px 3px!important;
