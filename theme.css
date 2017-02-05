@@ -1,6 +1,7 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
   content: "Theme version: v0.9.1 Alpha";
+  padding-right: 1rem;
 }
 
 /* The beginning */
@@ -111,15 +112,6 @@
     background-image: url("https://s-media-cache-ak0.pinimg.com/originals/e5/47/e1/e547e16dfaa05ef23cc9b85ef2c7ca95.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.form.settings.user-settings-modal .settings-actions:before,
-.lastversion:after {
-    position: absolute;
-    left: 22rem;
-    top: 31rem;
-    font-weight: bold;
-    width: 26rem;
 }
 
 /* End of: The beginning */
@@ -1620,7 +1612,7 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 
 .user-popout .avatar-wrapper .avatar-popout {
     border: 0;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.01);
 }
 
 .user-popout .avatar-wrapper .avatar-hint {
