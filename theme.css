@@ -1306,6 +1306,11 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 
 /* Keyboard Combos by Archer (https://github.com/AmazingArcher23 , Discord archer#9341) */
 
+/* Corner Fix by Snazzah (https://github.com/SnazzyPine25 , Discord Snazzah#0371) */
+.keyboard-shortcuts-modal .scroller-wrap .scroller::-webkit-scrollbar-corner {
+    background-color: #272626;
+}
+
 .keyboard-shortcuts-modal {
     position: relative;
     background-color: #272626;
