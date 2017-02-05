@@ -1306,6 +1306,11 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 
 /* Keyboard Combos by Archer (https://github.com/AmazingArcher23 , Discord archer#9341) */
 
+/* Corner Fix by Snazzah (https://github.com/SnazzyPine25 , Discord Snazzah#0371) */
+.keyboard-shortcuts-modal .scroller-wrap .scroller::-webkit-scrollbar-corner {
+    background-color: #272626;
+}
+
 .keyboard-shortcuts-modal {
     position: relative;
     background-color: #272626;
@@ -2709,11 +2714,19 @@ a[href="/channels/@me"] .badge {
 
 /* Server Settings Bubble */
 /* Contributed by Snazzah (https://github.com/SnazzyPine25 , Discord Snazzah#0371) */
-.theme-dark .popout-bottom:not(.no-arrow):not(.search-popout) {
+.theme-dark .popout-bottom:not(.no-arrow):not(.search-popout):not([style*="z-index: 2000;"]) {
     top: 57px !important;
     left: 190px !important;
     width: 240px !important;
     margin-top: 0px;
+}
+
+.theme-dark .popout:not(.no-arrow):not(.search-popout) .popout-menu {
+    top: 44px;
+    left: 178px;
+    width: 240px;
+    border-radius: 0;
+    background: #141414;
 }
 
 /* End of: Server Settings Bubble */
@@ -2723,14 +2736,6 @@ a[href="/channels/@me"] .badge {
   border-bottom: 1px solid #212121;
   margin-left: auto;
   margin-right: auto;
-}
-
-.theme-dark .popout:not(.no-arrow):not(.search-popout) .popout-menu {
-    top: 44px;
-    left: 178px;
-    width: 240px;
-    border-radius: 0;
-    background: #141414;
 }
 
 .popout-menu .popout-menu-item {
