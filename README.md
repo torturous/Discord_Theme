@@ -3,7 +3,7 @@ A custom CSS made to change your discord style<br>
 This theme does also **force** you to Dark Theme, be aware of that<br>
 
 ## FAQ
-**Where can I talk with you?**<br>Here: https://discord.gg/qG44FUz
+**Where can I talk with you?**<br>Here: https://discord.gg/J4mwTJR
 
 **What should I use, theme.css or autotheme.css?**<br>That really depends on you. If you are a developer and want
 to change stuff, download the theme.css, however if you wish for a theme that updates, use autotheme.css :P
