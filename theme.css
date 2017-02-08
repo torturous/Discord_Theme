@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-  content: "Theme version: v0.9.5.2 Alpha";
+  content: "Theme version: v0.9.6.1 Alpha";
   padding-right: 1rem;
 }
 
@@ -2268,6 +2268,16 @@ a[href="/channels/@me"] .badge {
 .guild-channels .channel-voice-states li.speaking {
     -webkit-transition: all 100ms ease;
     transition: all 100ms ease;
+}
+
+.guild-channels .channel .channel-name {
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.guild-channels .channel:hover .channel-name {
+    -webkit-transform: translate(10px);
+    transform: translate(10px);
 }
 
 .guild-channels .channel-voice-states li .avatar-small {
