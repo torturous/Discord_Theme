@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-  content: "Theme version: v0.9.5 Alpha";
+  content: "Theme version: v0.9.5.2 Alpha";
   padding-right: 1rem;
 }
 
@@ -1008,6 +1008,10 @@ form:not(.user-settings-modal) .tab-bar.SIDE .tab-bar-item:before,
 .form .form-inner p,
 .form .form-inner .message-text .markup {
     color: white;
+}
+
+.message-group .comment .markup code.inline {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .form .form-actions {
