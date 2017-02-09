@@ -10,7 +10,8 @@ to change stuff, download the theme.css, however if you wish for a theme that up
 
 **How do I use the theme?**<br>[BeautifulDiscord](https://github.com/beautiful-discord-community/resources/wiki/Installing-BeautifulDiscord) should be useful to use the skin
 
-**Does it support BetterDiscord?**<br>**no, just... no... [How to install beautifuldiscord](https://github.com/beautiful-discord-community/resources/wiki/Installing-BeautifulDiscord)**
+**Does it support BetterDiscord?**<br>Yes, however I do highly recommended **BeautifulDiscord**
+(You can fint BetterDiscord version in assets folder)
 
 **The theme looks weird...**<br>There is a reason why it's on alpha stage ;)
 
