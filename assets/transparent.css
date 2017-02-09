@@ -19,6 +19,10 @@
   opacity: 1;
 }
 
+.guilds-wrapper .guild.guilds-add:before {
+  background: transparent;
+}
+
 .theme-dark .chat .private-channel-call {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
