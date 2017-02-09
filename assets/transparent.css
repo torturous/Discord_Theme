@@ -20,7 +20,7 @@
 }
 
 .guilds-wrapper .guild.guilds-add:before {
-  background: transparent;
+  background: transparent!important;
 }
 
 .theme-dark .chat .private-channel-call {
