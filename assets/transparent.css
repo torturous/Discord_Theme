@@ -1,0 +1,45 @@
+/* This is just a mess, but works! o.o */
+.search-bar, .friends-header, .chat>.title-wrap, .chat>.title-wrap>.title,
+.guild-header, .chat .title-wrap .private-channels .channel:active, .guild-channels .channel-text:active,
+.channel-members .member.popout-open, .private-channels .channel.selected, .guild-channels .channel-text.selected,
+.theme-dark .messages-wrapper, .guild-channels, .theme-dark .chat .title-wrap,
+.theme-dark .chat>.content, .theme-dark .friends-table, .theme-dark .messages-wrapper,
+.private-channels, .channel-members, .guilds-wrapper, .channel-members, .channel-textarea, .theme-dark .channel-textarea-inner,
+#friends, .account .btn-group, #friends .friends-table .friends-table-header,
+#friends .friends-table, .flex-horizontal>.flex-spacer, .chat .messages,
+.friends-table .messages .message-group:not(.has-divider), .messages-wrapper .messages .message-group:not(.has-divider),
+#voice-connection .btn-group, .account .btn-group, .account .btn-mute, .account .btn-deafen, .account .btn-settings,
+.channel-textarea, .comment, .scroller .guild-channels, .channels-wrap, .theme-dark .layers, .channel-members-wrap,
+.channel-members-wrap .scroller-wrap.fade.dark, .search-bar, .friends-header, .guild-header header, .chat>.title-wrap>.title, .chat .title-wrap,
+.chat .messages-wrapper, .chat .messages-wrapper .scroller-wrap, .chat form .typing:hover, .typing .text, .theme-dark .chat .private-channel-call {
+  background: transparent!important;
+  box-shadow: none;
+  border-bottom: 0px solid #fff;
+  border-top: none;
+  opacity: 1;
+}
+
+.theme-dark .chat .private-channel-call {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.channel-textarea-inner textarea, .chat .title-wrap .topic {
+  color: rgba(255, 255, 255, 0.7)!important;
+}
+
+.guilds-wrapper .guilds .guild.selected {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.chat form .typing, .channel-textarea, .account {
+  background: rgba(0, 0, 0, 0.3)!important;
+}
+
+.guild-channels .channel-text:hover, .channel-members .member:hover,
+.private-channels .channel:hover, .theme-dark #friends .friends-table .friends-row:hover {
+  background: rgba(0, 0, 0, 0.4)!important
+}
+
+.guild-header header {
+  border-bottom: 0px solid #fff;
+}
