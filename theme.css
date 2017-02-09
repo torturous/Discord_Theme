@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-  content: "Theme version: v0.9.6.1 Alpha";
+  content: "Theme version: v0.9.6.2 Alpha";
   padding-right: 1rem;
 }
 
@@ -1942,6 +1942,13 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 /* END OF: Scroller */
 
 /* Discord chat background */
+
+.theme-dark .chat .has-more button {
+  box-shadow: none;
+  background: #272727;
+  color: #fff;
+  margin-top: -4px;
+}
 
 .channel-members::-webkit-scrollbar {
     background: rgba(225, 225, 225, 0.05);
