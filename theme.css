@@ -2755,7 +2755,7 @@ a[href="/channels/@me"] .badge {
 
 /* Server Settings Bubble */
 /* Contributed by Snazzah (https://github.com/SnazzyPine25 , Discord Snazzah#0371) */
-.theme-dark .popout-bottom:not(.no-arrow):not(.search-popout):not([style*="z-index: 2000;"]) {
+.theme-dark .popout-bottom:not(.no-arrow):not(.search-popout):not(.popout-bottom):not([style*="z-index: 2000;"]) {
     top: 57px !important;
     left: 190px !important;
     width: 240px !important;
@@ -2776,6 +2776,26 @@ a[href="/channels/@me"] .badge {
   background-image: url('/assets/1ac6fb17c60570343eec4e81fe1e4073.svg');
   border-radius: 0;
   background-color: transparent;
+}
+
+.popout section {
+  background: #141414!important;
+  -webkit-transition: all 100ms ease;
+  transition: all 100ms ease;
+}
+
+#autocomplete-popout .row.selected,
+#autocomplete-popout .row:hover {
+    background: #181818
+}
+
+#autocomplete-popout .row {
+    -webkit-transition: all 50ms ease;
+    transition: all 50ms ease;
+}
+
+#autocomplete-popout .scroller::-webkit-scrollbar {
+    display: none
 }
 
 .alert.form.has-icon h4 {
