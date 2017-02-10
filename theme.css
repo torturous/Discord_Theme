@@ -3005,6 +3005,47 @@ a[href="/channels/@me"] .badge {
     box-shadow: none;
 }
 
+.jump-to-present-bar button:first-of-type {
+    display: none;
+}
+
+.jump-to-present-bar {
+    width: 130px!important;
+    right: 10px!important;
+    left: auto!important;
+    -webkit-animation: slide-up .7s cubic-bezier(.4, 0, 0, 1);
+    animation: slide-up .7s cubic-bezier(.4, 0, 0, 1);
+}
+
+.chat .jump-to-present-bar button:last-child {
+    width: 130px!important;
+    text-align: center;
+}
+
+.chat .jump-to-present-bar .spinner {
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3)
+}
+
+.sink-interactions .clickable.action-buttons {
+    background: transparent!important;
+}
+
+.action-buttons {
+    background: transparent!important;
+    box-shadow: none!important;
+    -webkit-transform: translate(-6px, 7px);
+    transform: translate(-6px, 7px)
+}
+
+.search-results-wrap .action-buttons {
+    -webkit-transform: translate(-30px, 11px);
+    transform: translate(-30px, 11px)
+}
+
 .messages-popout-wrap .comment {
     background: rgba(0, 0, 0, 0);
     border-radius: 0 3px 3px 3px!important;
@@ -3360,6 +3401,15 @@ a[href="/channels/@me"] .badge {
     margin-left: -2px;
     padding-left: 2px;
     padding-right: 2px
+}
+
+.mention {
+  background: rgba(114, 137, 218, 0.2);
+  color: #7289da;
+}
+
+.mention:hover {
+  background: rgba(114, 137, 218, 0.4);
 }
 
 .markdown-modal {
