@@ -6,7 +6,7 @@
 .theme-dark .chat>.content, .theme-dark .friends-table, .theme-dark .messages-wrapper,
 .private-channels, .channel-members, .guilds-wrapper, .channel-members, .channel-textarea, .theme-dark .channel-textarea-inner,
 #friends, .account .btn-group, #friends .friends-table .friends-table-header,
-#friends .friends-table, .flex-horizontal>.flex-spacer, .chat .messages,
+#friends .friends-table, .flex-horizontal>.flex-spacer, .chat .messages, .guild-header header,
 .friends-table .messages .message-group:not(.has-divider), .messages-wrapper .messages .message-group:not(.has-divider),
 #voice-connection .btn-group, .account .btn-group, .account .btn-mute, .account .btn-deafen, .account .btn-settings,
 .channel-textarea, .comment, .scroller .guild-channels, .channels-wrap, .theme-dark .layers, .channel-members-wrap,
@@ -19,27 +19,35 @@
   opacity: 1;
 }
 
+.channel-textarea-inner textarea, .chat .title-wrap .topic, .theme-dark .search-results-wrap .search-result .hit {
+  color: rgba(255, 255, 255, 0.8)!important;
+}
+
 .theme-dark .chat .private-channel-call {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.channel-textarea-inner textarea, .chat .title-wrap .topic {
-  color: rgba(255, 255, 255, 0.7)!important;
+.message-group-blocked {
+  background: rgba(0, 0, 0, 0.5)!important;
+  border-color: rgba(0, 0, 0, 0.5)!important;
+}
+
+.guild-channels .channel-text:hover, .channel-members .member:hover,
+.private-channels .channel:hover, .theme-dark #friends .friends-table .friends-row:hover, .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar,
+.theme-dark .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-thumb:active, .theme-dark .search-results-wrap .search-result .hit {
+  background: rgba(0, 0, 0, 0.4)!important
+}
+
+.chat form .typing, .channel-textarea, .account, .search-result.expanded .search-result-message:not(.hit), .search-result .search-result-message:not(.hit),
+.theme-dark .search-results-wrap .search-result.expanded .search-result-message.hit, .search-results-wrap,
+.search-results-wrap .search-header {
+  background: rgba(0, 0, 0, 0.3)!important;
+}
+
+.theme-dark .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-thumb {
+    background: rgba(225, 225, 225, 0.2) !important;
 }
 
 .guilds-wrapper .guilds .guild.selected {
   background: rgba(255, 255, 255, 0.05);
-}
-
-.chat form .typing, .channel-textarea, .account {
-  background: rgba(0, 0, 0, 0.3)!important;
-}
-
-.guild-channels .channel-text:hover, .channel-members .member:hover,
-.private-channels .channel:hover, .theme-dark #friends .friends-table .friends-row:hover {
-  background: rgba(0, 0, 0, 0.4)!important
-}
-
-.guild-header header {
-  border-bottom: 0px solid #fff;
 }
