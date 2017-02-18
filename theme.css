@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-  content: "Theme version: v0.1 Beta";
+  content: "Theme version: v0.2 Beta";
   padding-right: 1rem;
 }
 
@@ -2782,6 +2782,57 @@ a[href="/channels/@me"] .badge {
   background: #141414!important;
   -webkit-transition: all 100ms ease;
   transition: all 100ms ease;
+}
+
+@-webkit-keyframes quickswitcher-menu {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes quickswitcher-menu {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.quickswitcher.dark {
+  background-color: #272727;
+  animation: quickswitcher-menu 300ms ease-in-out;
+}
+
+.quickswitcher.dark .result.selected, .quickswitcher.dark .result .result-action {
+  background-color: #181818;
+  box-shadow: none;
+}
+
+.quickswitcher.dark .scroller-wrap:before {
+  background: transparent;
+}
+
+.quickswitcher .result .result-name, .quickswitcher .result .result-name:hover,
+.quickswitcher .result .result-display-name, .quickswitcher .result .result-display-name:hover,
+.quickswitcher.dark .result.selected .result-display-name {
+  transition: all 200ms ease;
+}
+
+.quickswitcher .result .result-name:hover, .quickswitcher .result .result-display-name:hover, .quickswitcher.dark .result.selected .result-display-name  {
+  margin-left: 1em;
+}
+
+.quickswitcher.dark .big-input {
+  box-shadow: none;
+  background: transparent;
 }
 
 #autocomplete-popout .row.selected,
