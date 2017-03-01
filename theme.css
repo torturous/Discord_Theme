@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-  content: "Theme version: v0.3.1 Beta";
+  content: "Theme version: v0.3.2 Beta";
   padding-right: 1rem;
 }
 
@@ -502,6 +502,29 @@
 
 .form .Select-control {
     border: none!important;
+}
+
+.Select-menu-outer {
+    background: #303030;
+    border: none;
+}
+
+.Select-option {
+  color: #fff!important
+}
+
+.Select-option:hover {
+    background: rgba(255, 255, 255, .02)!important;
+    color: rgba(255, 255, 255, 1)!important;
+}
+
+.Select-option.is-selected {
+    background: #8495CF!important;
+    color: #fff!important;
+}
+
+.Select-option.is-selected:hover {
+    background: #7289DA!important;
 }
 
 .tab-bar.TOP {
@@ -1273,6 +1296,21 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 .premium-settings .payment-subhead,
 .premium-settings .billing-history-list li {
   color: white;
+}
+
+.premium-settings .subscription .premium-tools .ui-button {
+  color: white;
+  background: #27ae60;
+}
+
+.premium-settings .subscription .premium-tools .ui-button+.ui-button {
+  background: #e74c3c;
+}
+
+.premium-settings .payment-method .payment-info .card-tools .ui-button {
+  background: #3498db;
+  color: #fff;
+  font-weight: bold;
 }
 
 .premium-settings .payment-method .payment-info .card-tools button, .premium-settings .subscription, .premium-settings .subscription .premium-tools button {
