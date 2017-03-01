@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-  content: "Theme version: v0.3 Beta";
+  content: "Theme version: v0.3.1 Beta";
   padding-right: 1rem;
 }
 
@@ -2876,6 +2876,11 @@ a[href="/channels/@me"] .badge {
 .quickswitcher.dark .big-input {
   box-shadow: none;
   background: transparent;
+}
+
+.quickswitcher.dark .result.selected:after {
+  background-color: transparent;
+  box-shadow: none;
 }
 
 #autocomplete-popout .row.selected,
