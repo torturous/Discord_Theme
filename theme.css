@@ -166,6 +166,19 @@
 
 /* End of: Down dirty in the DMs */
 
+/* Channel Notice */
+/* Contributed by Snazzah (https://github.com/SnazzyPine25 , Discord Snazzah#0371) */
+
+.channel-notice {
+    background-color: #111 !important;
+}
+
+/* Channel Notice */
+
+.channel-notice .btn {
+    background-color: #212121 !important;
+}
+
 /* Tooltips */
 /* Contributed by Snazzah (https://github.com/SnazzyPine25 , Discord Snazzah#0371) */
 
