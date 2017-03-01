@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-  content: "Theme version: v0.2 Beta";
+  content: "Theme version: v0.3 Beta";
   padding-right: 1rem;
 }
 
@@ -109,12 +109,28 @@
 }
 
 .app.flex-vertical.theme-light {
-    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/e5/47/e1/e547e16dfaa05ef23cc9b85ef2c7ca95.jpg");
+    background-image: url("https://i.alexflipnote.xyz/tumblr_mz9mfzxW2Y1rydwbvo1_500.gif");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 /* End of: The beginning */
+
+/* login screen */
+
+.auth-center {
+  background: #141414;
+}
+
+.auth-inner .auth-brand, form.auth-form {
+  background: #272727;
+}
+
+.form .control-group {
+  transition: all 300ms ease;
+}
+
+/* Endo of: login screen */
 
 /* Down dirty in the DMs */
 
@@ -2784,6 +2800,25 @@ a[href="/channels/@me"] .badge {
   background-image: url('/assets/1ac6fb17c60570343eec4e81fe1e4073.svg');
   border-radius: 0;
   background-color: transparent;
+}
+
+.callout-backdrop {
+  opacity: 1 !important;
+  background-color: rgba(0, 0, 0, 0.8)!important;
+}
+
+.download-apps .header, .download-apps .footer {
+  color: white;
+}
+
+.download-apps .platforms .platform {
+  border: none;
+}
+
+.download-apps .content-wrapper {
+  background: #141414;
+  border: none;
+  border-radius: 10px;
 }
 
 .popout section {
