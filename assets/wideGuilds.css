@@ -1,5 +1,9 @@
-.guilds-wrapper .guilds .guild
-{
+/*
+  This plugin was made by Discord user: CyberRonin#5517
+  Github: https://github.com/Rxswyers
+*/
+
+.guilds-wrapper .guilds .guild {
   padding-right: 6px;
   padding-left: 6px;
   padding-top: 4px;
