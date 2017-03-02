@@ -1,27 +1,9 @@
-@import "assets/wideGuilds.css";
+/* This will automatically update your theme to the latest release */
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/theme.css";
 
-/* This will automatically update your theme to the latest release */
-/* Should be able to put a raw URL here, the contents of the file work in here. */
-
-/* NOTE: Do you want the background version of this theme? Just uncomment the @import */
-/* @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/transparent.css"; */
-
 /*
-  body = Set background (Must be HTTPS)
-  .app = The RGBA to the overlay (Over the background)
+  How to add plugins :D
+  1. Just add any @import from either my PLUGINS.md file or find some other @import stuff
+  2. Add them under this comment
+  3. Enjoy some fun stuff :P
 */
-
-
-body { background: url("https://festive.tf/assets/images/forest_bg.jpg"); }
-.app { background: rgba(0, 0, 0, 0.5); }
-
-
-/* If you want to fix the background, here you go, might need to know CSS before you edit this */
-body {
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-

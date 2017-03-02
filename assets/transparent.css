@@ -55,3 +55,10 @@
 .guilds-wrapper .guilds .guild.selected {
   background: rgba(255, 255, 255, 0.05);
 }
+
+body {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
