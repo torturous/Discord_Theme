@@ -1,6 +1,8 @@
-/* This will automatically update your theme to the latest release */
+@import "assets/wideGuilds.css";
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/theme.css";
 
+/* This will automatically update your theme to the latest release */
+/* Should be able to put a raw URL here, the contents of the file work in here. */
 
 /* NOTE: Do you want the background version of this theme? Just uncomment the @import */
 /* @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/transparent.css"; */
@@ -9,6 +11,8 @@
   body = Set background (Must be HTTPS)
   .app = The RGBA to the overlay (Over the background)
 */
+
+
 body { background: url("https://festive.tf/assets/images/forest_bg.jpg"); }
 .app { background: rgba(0, 0, 0, 0.5); }
 
@@ -20,3 +24,4 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+
