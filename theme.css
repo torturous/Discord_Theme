@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-  content: "Theme version: v0.3.2 Beta";
+  content: "Theme version: v0.3.3 Beta";
   padding-right: 1rem;
 }
 
@@ -3231,6 +3231,11 @@ a[href="/channels/@me"] .badge {
 
 /* The chat */
 
+::selection {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
 .edit-operation {
     padding: 0!important;
 }
@@ -3302,10 +3307,12 @@ a[href="/channels/@me"] .badge {
 
 .message-group .edit-message .channel-textarea-inner,
 .message-group .edit-message .channel-textarea {
-    border-radius: 3px!important;
-    background: transparent!important;
+    border-radius: 5px!important;
+    background: #181818!important;
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
     box-shadow: none!important;
-    opacity: 1!important
+    opacity: 1!important;
 }
 
 .message-group .edit-message .channel-textarea textarea {
@@ -3314,7 +3321,7 @@ a[href="/channels/@me"] .badge {
 
 .message-group .edit-message .channel-textarea-inner {
     padding: 0px!important;
-    padding-bottom: 5px!important
+    padding-bottom: 5px!important;
 }
 
 .message-group .edit-message textarea {
