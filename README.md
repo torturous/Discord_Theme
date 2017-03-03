@@ -18,4 +18,4 @@ to change stuff, download the theme.css, however if you wish for a theme that up
 **I found a bug, what do I do?**<br>Either tell me the problem or make a Pull Request / Issue</a>
 
 ## Screenshots
-[Preview1](https://i.mify.pw/5d0d65.png) [Preview2](https://i.mify.pw/62161e.png) [Preview3](https://i.mify.pw/155085.png) [Preview4](https://i.mify.pw/a21aa9.png) [Preview5](https://i.mify.pw/271422.png)
+![Preview1](https://i.mify.pw/5d0d65.png) ![Preview2](https://i.mify.pw/62161e.png) ![Preview3](https://i.mify.pw/155085.png) ![Preview4](https://i.mify.pw/a21aa9.png) ![Preview5](https://i.mify.pw/271422.png)
