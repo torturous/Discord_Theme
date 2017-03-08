@@ -1,0 +1,37 @@
+/*
+  This plugin was made by Discord user: CyberRonin#5517
+  Github: https://github.com/Rxswyers
+*/
+
+/*Change this to alter the color of the unread notification circle in the lower right*/
+.guilds-wrapper .guilds .guild.selected.unread:before,
+.guilds-wrapper .guilds .guild.selected:before,
+.guilds-wrapper .guilds .guild.unread:before {
+    background: mediumpurple;
+}
+/*Changes the background color of the numbered badge in a server*/
+.guilds .guild.unread .badge {
+
+    background-color: mediumpurple !important;
+}
+.theme-dark .new-messages-indicator span {
+  margin: 0;
+}
+/*Change this to change the color of the new message bar as well as the jump to present background*/
+.theme-dark .new-messages-bar,
+.theme-dark .jump-to-present-bar {
+  background: black !important;
+}
+/*Change this to chage the jump to present and mark as read text color*/
+.theme-dark .new-messages-bar button:last-child,
+.theme-dark .jump-to-present-bar button:last-child {
+  color: mediumpurple!important;
+}
+/*Changes the background color of the numbered notification in DMs and Friends Icons*/
+.theme-dark .badge,
+.theme-dark .toolbar-badge,
+.theme-dark .tab-bar-item-primary {
+  box-shadow: none !important;
+  background: mediumpurple !important;
+  border-color: #13191c !important;
+}
