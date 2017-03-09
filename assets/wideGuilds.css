@@ -73,12 +73,21 @@
     transform: translate(-7px, -9px)!important;
     z-index: 100;
 }
+
 .dms .guild:not(.guilds-add):first-child {
     margin-bottom: 0px!important;
     padding-right: -20px !important;
     left: -20px;
 }
+
 .dms .guild:not(.guilds-add):nth-child(2) {
     margin-bottom: 0px!important;
     left: -45px;
+}
+
+.guilds-wrapper .guilds .friends-icon {
+  left:-5px;
+  position:relative;
+	width:50px !important;
+	height:50px !important;
 }
