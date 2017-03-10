@@ -2422,7 +2422,7 @@ a[href="/channels/@me"] .badge {
 }
 
 .private-channels .channel .close {
-  padding-left: 35px;
+  padding-left: 3.5em;
 }
 
 .title-wrap,
@@ -3211,6 +3211,14 @@ a[href="/channels/@me"] .badge {
   left: -20px;
   top: -4px;
   border-color: transparent rgba(0, 0, 0, .3) transparent transparent;
+}
+
+.private-channels .channel a, .private-channels .channel a:hover {
+  transition: all 300ms ease;
+}
+
+.private-channels .channel a:hover {
+  transform: translateX(10px);
 }
 
 .private-channel-recipients-invite .footer,
