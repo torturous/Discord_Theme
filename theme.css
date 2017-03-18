@@ -1,6 +1,6 @@
 .form.settings.user-settings-modal .settings-actions:before,
 .lastversion:after {
-  content: "Theme version: v0.3.4 Beta";
+  content: "Theme version: v0.3.5 Beta";
   padding-right: 1rem;
 }
 
@@ -1846,20 +1846,24 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
   width: 310px
 }
 
-#user-profile-modal .header .header-info .badge-premium {
+#user-profile-modal .header .header-info .badge-premium,
+#user-profile-modal .header .header-info .badge-partner,
+#user-profile-modal .header .header-info .badge-staff {
   position: absolute;
   left: 170px;
-  top: 71px;
-  height: 26px;
-  width: 26px;
+  top: 69px;
+  height: 32px;
+  width: 45px;
   background-size: cover;
   z-index: 200;
   -webkit-animation: scale 400ms cubic-bezier(.77, 0, 0, .99);
   animation: scale 400ms cubic-bezier(.77, 0, 0, .99)
 }
 
-#user-profile-modal .header .badge-premium+.header-info-inner .discord-tag {
-  margin-left: 33px
+#user-profile-modal .header .badge-premium+.header-info-inner .discord-tag,
+#user-profile-modal .header .badge-partner+.header-info-inner .discord-tag,
+#user-profile-modal .header .badge-staff+.header-info-inner .discord-tag {
+  margin-left: 1.8em;
 }
 
 #user-profile-modal .header .activity {
