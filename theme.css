@@ -1850,20 +1850,35 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 #user-profile-modal .header .header-info .badge-partner,
 #user-profile-modal .header .header-info .badge-staff {
   position: absolute;
-  left: 170px;
-  top: 69px;
-  height: 32px;
-  width: 45px;
   background-size: cover;
+  margin-left: 2em;
   z-index: 200;
   -webkit-animation: scale 400ms cubic-bezier(.77, 0, 0, .99);
   animation: scale 400ms cubic-bezier(.77, 0, 0, .99)
 }
 
-#user-profile-modal .header .badge-premium+.header-info-inner .discord-tag,
-#user-profile-modal .header .badge-partner+.header-info-inner .discord-tag,
-#user-profile-modal .header .badge-staff+.header-info-inner .discord-tag {
-  margin-left: 1.8em;
+#user-profile-modal .header .badge-premium+.header-info-inner .discord-tag { margin-left: 1.4em; }
+#user-profile-modal .header .header-info .badge-premium {
+  height: 30px;
+  width: 33px;
+  left: 130px;
+  top: 69px;
+}
+
+#user-profile-modal .header .badge-partner+.header-info-inner .discord-tag { margin-left: 1.7em; }
+#user-profile-modal .header .header-info .badge-partner {
+  height: 31px;
+  width: 40px;
+  left: 137px;
+  top: 69px;
+}
+
+#user-profile-modal .header .badge-staff+.header-info-inner .discord-tag { margin-left: 1.4em; }
+#user-profile-modal .header .header-info .badge-staff {
+  height: 32px;
+  width: 34px;
+  left: 135px;
+  top: 69px;
 }
 
 #user-profile-modal .header .activity {
