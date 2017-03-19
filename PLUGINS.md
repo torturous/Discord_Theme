@@ -4,6 +4,7 @@ Here you can find plugins that can be used on **autotheme.css** Example:<br>
 # Plugins
 
 ### Discord Background
+[Click here for preview](https://i.alexflipnote.xyz/0319kiG.png)
 ```css
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/transparent.css";
 /* Settings */
@@ -17,11 +18,13 @@ body {
 ```
 
 ### 2 Guilds/Line (Community made)
+[Click here for preview](https://i.alexflipnote.xyz/0319bqc.png)
 ```css
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/wideGuilds.css";
 ```
 
 ### Auto-hide Member list in Guilds
+[Click here for preview](https://i.alexflipnote.xyz/0319Tfm.gif)
 ```css
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/autoMemberlist.css";
 ```
