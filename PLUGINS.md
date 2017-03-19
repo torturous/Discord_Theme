@@ -1,6 +1,7 @@
-# Plugins
 Here you can find plugins that can be used on **autotheme.css** Example:<br>
 <img src="https://i.alexflipnote.xyz/0302s2U.png">
+
+# Plugins
 
 ### Discord Background
 ```css
@@ -18,6 +19,11 @@ body {
 ### 2 Guilds/Line (Community made)
 ```css
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/wideGuilds.css";
+```
+
+### Auto-hide Member list in Guilds
+```css
+@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/autoMemberlist.css";
 ```
 
 ### Remove blocked messages
