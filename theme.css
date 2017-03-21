@@ -66,6 +66,54 @@
 /* END: User Settings */
 
 
+/* User Profile Modal */
+/* BOTH | This one can't be used on light and dark, must define both */
+#user-profile-modal .header {
+  background-color: #181818;
+  background-image: none;
+}
+#user-profile-modal .scroller, #user-profile-modal .tab-bar-container {
+  background-color: #272727;
+  border-bottom: 0;
+}
+#user-profile-modal .tab-bar .tab-bar-item, #user-profile-modal .tab-bar .tab-bar-item.selected {
+  color: white;
+}
+#user-profile-modal .tab-bar .tab-bar-item.selected {
+  font-weight: bold;
+  border-bottom-color: #fff;
+}
+#user-profile-modal .guilds .section .connected-accounts .connected-account {
+  border: 0;
+  background: #212121;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+#user-profile-modal .guilds .section .connected-accounts {
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 0 10px;
+}
+#user-profile-modal .guilds .section .connected-accounts .connected-account a:hover .connected-account-open-icon {
+  opacity: 0.8;
+}
+#user-profile-modal .guilds .section .connected-accounts .connected-account .connected-account-name-inner .connected-account-name {
+  color: #fff;
+  font-weight: 600
+}
+#user-profile-modal .header::after {
+  display: none!important;
+}
+#user-profile-modal .avatar-wrapper {
+  background-color: transparent;
+}
+
+/* Username, Discriminator and Playing Status */
+#user-profile-modal .header .header-info .header-info-inner .discord-tag .username { color: #fff; }
+#user-profile-modal .header .header-info .header-info-inner .discord-tag .discriminator { color: rgba(255, 255, 255, .7); }
+#user-profile-modal .header .header-info .header-info-inner .activity { color: rgba(255, 255, 255, .5); }
+/* END: User Profile Modal */
+
+
 /* Quick Switcher */
 /* BOTH */
 @-webkit-keyframes quickswitcher-menu {
