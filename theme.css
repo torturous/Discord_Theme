@@ -66,6 +66,30 @@
 /* END: User Settings */
 
 
+/* Scroller */
+/* BOTH | This one can't be used on light and dark, must define both */
+.scroller-wrap .scroller::-webkit-scrollbar { width: 14px; }
+.scroller.guild-channels::-webkit-scrollbar { display: none; }
+.scroller-wrap .scroller::-webkit-scrollbar-track-piece {
+  border: 4px solid rgba(255, 255, 255, 0) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.scroller-wrap .scroller::-webkit-scrollbar-thumb {
+  border: 4px solid rgba(255, 255, 255, 0) !important;
+  background-color: rgba(225, 225, 225, 0.1) !important;
+  display: initial;
+}
+.scroller-wrap .scroller::-webkit-scrollbar-thumb:hover {
+  border: 4px solid rgba(255, 255, 255, 0) !important;
+  background-color: rgba(225, 225, 225, 0.15) !important;
+}
+.scroller-wrap .scroller::-webkit-scrollbar-thumb:active {
+  border: 4px solid rgba(255, 255, 255, 0) !important;
+  background-color: rgba(225, 225, 225, 0.2) !important;
+}
+/* END: Scroller */
+
+
 /* User Profile Modal */
 /* BOTH | This one can't be used on light and dark, must define both */
 #user-profile-modal .header {
@@ -100,6 +124,21 @@
   color: #fff;
   font-weight: 600
 }
+#user-profile-modal .guilds .section .note textarea {
+  padding: 5px;
+  border-radius: 0px;
+  -webkit-transition: all 100ms ease;
+  transition: all 100ms ease;
+}
+#user-profile-modal .guilds .section .note textarea:hover:focus,
+#user-profile-modal .guilds .section .note textarea:focus {
+  color: #fff;
+  background: transparent;
+}
+#user-profile-modal .guilds .guild:hover {
+  background: rgba(255, 255, 255, .1);
+  color: #fff
+}
 #user-profile-modal .header::after {
   display: none!important;
 }
@@ -111,6 +150,38 @@
 #user-profile-modal .header .header-info .header-info-inner .discord-tag .username { color: #fff; }
 #user-profile-modal .header .header-info .header-info-inner .discord-tag .discriminator { color: rgba(255, 255, 255, .7); }
 #user-profile-modal .header .header-info .header-info-inner .activity { color: rgba(255, 255, 255, .5); }
+
+/* Badge on name */
+@-webkit-keyframes profile-badge {
+  from {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes profile-badge {
+  from {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+#user-profile-modal .header .badge-premium+.header-info-inner .discord-tag,
+#user-profile-modal .header .badge-partner+.header-info-inner .discord-tag,
+#user-profile-modal .header .badge-staff+.header-info-inner .discord-tag,
+#user-profile-modal .header .header-info .badge-premium,
+#user-profile-modal .header .header-info .badge-partner,
+#user-profile-modal .header .header-info .badge-staff {
+  animation: profile-badge 500ms ease-in-out;
+}
 /* END: User Profile Modal */
 
 
