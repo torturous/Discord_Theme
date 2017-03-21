@@ -35,7 +35,7 @@
 
 .guilds-wrapper .guilds .guild:first-child {
   position: relative;
-  left: -15px;
+  left: -20px;
   margin: auto;
 }
 
@@ -86,7 +86,6 @@
 }
 
 .guilds-wrapper .guilds .friends-icon {
-  left:-5px;
   position:relative;
 	width:50px !important;
 	height:50px !important;
