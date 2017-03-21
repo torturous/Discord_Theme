@@ -11,13 +11,11 @@
   vertical-align: -40%;
 }
 
-/* Emotes: https://material.io/icons/ */
-
-.ui-tab-bar.SIDE .ui-tab-bar-item.brand { color: #d35400; }
-
 /* DARK */
+/* Emotes: https://material.io/icons/ */
 .theme-dark .ui-standard-sidebar-view .sidebar-region .scroller { background-color: #181818; }
 .theme-dark .ui-standard-sidebar-view .content-region .scroller { background-color: #272727; }
+.theme-dark .ui-tab-bar.SIDE .ui-tab-bar-item.brand { color: #2ecc71; }
 /* Account */ .theme-dark .ui-tab-bar-item:nth-of-type(2):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_person_white_24px.svg); }
 /* Authorized Apps */ .theme-dark .ui-tab-bar-item:nth-of-type(3):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_security_white_24px.svg); }
 /* Connections */ .theme-dark .ui-tab-bar-item:nth-of-type(4):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_signal_wifi_4_bar_white_24px.svg); }
@@ -37,6 +35,7 @@
 /* LIGHT */
 .theme-light .ui-standard-sidebar-view .sidebar-region .scroller { background-color: #DDD; }
 .theme-light .ui-standard-sidebar-view .content-region .scroller { background-color: #ecf0f1; }
+.theme-light .ui-tab-bar.SIDE .ui-tab-bar-item.brand { color: #9b59b6; }
 .theme-light .ui-tab-bar.SIDE .ui-tab-bar-header { color: #000000; }
 .theme-light .theme-light .ui-tab-bar-item:hover { background-color: #303030; color: #ddd; }
 /* Account */ .theme-light .ui-tab-bar-item:nth-of-type(2):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_person_black_24px.svg); }
