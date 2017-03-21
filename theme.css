@@ -3,7 +3,11 @@
   color: #2ecc71; font-weight: bold;
   content: "Theme version: v0.4.41 Rewrite Beta";
 }
-
+/* GLOBAL */
+:root {
+  /*--<var>: <value>*/
+}
+/* End GLOBAL */
 /* User Settings */
 /* BOTH */
 .ui-tab-bar.SIDE .ui-tab-bar-item:before {
@@ -119,3 +123,13 @@
 .quickswitcher.dark .result.selected, .quickswitcher.dark .result .result-action { background-color: #181818; }
 /* LIGHT | Empty to now, can be edited! */
 /* END: Quick Switcher */
+
+/* Account Section */
+/*Make buttons flat on profile section*/
+.account .btn-group { border: none; }
+
+.account .btn { background: none; }
+
+.account .btn-deafen, .account .btn-settings { box-shadow: none; }
+
+.account .btn-deafen, .account .btn-mute { border-right: none; }
