@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after {
   color: cyan;
   font-weight: bold;
-  content: "Theme version: v0.4 Beta";
+  content: "Theme version: v0.4.1 Beta";
 }
 
 /* The beginning */
@@ -1237,20 +1237,15 @@ form:not(.user-settings-modal) .tab-bar.SIDE .tab-bar-item:before,
   color: #fff;
 }
 
-.ui-tab-bar.SIDE .ui-tab-bar-item {
-  /* Under progress */
-}
-
 .ui-tab-bar.SIDE .ui-tab-bar-item:before {
   margin-right: 10px;
+  vertical-align: -30%;
 }
-
 
 /* Emotes: https://material.io/icons/ */
 
 .ui-tab-bar-item:nth-of-type(2):before {
   /* Account */
-  width: 10px;
   content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_person_white_24px.svg);
 }
 
