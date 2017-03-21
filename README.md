@@ -2,8 +2,8 @@
 
 ## Disclaimer
 This theme does **force** you to Dark Theme, be aware of that (However a light theme plugin is being made)<br>
-This theme also has no connections with [BeardDesign1/Material-design-theme](https://github.com/BeardDesign1/Material-design-theme),
-the only thing that is in common is the base look.
+This theme also has some similarities to the theme [BeardDesign1/Material-design-theme](https://github.com/BeardDesign1/Material-design-theme)'s base, however
+it's not made to be a "stolen" project. Current code with base CSS from **BeardDesign1**, is not by any way, owned by me. 
 
 ## FAQ
 **Where can I talk with you?**<br>Here: https://discord.gg/J4mwTJR
