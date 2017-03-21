@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: #2ecc71; font-weight: bold;
-  content: "Theme version: v0.4.4 Rewrite Beta";
+  content: "Theme version: v0.4.41 Rewrite Beta";
 }
 
 /* User Settings */
@@ -9,6 +9,12 @@
 .ui-tab-bar.SIDE .ui-tab-bar-item:before {
   margin-right: 10px;
   vertical-align: -40%;
+}
+
+.theme-light .ui-card-primary, .theme-dark .ui-card-primary {
+  background: transparent;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 /* DARK */
