@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after {
   color: cyan;
   font-weight: bold;
-  content: "Theme version: v0.4.1 Beta";
+  content: "Theme version: v0.4.2 Beta";
 }
 
 /* The beginning */
@@ -443,6 +443,10 @@
 
 .ui-standard-sidebar-view .content-region .scroller {
   background-color: #272727;
+}
+
+.theme-dark .ui-card-primary.editable {
+  background-color: #181818;
 }
 
 .ui-standard-sidebar-view .sidebar-region .scroller {
