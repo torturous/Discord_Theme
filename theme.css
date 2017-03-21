@@ -1,5 +1,43 @@
-.theme-dark .user-settings-account:after {
-  color: cyan;
-  font-weight: bold;
+.theme-dark .user-settings-account:after,
+.theme-light .user-settings-account:after {
+  color: #2ecc71; font-weight: bold;
   content: "Theme version: v0.4.4 Rewrite Beta";
 }
+
+/* User Settings */
+/* BOTH */
+.ui-tab-bar.SIDE .ui-tab-bar-item:before {
+  margin-right: 10px;
+  vertical-align: -40%;
+}
+
+/* Emotes: https://material.io/icons/ */
+/* Account */ .ui-tab-bar-item:nth-of-type(2):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_person_white_24px.svg); }
+/* Authorized Apps */ .ui-tab-bar-item:nth-of-type(3):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_security_white_24px.svg); }
+/* Connections */ .ui-tab-bar-item:nth-of-type(4):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_signal_wifi_4_bar_white_24px.svg); }
+/* Nitro */ .ui-tab-bar-item:nth-of-type(6):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_favorite_white_24px.svg); }
+/* Voice */ div.platform-osx .ui-tab-bar-item:nth-of-type(9):before, div.platform-win .ui-tab-bar-item:nth-of-type(9):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_white_24px.svg); }
+/* Overlay */ .ui-tab-bar-item:nth-of-type(9):before, div.platform-win .ui-tab-bar-item:nth-of-type(10):before, div.platform-osx .ui-tab-bar-item:nth-of-type(10):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_desktop_windows_white_24px.svg); }
+/* Notification */ div.platform-win .ui-tab-bar-item:nth-of-type(11):before, div.platform-osx .ui-tab-bar-item:nth-of-type(11):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_notifications_white_24px.svg); }
+/* Keybinds */ div.platform-win .ui-tab-bar-item:nth-of-type(12):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_white_24px.svg); }
+/* Games */ .ui-tab-bar-item:nth-of-type(10):before, div.platform-osx .ui-tab-bar-item:nth-of-type(12):before, div.platform-win .ui-tab-bar-item:nth-of-type(13):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_games_white_24px.svg); }
+/* Text & Images */ .ui-tab-bar-item:nth-of-type(11):before, div.platform-osx .ui-tab-bar-item:nth-of-type(13):before, div.platform-win .ui-tab-bar-item:nth-of-type(14):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_chat_white_24px.svg); }
+/* Appearance */ .ui-tab-bar-item:nth-of-type(12):before, div.platform-osx .ui-tab-bar-item:nth-of-type(14):before, div.platform-win .ui-tab-bar-item:nth-of-type(15):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_palette_white_24px.svg); }
+/* Streamer Mode */ .ui-tab-bar-item:nth-of-type(13):before, div.platform-osx .ui-tab-bar-item:nth-of-type(15):before, div.platform-win .ui-tab-bar-item:nth-of-type(16):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_videocam_white_24px.svg); }
+/* Language */ .ui-tab-bar-item:nth-of-type(14):before, div.platform-osx .ui-tab-bar-item:nth-of-type(16):before, div.platform-win .ui-tab-bar-item:nth-of-type(17):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_translate_white_24px.svg); }
+/* Change log */ .ui-tab-bar-item:nth-of-type(16):before, div.platform-osx .ui-tab-bar-item:nth-of-type(18):before, div.platform-win .ui-tab-bar-item:nth-of-type(19):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_edit_white_24px.svg); }
+/* Log out */ .ui-tab-bar-item:nth-of-type(18):before, div.platform-osx .ui-tab-bar-item:nth-of-type(20):before, div.platform-win .ui-tab-bar-item:nth-of-type(21):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_reply_white_24px.svg); }
+
+.ui-tab-bar.SIDE .ui-tab-bar-item.brand { color: #f1c40f; }
+
+/* DARK */
+.theme-dark .ui-standard-sidebar-view .sidebar-region .scroller { background-color: #181818; }
+.theme-dark .ui-standard-sidebar-view .content-region .scroller { background-color: #272727; }
+
+/* LIGHT */
+.theme-light .ui-standard-sidebar-view .sidebar-region .scroller { background-color: #808080; }
+.theme-light .ui-tab-bar-item { color: #fff; }
+.theme-light .ui-tab-bar-item:hover { background-color: #303030; color: #ddd; }
+.theme-light .ui-tab-bar.SIDE .ui-tab-bar-item.danger { color: #c0392b; font-weight: bold;}
+.theme-light .ui-standard-sidebar-view .content-region .scroller { background-color: #ecf0f1; }
+/* END: User Settings */
