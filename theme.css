@@ -125,11 +125,10 @@
 /* END: Quick Switcher */
 
 /* Account Section */
+/* BOTH */
 /*Make buttons flat on profile section*/
 .account .btn-group { border: none; }
-
 .account .btn { background: none; }
-
 .account .btn-deafen, .account .btn-settings { box-shadow: none; }
-
 .account .btn-deafen, .account .btn-mute { border-right: none; }
+/* END: Account Section */
