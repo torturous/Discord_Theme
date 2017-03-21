@@ -47,41 +47,6 @@
   box-shadow: 0 2px 10px rgba(240, 71, 71, .3);
 }
 
-.radio-theme.dark:after {
-  content: "ENABLE DARK MODE";
-  display: block;
-  color: #fff;
-  -webkit-transform: translate(-50%, -32px);
-  transform: translate(-50%, -32px);
-  position: absolute;
-  left: 50%;
-  font-weight: 800;
-  pointer-events: none
-}
-
-.theme-dark+div .radio-theme.dark:after {
-  content: "DARK MODE ENABLED"
-}
-
-.radio-theme.light {
-  display: none;
-}
-
-.theme-light .btn.btn-settings {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  margin-top: 65px;
-  width: 230px;
-  height: 40px;
-  visibility: visible!important;
-  background: #27ae60!important;
-  border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(240, 71, 71, .3);
-}
-
 .theme-light .btn.btn-settings {
   position: absolute;
   z-index: 10000;
@@ -90,6 +55,7 @@
   width: 230px;
   height: 35px;
   border-radius: 5px;
+  margin-top: 65px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -104,11 +70,7 @@
   content: "GO TO SETTINGS";
 }
 
-.theme-light .btn.btn-settings:after {
-  visibility: hidden
-}
-
-.app.flex-vertical.theme-light * {
+.theme-light .btn.btn-settings:after, .app.flex-vertical.theme-light *  {
   visibility: hidden
 }
 
@@ -407,14 +369,12 @@
 
 .status-picker .popout-menu-item:hover {
   color: transparent;
-  box-shadow: 0 0 20px rgba(0, 0, 0, .2);
   -webkit-transform: scale(0.95);
   transform: scale(0.95)
 }
 
 .status-picker .popout-menu-item:nth-of-type(1) {
   background-color: #43B581;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNOSAxNi4yTDQuOCAxMmwtMS40IDEuNEw5IDE5IDIxIDdsLTEuNC0xLjRMOSAxNi4yeiIvPjwvc3ZnPg==);
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -424,7 +384,6 @@
 
 .status-picker .popout-menu-item:nth-of-type(3) {
   background-color: #FAA61A;
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhbHF1ZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iLTk0NyA1MjkgMjQgMjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgLTk0NyA1MjkgMjQgMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5zdDB7ZmlsbDojRkZGRkZGO308L3N0eWxlPjxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iLTkyOSw1NDQuNSAtOTMwLDU0NiAtOTM2LjIsNTQyLjIgLTkzNi4yLDUzNSAtOTM0LjQsNTM1IC05MzQuNCw1NDEuMiAiLz48L3N2Zz4=);
   background-size: 85%;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -434,8 +393,6 @@
 
 .status-picker .popout-menu-item:nth-of-type(4) {
   background-color: #F04747;
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhbHF1ZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iLTk0NyA1MjkgMjQgMjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgLTk0NyA1MjkgMjQgMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5zdDB7ZmlsbDojRkZGRkZGO308L3N0eWxlPjxyZWN0IHg9Ii05NDAuNCIgeT0iNTQwLjEiIGNsYXNzPSJzdDAiIHdpZHRoPSIxMC45IiBoZWlnaHQ9IjEuOCIvPjwvc3ZnPg==);
-  background-size: 85%;
   background-repeat: no-repeat;
   background-position: 50%;
   -webkit-animation-delay: -100ms;
@@ -444,8 +401,6 @@
 
 .status-picker .popout-menu-item:nth-of-type(5) {
   background-color: #303030;
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhbHF1ZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iLTk0NyA1MjkgMjQgMjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgLTk0NyA1MjkgMjQgMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5zdDB7ZmlsbDojRkZGRkZGO308L3N0eWxlPjxnPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0tOTM0LjEsNTQzLjZoLTEuOHYtMC45YzAtMC41LDAuMS0xLDAuMy0xLjRjMC4yLTAuNCwwLjYtMC45LDEuMi0xLjRjMC42LTAuNSwxLTEsMS4yLTEuM2MwLjItMC4zLDAuMy0wLjcsMC4zLTEuMWMwLTAuNi0wLjItMS4xLTAuNi0xLjRjLTAuNC0wLjMtMC45LTAuNS0xLjUtMC41Yy0xLjEsMC0xLjgsMC42LTIuMiwxLjhsLTEuNi0wLjdjMC4zLTAuOCwwLjgtMS41LDEuNS0yYzAuNy0wLjUsMS41LTAuOCwyLjQtMC44YzEuMSwwLDIsMC4zLDIuOCwxYzAuNywwLjcsMS4xLDEuNSwxLjEsMi42YzAsMC41LTAuMSwxLTAuNCwxLjVjLTAuMywwLjUtMC44LDEuMS0xLjUsMS43Yy0wLjcsMC43LTEuMSwxLjMtMS4xLDJWNTQzLjZ6IE0tOTMzLjgsNTQ2LjZjMCwwLjQtMC4xLDAuNi0wLjQsMC45Yy0wLjIsMC4yLTAuNSwwLjQtMC45LDAuNGMtMC4zLDAtMC42LTAuMS0wLjktMC40Yy0wLjItMC4yLTAuNC0wLjUtMC40LTAuOWMwLTAuNCwwLjEtMC43LDAuNC0wLjljMC4yLTAuMiwwLjUtMC40LDAuOS0wLjRjMC40LDAsMC43LDAuMSwwLjksMC40Qy05MzMuOSw1NDYtOTMzLjgsNTQ2LjMtOTMzLjgsNTQ2LjZ6Ii8+PC9nPjwvc3ZnPg==);
-  background-size: 60%;
   background-repeat: no-repeat;
   background-position: 50%;
 }
@@ -492,17 +447,6 @@
 
 .ui-standard-sidebar-view .sidebar-region .scroller {
   background-color: #181818;
-}
-
-.form .control-group input[type=text],
-.form .control-group input[type=email],
-.form .control-group input[type=password],
-.form .control-group input[type=number],
-.form .control-group textarea {
-  background: transparent!important;
-  color: #fff;
-  border-bottom: 2px solid rgba(255, 255, 255, .05);
-  margin-bottom: 0!important;
 }
 
 .form .control-group label {
