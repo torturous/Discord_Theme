@@ -54,3 +54,62 @@
 /* Change log */ .theme-light .ui-tab-bar-item:nth-of-type(16):before, div.platform-osx .theme-light .ui-tab-bar-item:nth-of-type(18):before, div.platform-win .theme-light .ui-tab-bar-item:nth-of-type(19):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_edit_black_24px.svg); }
 /* Log out */ .theme-light .ui-tab-bar-item:nth-of-type(18):before, div.platform-osx .theme-light .ui-tab-bar-item:nth-of-type(20):before, div.platform-win .theme-light .ui-tab-bar-item:nth-of-type(21):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_reply_black_24px.svg); }
 /* END: User Settings */
+
+
+/* Quick Switcher */
+/* BOTH */
+@-webkit-keyframes quickswitcher-menu {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes quickswitcher-menu {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.quickswitcher { animation: quickswitcher-menu 300ms ease-in-out; }
+
+.quickswitcher.dark .result.selected, .quickswitcher.dark .result .result-action,
+.quickswitcher.light .result.selected, .quickswitcher.light .result .result-action  {
+  box-shadow: none;
+}
+
+.quickswitcher.dark .scroller-wrap:before, .quickswitcher.light .scroller-wrap:before { background: transparent; }
+
+.quickswitcher .result .result-name, .quickswitcher .result .result-name:hover,
+.quickswitcher .result .result-display-name, .quickswitcher .result .result-display-name:hover,
+.quickswitcher .result.selected .result-display-name {
+  transition: all 200ms ease;
+}
+
+.quickswitcher .result .result-name:hover, .quickswitcher .result .result-display-name:hover, .quickswitcher .result.selected .result-display-name  {
+  margin-left: 1em;
+}
+
+.quickswitcher.dark .big-input, .quickswitcher.light .big-input {
+  box-shadow: none;
+  background: transparent;
+}
+
+.quickswitcher.dark .result.selected:after, .quickswitcher.light .result.selected:after {
+  background-color: transparent;
+  box-shadow: none;
+}
+/* DARK */
+.quickswitcher.dark { background-color: #272727; }
+.quickswitcher.dark .result.selected, .quickswitcher.dark .result .result-action { background-color: #181818; }
+/* LIGHT | Empty to now, can be edited! */
+/* END: Quick Switcher */

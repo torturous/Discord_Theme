@@ -11,6 +11,12 @@ Template for each redesign
 /* LIGHT */
 .theme-light .stuff
 /* END: Name of target*/
+
+/*
+  If you find out that there is nothing to edit on dark/light theme
+  Then you add this: | Empty to now, can be edited!
+  ( Example in theme.css, LINE 114 )
+*/
 ```
 
 ## TODO
