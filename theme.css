@@ -1237,24 +1237,24 @@ form:not(.user-settings-modal) .tab-bar.SIDE .tab-bar-item:before,
   color: #fff;
 }
 
-.tab-bar.SIDE {
-  margin-right: -17px;
+.ui-tab-bar.SIDE .ui-tab-bar-item {
+  /* Under progress */
 }
 
-.ui-tab-bar-item:before {
-  left: 33px;
-  position: absolute;
+.ui-tab-bar.SIDE .ui-tab-bar-item:before {
+  margin-right: 10px;
 }
+
 
 /* Emotes: https://material.io/icons/ */
 
 .ui-tab-bar-item:nth-of-type(2):before {
   /* Account */
-  top: 83px;
+  width: 10px;
   content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_person_white_24px.svg);
 }
 
-.ui-tab-bar-item:nth-of-type(6):before {
+.ui-tab-bar-item:nth-of-type(3):before {
   /* Authorized Apps */
   top: 113px;
   content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_security_white_24px.svg);
@@ -1266,7 +1266,7 @@ form:not(.user-settings-modal) .tab-bar.SIDE .tab-bar-item:before,
   content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_signal_wifi_4_bar_white_24px.svg);
 }
 
-.ui-tab-bar-item:nth-of-type(3):before {
+.ui-tab-bar-item:nth-of-type(6):before {
   /* Nitro */
   top: 196px;
   content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_favorite_white_24px.svg);
