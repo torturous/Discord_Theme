@@ -253,6 +253,8 @@
 .account .btn { background: none; }
 .account .btn-deafen, .account .btn-settings { box-shadow: none; }
 .account .btn-deafen, .account .btn-mute { border-right: none; }
+/* Get rid of the top border */
+.account { border: none; }
 /* END: Account Section */
 
 /* Message Textarea */
@@ -270,8 +272,12 @@
 }
 
 .channel-textarea-inner, .channel-textarea.has-results .channel-textarea-inner {
-  margin-top: 14.5px;
-  margin-bottom: 14.5px; 
+  margin-top: 14px;
+  margin-bottom: 14px; 
+}
+
+.chat form {
+    border: none;
 }
 
 .typing {
