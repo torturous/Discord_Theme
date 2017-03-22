@@ -568,3 +568,32 @@
     background-color: #181818;
 }
 .search-bar .search-bar-inner { background: rgba(47,47,47,.9); }
+ /* END: Search Bar*/
+
+/* Friends Section */
+/* BOTH */
+#friends .friends-table {
+  margin-top: 0px;
+  padding-top: 4px;
+  border: none;
+}
+
+#friends .friends-header {
+  border: none;
+  box-shadow: none;
+  height: 57px;
+}
+/* DARK */
+.theme-dark #friends .friends-header {
+    background-color: #181818;
+    border: none;
+}
+
+/* LIGHT */
+#friends .friends-header {
+    background-color: #ddd;
+}
+#friends .friends-table {
+  background-color: #ededed;
+}
+/* END: Friends Section */
