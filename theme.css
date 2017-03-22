@@ -295,7 +295,7 @@
 .theme-dark .channel-textarea-inner { background-color: transparent; }
 .theme-dark .channel-textarea-inner .channel-textarea-upload:hover { background-color: transparent; }
 .theme-dark .chat form .typing { background-color: rgba(40, 40, 40, .9); }
-.theme-dark .chat form {background-color: #333333}
+.theme-dark .chat form {background-color: #333333; border: none;}
 /* LIGHT */
 .chat form { background-color: #DDD; }
 .chat form .typing { background-color: rgba(236, 240, 241, .9); }
@@ -309,6 +309,7 @@
 /* Chat Messages */
 /* DARK */
 .theme-dark .chat>.content, .theme-dark .friends-table, .theme-dark .messages-wrapper { background-color: #282828 !important; }
+
 /* LIGHT */
 .chat .messages-wrapper { background-color: #ecf0f1; }
 .message-group .comment .markup { color: #2e3136; }
