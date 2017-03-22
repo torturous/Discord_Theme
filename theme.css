@@ -254,7 +254,10 @@
 .account .btn-deafen, .account .btn-settings { box-shadow: none; }
 .account .btn-deafen, .account .btn-mute { border-right: none; }
 /* Get rid of the top border */
-.account { border: none; }
+.account { 
+  border: none;
+  background-color: #181818;
+}
 /* END: Account Section */
 
 /* Message Textarea */
@@ -263,12 +266,13 @@
 .channel-textarea-upload { border: none; }
 .channel-textarea-inner .channel-textarea-upload { border-right-color: none; }
 .channel-textarea { margin: 0 0 0; }
-.chat form { margin: 0px; }
-.message-group:last-of-type { margin-bottom: 15px !important; }
+.message-group:last-of-type { margin-bottom: 20px !important; }
+.channel-textarea-inner textarea { background-color: transparent; }
+.channel-textarea-inner textarea::-webkit-input-placeholder { color:rgba(128, 128, 128, .9) !important; }
 
 .channel-textarea-upload:hover {
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
 }
 
 .channel-textarea-inner, .channel-textarea.has-results .channel-textarea-inner {
@@ -277,20 +281,53 @@
 }
 
 .chat form {
-    border: none;
+  border: none;
+  margin: 0px;
 }
 
 .typing {
-    bottom: 100%;
-    left: 10px;
-    width: auto;
+  bottom: 100%;
+  left: 10px;
+  width: auto;
 }
 
 /* DARK */
 .theme-dark .channel-textarea-inner { background-color: transparent; }
 .theme-dark .channel-textarea-inner .channel-textarea-upload:hover { background-color: transparent; }
-.theme-dark .chat form .typing { background-color: rgba(54, 57, 62, .9); }
+.theme-dark .chat form .typing { background-color: rgba(40, 40, 40, .9); }
+.theme-dark .chat form {background-color: #333333}
 /* LIGHT */
-
-/* Save for icon stuff */
+.chat form { background-color: #DDD; }
+.chat form .typing { background-color: rgba(236, 240, 241, .9); }
+.channel-textarea-inner, .channel-textarea.has-results .channel-textarea-inner { background-color: transparent; }
+.channel-textarea-inner textarea {
+    background-color: transparent;
+    color: #2e3136;
+}
 /* END: Message Textarea */
+
+/* Chat Messages */
+/* DARK */
+.theme-dark .chat>.content, .theme-dark .friends-table, .theme-dark .messages-wrapper { background-color: #282828 !important; }
+/* LIGHT */
+.chat .messages-wrapper { background-color: #ecf0f1; }
+.message-group .comment .markup { color: #2e3136; }
+/* END: Chat Messages */
+
+/* Title Section */
+/* DARK */
+.theme-dark .chat .title-wrap {
+    background-color: #181818;
+    border: none;
+}
+/* LIGHT */
+.chat>.title-wrap { background-color: #ddd; }
+/* END: Title Section */
+
+/* Search Section (PMs) */
+
+.private-channels .search-bar {
+    border-radius: 0px;
+    background-color: #181818;
+}
+.search-bar .search-bar-inner { background: rgba(47,47,47,.9); }
