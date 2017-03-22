@@ -254,3 +254,19 @@
 .account .btn-deafen, .account .btn-settings { box-shadow: none; }
 .account .btn-deafen, .account .btn-mute { border-right: none; }
 /* END: Account Section */
+
+/* Message Textarea */
+/* BOTH */
+.channel-textarea-inner, .channel-textarea.has-results .channel-textarea-inner { border: none; }
+.channel-textarea-upload { border: none; }
+.channel-textarea-inner .channel-textarea-upload { border-right-color: none; }
+.channel-textarea-upload:hover {
+    background-color: transparent;
+    border: none;
+}
+/* DARK */
+.theme-dark .channel-textarea-inner { background-color: transparent; }
+.theme-dark .channel-textarea-inner .channel-textarea-upload:hover { background-color: transparent; }
+/* LIGHT */
+/* Save for icon stuff */
+/* END: Message Textarea */
