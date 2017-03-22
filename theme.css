@@ -357,7 +357,6 @@
 /* Image Modal */
 /* BOTH */
 /* Contributed by Snazzah (https://github.com/SnazzyPine25 , Discord Snazzah#0371) */
-
 .modal .modal-inner .modal-image a {
     background: #212121;
     padding-left: 10px;
@@ -372,13 +371,11 @@
 }
 
 .callout-backdrop { opacity: 0.6 !important; }
-
 /* END: Image Modal */
 
 
 /* Tool tip */
 /* BOTH */
-
 @-webkit-keyframes tooltip-top-anim {
   from {
     transform: translateY(-20px);
@@ -470,6 +467,58 @@
   animation: tooltip-right-anim 200ms ease-in-out;
 }
 /* END: Tool tip */
+
+
+/* Help Section */
+/* BOTH */
+.need-help-modal .header input[type=text] {
+  box-shadow: 0 0;
+  border-radius: 0;
+  border-bottom: 2px solid #696969;
+  background: transparent;
+}
+
+.need-help-modal .header input[type=text]:focus {
+  border-bottom: 2px solid #696969;
+  color: #fff;
+}
+
+.need-help-modal .header {
+  background-color: #181818;
+  color: #181818;
+}
+
+.need-help-modal .form-inner.loading {
+  background-color: #282828;
+}
+
+.need-help-modal .footer {
+  background-color: #181818;
+  border-top: none;
+  color: white;
+}
+
+.need-help-modal .form-inner .failed .poop {
+  background-image: url(/assets/4dc13fd52f691020a1308c5b6cbc6f49.svg);
+}
+
+.need-help-modal ul li {
+  color: #fff;
+}
+
+.need-help-modal a {
+  color: #fff;
+}
+
+.need-help-modal .form-inner .failed p {
+  display: none;
+}
+
+.need-help-modal .form-inner .failed:after {
+  content: 'Looks like the help site is down...';
+  color: #fff;
+}
+/* END: Help Section */
 
 
 /* Search Function */
