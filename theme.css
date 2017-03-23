@@ -7,6 +7,10 @@
 :root {
   /*--<var>: <value>*/
 }
+.theme-dark .messages-wrapper .messages .divider span,
+.theme-light .messages-wrapper .messages .divider span {
+  background-color: transparent;
+}
 /* End GLOBAL */
 /* User Settings */
 /* BOTH */
@@ -214,6 +218,187 @@
 .keybind-shortcut.dim span:active { color: grey; }
 .keybind-shortcut.dim span:active .bind-arrow g { fill: grey; }
 /* END: Keyboard combo */
+
+
+/* Religion */
+/* BOTH */
+.region-select .region-select-inner, .region-select button { border: none; }
+.region-select:hover button {
+  background-color: #27ae60;
+  color: #fff;
+  transition: all 500ms ease;
+  border-radius: 0;
+}
+
+.region-select-modal {
+  background: #181818;
+}
+
+.region-select-modal .region-select-modal-header {
+  color: #fff;
+  text-transform: none;
+}
+
+.region-select-modal .region-select-modal-option {
+  background-color: #272727;
+  border: 2px solid #696969;
+  transition: all 200ms ease;
+}
+
+.region-select-modal .region-select-modal-option:hover {
+  border: 5px solid #27ae60;
+  transition: all 200ms ease;
+}
+/* END: Religion */
+
+
+/* Status Picker */
+/* BOTH */
+@-webkit-keyframes status-picker {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes status-picker {
+  from {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.popout-menu {
+  background: #181818;
+  border-radius: 0;
+  animation: status-picker 600ms ease-in-out!important;
+}
+.status-picker .popout-menu-item { color: #fff; }
+.status-picker .popout-menu-item:hover {
+  background-color: #272727;
+  color: #fff;
+}
+/* END: Status Picker */
+
+
+/* Add/Make new server */
+/* BOTH */
+.create-guild-container { background-color: transparent; }
+.create-guild-container .create-or-join .form-inner,
+.create-guild-container .form {
+  background-color: #181818;
+  border-radius: 10px;
+}
+
+.create-guild-container h5 {
+  color: #fff;
+  text-transform: none;
+}
+
+.create-guild-container h5:after {
+  content: ' :D';
+}
+
+.form .control-group input[type=text] {
+  background: transparent;
+  color: #fff;
+}
+
+.avatar-uploader-inner {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+.create-guild-container .form-actions .btn-default {
+  color: #fff;
+  background-color: transparent;
+  border-bottom: none;
+  padding: 10px;
+  transition: all 500ms ease;
+}
+
+.create-guild-container .form-actions .btn-default:hover {
+  transition: all 500ms ease;
+  box-shadow: inset 6.5em 0 0 0 #e74c3c;
+}
+
+@-webkit-keyframes server-create-enter {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes server-create-enter {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.create-guild-container {
+  animation: server-create-enter 500ms ease-in-out;
+  background-color: #181818;
+}
+
+.create-guild-container .form .form-actions {
+  background-color: #272727;
+  border-top: none;
+}
+
+.create-guild-container .action .action-body {
+  color: #fff;
+}
+
+.create-guild-container .action.join .action-icon {
+  background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_plus_one_white_48px.svg) 50% no-repeat;
+  background-size: 50%;
+}
+
+.create-guild-container .action.create .action-icon {
+  background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_storage_white_48px.svg) 50% no-repeat;
+  background-size: 50%;
+}
+
+.create-guild-container .create-or-join header {
+  color: #fff;
+  text-transform: none;
+}
+
+.create-guild-container .action .action-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.create-guild-container .create-or-join header:after {
+  content: ' 🎀';
+}
+
+.create-guild-container .create-or-join .actions .or {
+  display: none;
+}
+
+.create-guild-container .action {
+  box-shadow: 0;
+  background: #272727;
+}
+/* END: Add/Make new server */
 
 
 /* Quick Switcher */
