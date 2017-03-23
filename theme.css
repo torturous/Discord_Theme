@@ -599,7 +599,7 @@
 .theme-dark .channel-textarea-inner { background-color: transparent; }
 .theme-dark .channel-textarea-inner .channel-textarea-upload:hover { background-color: transparent; }
 .theme-dark .chat form .typing { background-color: rgba(40, 40, 40, .9); }
-.theme-dark .chat form {background-color: var(--dark-primary); border: none;}
+.theme-dark .chat form {background-color: #3c3c3c; border: none;}
 /* LIGHT */
 .chat form { background-color: #DDD; box-shadow: none; }
 .chat form .typing { background-color: rgba(236, 240, 241, .9); }
@@ -912,7 +912,7 @@
 .popout.popout-bottom{ margin: 0px; }
 .guild-header header:hover { background-color: var(--dark-secondary); }
 .guild-header.popout-open header { background-color: var(--dark-secondary); }
-
+.guild-header header { height: 57px; box-shadow: none; }
 /* DARK */
 .theme-dark .popout-menu .popout-menu-separator {
     border-bottom: 1px solid var(--dark-primary);
