@@ -561,7 +561,7 @@
 .message-group:last-of-type { margin-bottom: 20px !important; }
 .channel-textarea-inner textarea { background-color: transparent; }
 .channel-textarea-inner textarea::-webkit-input-placeholder { color:rgba(128, 128, 128, .9) !important; }
-
+.channel-textarea.channel-textarea-disabled { color: rgba(128, 128, 128, 1); }
 .channel-textarea-upload:hover {
   background-color: transparent;
   border: none;
@@ -589,7 +589,7 @@
 .theme-dark .chat form .typing { background-color: rgba(40, 40, 40, .9); }
 .theme-dark .chat form {background-color: #333333; border: none;}
 /* LIGHT */
-.chat form { background-color: #DDD; }
+.chat form { background-color: #DDD; box-shadow: none; }
 .chat form .typing { background-color: rgba(236, 240, 241, .9); }
 .channel-textarea-inner, .channel-textarea.has-results .channel-textarea-inner { background-color: transparent; }
 .channel-textarea-inner textarea {
@@ -614,7 +614,12 @@
   border: none;
 }
 /* LIGHT */
-.chat>.title-wrap { background-color: #ddd; }
+.chat>.title-wrap { 
+  background-color: #ddd;
+  border: none;
+  box-shadow: none;
+  }
+.chat>.title-wrap>.topic { color: rgba(128, 128, 128, .9); }
 /* END: Title Section */
 
 
@@ -861,3 +866,29 @@
   background-color: #ededed;
 }
 /* END: Friends Section */
+
+/* Channel Members */
+
+/* DARK */
+.theme-dark .channel-members { background-color: #333333; }
+/* LIGHT */
+.channel-members { background-color: #9E9E9E; }
+.channel-members h2 { color: #2e3136; }
+.channel-members .member .member-activity { color: #525860; }
+/* END: Channel Members */
+
+/* Channel Section */
+/* BOTH */
+.guild-channels { background-color: #333333; }
+.guild-header header { background-color: #181818; }
+/* END: Channel Section */
+
+/* PM List */
+/* BOTH */
+.private-channels { background-color: #333333; }
+/* END: PM List */
+
+/* Server Section */
+/* BOTH */
+.guilds-wrapper { background: #181818; }
+/* END: Server Section */
