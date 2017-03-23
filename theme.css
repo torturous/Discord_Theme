@@ -10,6 +10,10 @@
   --dark-primary: #212121;
   --dark-secondary: #303030;
   --dark-highlight: #181818;
+  --light-primary: #ddd;
+  --light-secondary: #ecf0f1;
+  --light-highlight: #9E9E9E;
+  --light-dark-text: #2e3136;
 }
 .theme-dark .messages-wrapper .messages .divider span,
 .theme-light .messages-wrapper .messages .divider span {
@@ -59,11 +63,11 @@
 }
 
 /* LIGHT */
-.theme-light .ui-standard-sidebar-view .sidebar-region .scroller { background-color: #DDD; }
-.theme-light .ui-standard-sidebar-view .content-region .scroller { background-color: #ecf0f1; }
+.theme-light .ui-standard-sidebar-view .sidebar-region .scroller { background-color: var(--light-primary); }
+.theme-light .ui-standard-sidebar-view .content-region .scroller { background-color: var(--light-secondary); }
 .theme-light .ui-tab-bar.SIDE .ui-tab-bar-item.brand { color: #9b59b6; }
 .theme-light .ui-tab-bar.SIDE .ui-tab-bar-header { color: #000000; }
-.theme-light .theme-light .ui-tab-bar-item:hover { background-color: var(--dark-secondary); color: #ddd; }
+.theme-light .theme-light .ui-tab-bar-item:hover { background-color: var(--dark-secondary); color: var(--light-primary); }
 /* Account */ .theme-light .ui-tab-bar-item:nth-of-type(2):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_person_black_24px.svg); }
 /* Authorized Apps */ .theme-light .ui-tab-bar-item:nth-of-type(3):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_security_black_24px.svg); }
 /* Connections */ .theme-light .ui-tab-bar-item:nth-of-type(4):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_signal_wifi_4_bar_black_24px.svg); }
@@ -595,6 +599,30 @@
   width: auto;
 }
 
+.channel-textarea-autocomplete-inner {
+  border: 0!important;
+  border-radius: 0px;
+  border-bottom: 0px;
+  box-shadow: 0;
+}
+.channel-textarea-autocomplete-inner header {
+  border-bottom: 0px;
+  margin-bottom: 5px;
+}
+.channel-textarea-autocomplete-inner ul {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 0px!important;
+}
+.channel-textarea-autocomplete-inner li.active { border-radius: 0px; }
+.channel-textarea-autocomplete-inner li {
+  border-radius: 0px;
+  margin-bottom: 2px;
+}
+.channel-textarea-autocomplete-inner:after {
+  border: none;
+}
+
 /* DARK */
 .theme-dark .channel-textarea-inner { background-color: transparent; }
 .theme-dark .channel-textarea-inner .channel-textarea-upload:hover { background-color: transparent; }
@@ -603,46 +631,26 @@
 .theme-dark #autocomplete-popout .row.selected, #autocomplete-popout .row:hover { background: #181818 }
 .theme-dark #autocomplete-popout .row { -webkit-transition: all 50ms ease; transition: all 50ms ease; }
 .theme-dark #autocomplete-popout .scroller::-webkit-scrollbar { display: none }
-.theme-dark .channel-textarea-autocomplete-inner {
-  border: 0!important;
-  background-color: var(--dark-primary)!important;
-  border-radius: 5px;
-  border-bottom: 0px;
-  margin-bottom: 5px;
-  box-shadow: 0;
-}
-.theme-dark .channel-textarea-autocomplete-inner header {
-  background-color: var(--dark-highlight)!important;
-  border-bottom: 0px;
-  margin-bottom: 5px;
-}
-.theme-dark .channel-textarea-autocomplete-inner ul {
-  background-color: var(--dark-primary)!important;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-bottom: 0px!important;
-}
-.theme-dark .channel-textarea-autocomplete-inner li.active {
-  background-color: var(--dark-secondary)!important;
-  border-radius: 0px;
-}
-.theme-dark .channel-textarea-autocomplete-inner li {
-  background-color: var(--dark-primary)!important;
-  border-radius: 0px;
-  margin-bottom: 2px;
-}
+.theme-dark .channel-textarea-autocomplete-inner { background-color: var(--dark-primary)!important; }
+.theme-dark .channel-textarea-autocomplete-inner header { background-color: var(--dark-highlight)!important; }
+.theme-dark .channel-textarea-autocomplete-inner ul { background-color: var(--dark-primary)!important; }
+.theme-dark .channel-textarea-autocomplete-inner li.active { background-color: var(--dark-secondary)!important;}
+.theme-dark .channel-textarea-autocomplete-inner li { background-color: var(--dark-primary)!important; }
 
-.theme-dark .channel-textarea-autocomplete-inner:after {
-  border-bottom: 0px!important;
-}
 /* LIGHT */
-.chat form { background-color: #DDD; box-shadow: none; }
+.chat form { background-color: var(--light-primary); box-shadow: none; }
 .chat form .typing { background-color: rgba(236, 240, 241, .9); }
 .channel-textarea-inner, .channel-textarea.has-results .channel-textarea-inner { background-color: transparent; }
 .channel-textarea-inner textarea {
   background-color: transparent;
-  color: #2e3136;
+  color: var(--light-dark-text);
 }
+.channel-textarea-autocomplete-inner { background-color: var(--light-highlight)!important; }
+.channel-textarea-autocomplete-inner header { background-color: var(--light-dark-text)!important; }
+.channel-textarea-autocomplete-inner ul { background-color: var(--light-highlight)!important; }
+.channel-textarea-autocomplete-inner li.active { background-color: var(--light-highlight)!important; }
+.channel-textarea-autocomplete-inner li { background-color: var(--light-highlight)!important; }
+.channel-textarea-autocomplete-inner li:hover { background-color: var(--light-primary)!important; }
 /* END: Message Textarea */
 
 /* Chat Messages */
@@ -655,7 +663,7 @@
 .theme-dark .chat>.content, .theme-dark .friends-table, .theme-dark .messages-wrapper { background-color: var(--dark-secondary) !important; }
 
 /* LIGHT */
-.chat .messages-wrapper { background-color: #ecf0f1; }
+.chat .messages-wrapper { background-color: var(--light-secondary); }
 .message-group .comment .markup { color: #2e3136; }
 /* END: Chat Messages */
 
@@ -667,7 +675,7 @@
 }
 /* LIGHT */
 .chat>.title-wrap {
-  background-color: #ddd;
+  background-color: var(--light-primary);
   border: none;
   box-shadow: none;
   }
@@ -918,10 +926,10 @@
 
 /* LIGHT */
 #friends .friends-header {
-  background-color: #ddd;
+  background-color: var(--light-primary);
 }
 #friends .friends-table {
-  background-color: #ededed;
+  background-color: var(--light-secondary);
 }
 /* END: Friends Section */
 
