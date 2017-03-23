@@ -600,6 +600,41 @@
 .theme-dark .channel-textarea-inner .channel-textarea-upload:hover { background-color: transparent; }
 .theme-dark .chat form .typing { background-color: rgba(40, 40, 40, .9); }
 .theme-dark .chat form {background-color: #3c3c3c; border: none;}
+.theme-dark #autocomplete-popout .row.selected, #autocomplete-popout .row:hover { background: #181818 }
+.theme-dark #autocomplete-popout .row { -webkit-transition: all 50ms ease; transition: all 50ms ease; }
+.theme-dark #autocomplete-popout .scroller::-webkit-scrollbar { display: none }
+.theme-dark .channel-textarea-autocomplete-inner {
+  border: 0!important;
+  background-color: var(--dark-primary)!important;
+  border-radius: 5px;
+  border-bottom: 0px;
+  margin-bottom: 5px;
+  box-shadow: 0;
+}
+.theme-dark .channel-textarea-autocomplete-inner header {
+  background-color: var(--dark-highlight)!important;
+  border-bottom: 0px;
+  margin-bottom: 5px;
+}
+.theme-dark .channel-textarea-autocomplete-inner ul {
+  background-color: var(--dark-primary)!important;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 0px!important;
+}
+.theme-dark .channel-textarea-autocomplete-inner li.active {
+  background-color: var(--dark-secondary)!important;
+  border-radius: 0px;
+}
+.theme-dark .channel-textarea-autocomplete-inner li {
+  background-color: var(--dark-primary)!important;
+  border-radius: 0px;
+  margin-bottom: 2px;
+}
+
+.theme-dark .channel-textarea-autocomplete-inner:after {
+  border-bottom: 0px!important;
+}
 /* LIGHT */
 .chat form { background-color: #DDD; box-shadow: none; }
 .chat form .typing { background-color: rgba(236, 240, 241, .9); }
@@ -631,7 +666,7 @@
   border: none;
 }
 /* LIGHT */
-.chat>.title-wrap { 
+.chat>.title-wrap {
   background-color: #ddd;
   border: none;
   box-shadow: none;
@@ -917,7 +952,7 @@
 .theme-dark .popout-menu .popout-menu-separator {
     border-bottom: 1px solid var(--dark-primary);
 }
-.theme-dark .popout-menu { background: var(--dark-secondary); } 
+.theme-dark .popout-menu { background: var(--dark-secondary); }
 /* END: Channel Section */
 
 /* Server Settings */
