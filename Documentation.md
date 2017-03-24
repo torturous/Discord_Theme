@@ -27,7 +27,7 @@ In our theme, we have a global variable called :root, it can be found similar to
 **Usage:**
 ```css
 #user-profile-modal .header {
-  background-color: var(--dark-highlight);
+  background-color: var(--dark-primary);
   background-image: none;
 }
 ```
