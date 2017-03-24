@@ -21,8 +21,4 @@ to change stuff, download the theme.css, however if you wish for a theme that up
 **I found a bug, what do I do?**<br>Either tell me the problem on Discord ( **AlexFlipnote#0021** ) or make a **Pull Request / Issue**
 
 ## Screenshots
-![Preview1](https://i.alexflipnote.xyz/03216U7.png)
-![Preview2](https://i.alexflipnote.xyz/0321WrV.png)
-![Preview3](https://i.alexflipnote.xyz/0321b1E.png)
-![Preview4](https://i.alexflipnote.xyz/0321ri8.png)
-![Preview5](https://i.alexflipnote.xyz/0321JXy.png)
+*Coming soon*

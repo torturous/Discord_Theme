@@ -1,21 +1,35 @@
 # Discord_Theme, Documentation
 ( Created by **AlexFlipnote#0021** & **CyberRonin#5517** )
 
-## Rewrite information
+## Writing the theme
 Template for each object
 ```css
-/* Name of target */
+/* Target */
 /* BOTH */
 .stuff
 /* DARK */
 .theme-dark .stuff
 /* LIGHT */
 .theme-light .stuff
-/* END: Name of target*/
-
-/*
-  If you find out that there is nothing to edit on dark/light theme
-  Then you add this: | Empty to now, can be edited!
-  ( Example in theme.css, LINE 114 )
-*/
+/* END: Target */
 ```
+
+## Colour usage
+In our theme, we have a global variable called :root, it can be found similar to this
+```css
+:root {
+  /*--<var>: <value>*/
+  --accent: mediumpurple;
+  --dark-primary: #212121;
+  --dark-secondary: #303030;
+}
+```
+**Usage:**
+```css
+#user-profile-modal .header {
+  background-color: var(--dark-primary);
+  background-image: none;
+}
+```
+Having global variables makes colours easier to change, rather than changing one by one.
+This might not be supportive when it comes to browsers **( Tested & works on: Chrome, Firefox )**
