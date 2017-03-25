@@ -1102,6 +1102,11 @@
 }
 /* END: Form */
 
+/* Modal */
+/* BOTH */
+.modal-content .form-inner p { color: #fff; }
+/* END: Modal */
+
 /* Markdown */
 /* BOTH */
 .markdown-modal, .markdown-modal .markdown-modal-header {
