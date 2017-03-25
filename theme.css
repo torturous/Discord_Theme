@@ -728,7 +728,7 @@
 /* DARK */
 .theme-dark .channel-textarea-inner { background-color: transparent; }
 .theme-dark .channel-textarea-inner .channel-textarea-upload:hover { background-color: transparent; }
-.theme-dark .chat form .typing { background-color: rgba(48, 48, 48, .9); }
+.theme-dark .chat form .typing { background-color: #3c3c3c; padding-left: 10px; padding-right: 10px; }
 .theme-dark .chat form {background-color: #3c3c3c; border: none; color: #fff; }
 .theme-dark #autocomplete-popout .row.selected, #autocomplete-popout .row:hover { background: #181818 }
 .theme-dark #autocomplete-popout .row { -webkit-transition: all 50ms ease; transition: all 50ms ease; }
