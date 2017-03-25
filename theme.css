@@ -160,7 +160,7 @@
 }
 #user-profile-modal .guilds .section .connected-accounts .connected-account {
   border: 0;
-  background: var(--dark-highlight);
+  background: var(--dark-primary);
   box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
 }
 #user-profile-modal .guilds .section .connected-accounts {
