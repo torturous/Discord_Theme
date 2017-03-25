@@ -1102,6 +1102,17 @@
 }
 /* END: Form */
 
+/* Markdown */
+/* BOTH */
+.markdown-modal, .markdown-modal .markdown-modal-header {
+  background-color: var(--dark-highlight);
+  color: #fff;
+  border-bottom: none;
+}
+.markdown-modal .scroller-wrap { background-color: var(--dark-primary); }
+.markdown-modal .markdown-modal-footer { background-color: var(--dark-secondary); border-top: none; }
+/* END: Markdown */
+
 /* Pin messages */
 /* DARK */
 .themed-popout .header { background: var(--dark-highlight)!important; }
