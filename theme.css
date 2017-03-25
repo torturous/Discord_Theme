@@ -144,7 +144,11 @@
   background-color: var(--dark-highlight);
   background-image: none;
 }
-#user-profile-modal .scroller, #user-profile-modal .tab-bar-container {
+#user-profile-modal .scroller {
+  background-color: var(--dark-secondary);
+  border-bottom: 0;
+}
+#user-profile-modal .tab-bar-container {
   background-color: var(--dark-primary);
   border-bottom: 0;
 }
