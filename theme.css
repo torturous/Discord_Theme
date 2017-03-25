@@ -145,7 +145,7 @@
   background-image: none;
 }
 #user-profile-modal .scroller, #user-profile-modal .tab-bar-container {
-  background-color: var(--dark-secondary);
+  background-color: var(--dark-primary);
   border-bottom: 0;
 }
 #user-profile-modal .empty {
@@ -161,7 +161,7 @@
 #user-profile-modal .guilds .section .connected-accounts .connected-account {
   border: 0;
   background: var(--dark-primary);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+  box-shadow: none;
 }
 #user-profile-modal .guilds .section .connected-accounts {
   margin-left: -10px;
