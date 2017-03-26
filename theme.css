@@ -1313,7 +1313,10 @@
 .guild-settings-modal-members { background-color: var(--dark-secondary); }
 .guild-settings-modal-members .guild-settings-modal-members-header { border-bottom: none; }
 .guild-settings-modal-members .guild-settings-modal-list .member+.member { border-top: none; }
-
+.clipboard-input-inner button:first-of-type:before { background: transparent; }
+#instant-invite-modal .clipboard-input-inner input { color: var(--accent); }
+#instant-invite-modal .copy { background-color: var(--accent); }
+#instant-invite-modal-advanced .form-actions { background-color: var(--dark-secondary); }
 .guild-settings-modal-emoji .emoji-row .emoji-name {
   background-color: var(--dark-primary);
   color: white;
@@ -1420,3 +1423,5 @@
 /* BOTH */
 .guilds-wrapper { background: var(--dark-highlight); }
 /* END: Server Section */
+
+
