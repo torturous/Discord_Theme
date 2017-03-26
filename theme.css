@@ -1240,6 +1240,7 @@
    border-bottom: 2px solid var(--accent);
    background: transparent;
 }
+.form .control-group input[type=password] { background: transparent; color: white;}
 .region-select button { color: var(--accent); }
 .region-select:hover button { background-color: var(--accent); }
 
