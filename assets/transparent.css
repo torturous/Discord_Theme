@@ -1,5 +1,5 @@
 /* This is just a mess, but works! o.o */
-.search-bar, .friends-header, .chat>.title-wrap, .chat>.title-wrap>.title,
+.search-bar, .friends-header, .chat>.title-wrap, .chat>.title-wrap>.title, .theme-dark .chat form,
 .guild-header, .chat .title-wrap .private-channels .channel:active, .guild-channels .channel-text:active,
 .channel-members .member.popout-open, .private-channels .channel.selected, .guild-channels .channel-text.selected,
 .theme-dark .messages-wrapper, .guild-channels, .theme-dark .chat .title-wrap,
