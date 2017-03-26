@@ -695,6 +695,9 @@
 
 /* Message Textarea */
 /* BOTH */
+.message-group h2 strong { color: #fff; }
+.message-group .comment .message-text .markup { color: hsla(0,0%,100%,.7) }
+.message-group .comment .message-text .markup pre { color: #000; }
 .channel-textarea-inner, .channel-textarea.has-results .channel-textarea-inner { border: none; }
 .channel-textarea-upload { border: none; }
 .channel-textarea-inner .channel-textarea-upload { border-right-color: none; }
