@@ -681,8 +681,13 @@
 .account .btn { background: none; }
 .account .btn-deafen, .account .btn-settings { box-shadow: none; }
 .account .btn-deafen, .account .btn-mute { border-right: none; }
+#voice-connection .btn, #voice-connection .btn-group, #voice-connection .btn-disconnect {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
 /* Get rid of the top border */
-.account {
+.account, #voice-connection {
   border: none;
   background-color: var(--dark-highlight);
 }
