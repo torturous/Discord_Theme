@@ -229,12 +229,25 @@
   }
 }
 
-#user-profile-modal .header .badge-premium+.header-info-inner .discord-tag,
-#user-profile-modal .header .badge-partner+.header-info-inner .discord-tag,
-#user-profile-modal .header .badge-staff+.header-info-inner .discord-tag,
+@-webkit-keyframes profile-badge-info {
+  from { transform: translateX(-60px); }
+  100% { transform: translateX(0px); }
+}
+
+@keyframes profile-badge-info {
+  from { transform: translateX(-60px); }
+  100% { transform: translateX(0px); }
+}
+
+#user-profile-modal .header .discord-tag, #user-profile-modal .header .activity {
+  -webkit-animation: profile-badge-info 500ms ease-in-out;
+  animation: profile-badge-info 500ms ease-in-out;
+}
+
 #user-profile-modal .header .header-info .badge-premium,
 #user-profile-modal .header .header-info .badge-partner,
 #user-profile-modal .header .header-info .badge-staff {
+  -webkit-animation: profile-badge 500ms ease-in-out;
   animation: profile-badge 500ms ease-in-out;
 }
 /* END: User Profile Modal */
@@ -508,7 +521,8 @@
   content: ' :D';
 }
 
-.form .control-group input[type=text] {
+.form .control-group input[type=text],
+.form .control-group label+textarea {
   background: transparent;
   color: #fff;
 }
@@ -1203,6 +1217,7 @@
   background-color: var(--accent);
   color: #fff;
 }
+#permissions .permission-actions { color: #fff; }
 .form .btn-primary:hover {
   background-color: var(--accent);
   opacity: .8;
