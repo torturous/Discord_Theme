@@ -1236,7 +1236,10 @@
 }
 .form .radio-group { color: white; }
 .settings .settings-header { background-color: var(--dark-highlight); margin-right: -7px; }
-
+.form .control-group input[type=email]:focus, .form .control-group input[type=number]:focus, .form .control-group input[type=password]:focus, .form .control-group input[type=text]:focus, .form .control-group textarea:focus {
+   border-bottom: 2px solid var(--accent);
+   background: transparent;
+}
 .region-select button { color: var(--accent); }
 .region-select:hover button { background-color: var(--accent); }
 
