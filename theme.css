@@ -696,8 +696,8 @@
 
 /* Message Textarea */
 /* BOTH */
-.message-group h2 strong { color: #fff; }
-.message-group .comment .message-text .markup { color: hsla(0,0%,100%,.7) }
+.message-group h2 strong { color: var(--light-dark-text); }
+.message-group .comment .message-text .markup { color: var(--light-dark-text) }
 .message-group .comment .message-text .markup pre { color: #000; }
 .channel-textarea-inner, .channel-textarea.has-results .channel-textarea-inner { border: none; }
 .channel-textarea-upload { border: none; }
@@ -788,16 +788,43 @@
 
 /* Chat Messages */
 /* BOTH */
+.confirm-message-modal .form-inner .message-group.hide-overflow .comment .message-first .body .message-text .markup code.inline
+{
+  background: var(--dark-highlight) !important;
+}
+#app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup > code
+{
+  background: var(--dark-highlight);
+}
+#app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup > pre
+{
+  color: rgb(0, 0, 0);
+  background: #1A1C1F;
+  border: 2px solid #1A1C1F;
+}
+#app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup > pre > code.hljs
+{
+  background: #1A1C1F;
+  color: #839496;
+}
+
 .message-group .edit-message .channel-textarea-inner {
   border: 1px solid var(--accent);
 }
 .message-group .edit-message .edit-operation>a { color: var(--accent); }
 /* DARK */
 .theme-dark .chat>.content, .theme-dark .friends-table, .theme-dark .messages-wrapper { background-color: var(--dark-secondary) !important; }
-
+.theme-dark .message-group .comment .markup { color: hsla(0,0%,100%,.7) !important; }
+.theme-dark .message-group .comment .markup code.inline, .theme-dark .message-group .comment .markup pre code {
+    background: #1A1C1F;
+}
 /* LIGHT */
 .chat .messages-wrapper { background-color: var(--light-secondary); }
 .message-group .comment .markup { color: #2e3136; }
+#app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > h2 > span.username-wrapper > strong
+{
+  color: grey;
+}
 /* END: Chat Messages */
 
 /* Title Section */
@@ -1427,5 +1454,4 @@
 /* BOTH */
 .guilds-wrapper { background: var(--dark-highlight); }
 /* END: Server Section */
-
 
