@@ -1428,27 +1428,4 @@
 .guilds-wrapper { background: var(--dark-highlight); }
 /* END: Server Section */
 
-/* Notifications */
-.badge {
-    border-radius: 3px;
-    background-clip: padding-box;
-    background-color: var(--accent);
-    box-shadow: 0 1px 0 rgba(0,0,0,.25),inset 0 1px 0 hsla(0,0%,100%,.15);
-    color: #fff;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 12px;
-    display: inline-block;
-    padding: 3px 6px;
-    text-shadow: 0 1px 0 rgba(0,0,0,.25);
-}
 
-.channel.btn-friends a div.badge {
-  left: -5px;
-  position: relative;
-}
-
-.new-messages-indicator.new-messages-indicator-mention {
-    background-color: var(--accent);
-}
-/* END: Notifications */
