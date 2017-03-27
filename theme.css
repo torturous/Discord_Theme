@@ -315,30 +315,32 @@
 
 
 /* Emoji picker */
-/* BOTH */
-.emoji-picker {
+/* DARK */
+.theme-dark .popout .emoji-picker .header .search-bar { background-color: var(--dark-highlight); }
+.theme-dark .popout .emoji-picker .header { background-color: var(--dark-highlight); }
+.theme-dark .popout .emoji-picker {
   background: var(--dark-highlight);
 }
 
-.emoji-picker .scroller, .emoji-picker .sticky-header {
+.theme-dark .popout .emoji-picker .scroller,.theme-dark .popout .emoji-picker .sticky-header {
   background: var(--dark-secondary);
 }
 
-.emoji-picker .scroller .emoji-item.selected {
+.theme-dark .popout .emoji-picker .scroller .emoji-item.selected {
   background: var(--dark-highlight);
 }
 
-.emoji-picker .scroller .emoji-item {
+.theme-dark .popout .emoji-picker .scroller .emoji-item {
   -webkit-transition: all 100ms ease;
   transition: all 100ms ease;
 }
 
-.emoji-picker .header .search-bar .search-bar-inner {
+.theme-dark .popout .emoji-picker .header .search-bar .search-bar-inner {
   background: transparent;
   font-weight: bolder;
 }
 
-.popout.no-shadow .emoji-picker {
+.theme-dark .popout.no-shadow .emoji-picker {
   background: var(--dark-highlight)!important;
   border: 1px solid #212121;
   margin-right: 14px;
@@ -369,22 +371,25 @@
   }
 }
 
-.popout .emoji-picker {
+.theme-dark .popout .emoji-picker {
   animation: emoji-picker 300ms;
   background: #212121!important;
   border: 1px solid #212121;
   border-radius: 0 0 3px 3px!important;
 }
 
-.emoji-picker .header .search-bar {
+.theme-dark .popout .emoji-picker .header .search-bar {
   background: transparent!important;
 }
 
-.emoji-picker .scroller .emoji-item {
+.theme-dark .popout .emoji-picker .scroller .emoji-item {
   background-size: contain!important;
   background-position: 50%!important;
   background-repeat: no-repeat!important;
 }
+/* LIGHT */
+.emoji-picker .header .search-bar { background-color: var(--light-primary); }
+.emoji-picker .header { background-color: var(--light-primary); }
 /* END: Emoji picker */
 
 
@@ -840,6 +845,9 @@
   box-shadow: none;
 }
 .chat>.title-wrap>.topic { color: rgba(128, 128, 128, .9); }
+.search-bar.search-bar-light {
+    background-color: var(--light-primary) !important;
+}
 /* END: Title Section */
 
 
