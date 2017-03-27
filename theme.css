@@ -793,6 +793,10 @@
 
 /* Chat Messages */
 /* BOTH */
+#app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup
+{
+  color: white;
+}
 .confirm-message-modal .form-inner .message-group.hide-overflow .comment .message-first .body .message-text .markup code.inline
 {
   background: var(--dark-highlight) !important;
