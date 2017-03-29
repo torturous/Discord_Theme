@@ -1506,6 +1506,13 @@
   margin: 0;
   padding-bottom: 10px;
 }
+
+.guilds-wrapper .guilds .guild .guild-inner {
+
+  background: transparent !important;
+}
+
+
 /* END: Server Section */
 
 /* Notifications */
