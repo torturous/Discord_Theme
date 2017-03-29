@@ -13,7 +13,8 @@
 	z-index: 1;
 }
 
-.channel-members-wrap .member .member-inner {
+.channel-members-wrap .member .member-inner,
+.channel-members-wrap .channel-members h2 {
 	animation: fadeout 1s;
 	-webkit-animation-fill-mode: forwards;
 }
@@ -24,7 +25,8 @@
 	background: rgba(0, 0, 0, 0.3);
 }
 
-.channel-members-wrap:hover .member .member-inner {
+.channel-members-wrap:hover .member .member-inner,
+.channel-members-wrap:hover .channel-members h2 {
 	animation: fadein 0.5s;
 	-webkit-animation-fill-mode: forwards;
 }
