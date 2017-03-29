@@ -1496,9 +1496,15 @@
     text-align: center;
     -webkit-transition: border-color .25s ease,color .25s ease;
     transition: border-color .25s ease,color .25s ease;
-    position: relative;
-    left: 12px;
+    position: relative !important;
+    left: 12px !important;
     top: 4px;
+}
+.guilds-wrapper .guilds .guild-separator {
+  position: relative;
+  width: 90%;
+  margin: 0;
+  padding-bottom: 5px;
 }
 /* END: Server Section */
 
