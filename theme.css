@@ -147,6 +147,9 @@
 
 /* User Profile Modal */
 /* BOTH | This one can't be used on light and dark, must define both */
+.avatar-profile .status {
+    border-color: var(--dark-secondary);
+}
 #user-profile-modal .header {
   background-color: var(--dark-highlight);
   background-image: none;
