@@ -1,11 +1,12 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
-  color: #2ecc71; font-weight: bold;
+  color: --accent; font-weight: bold;
   content: "Theme version: Rewrite";
 }
 /* GLOBAL */
 :root {
   /*--<var>: <value>*/
+  --notif: mediumpurple;
   --accent: mediumpurple;
   --dark-primary: #212121;
   --dark-secondary: #303030;
@@ -1471,4 +1472,82 @@
 /* Server Section */
 /* BOTH */
 .guilds-wrapper { background: var(--dark-highlight); }
+.guilds-wrapper .guild.guilds-add:after,
+.guilds-wrapper .guild.guilds-add:hover:after,
+.guilds-wrapper .guilds .guild a:hover,
+.guilds-wrapper .guilds .guild.selected .guild-inner,
+.guilds-wrapper .guilds .guild.active .guild-inner
+{
+  background-color: var(--accent) !important;
+}
+.guilds-wrapper .guilds .friends-online {
+    display: none;
+}
+.guilds-wrapper .guild.guilds-add {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--dark-primary);
+    color: var(--accent);
+    border: 1px dashed var(--accent);
+    padding: 0;
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    -webkit-transition: border-color .25s ease,color .25s ease;
+    transition: border-color .25s ease,color .25s ease;
+    position: relative;
+    left: 12px;
+    top: 4px;
+}
 /* END: Server Section */
+
+/* Notifications */
+.badge {
+    background-color: var(--notif);
+}
+.new-messages-indicator.new-messages-indicator-mention {
+    background-color: var(--notif);
+}
+.guilds-wrapper .guilds .guild.selected:before,
+.guilds-wrapper .guilds .guild.selected.unread:before,
+.guilds-wrapper .guilds .guild.unread:before {
+    z-index: 100;
+    -webkit-transform: translate(50px, -20px) scale(1.2);
+    transform: translate(50px, -20px) scale(1.2);
+    background: var(--notif);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3), inset 0 1px 0 hsla(0, 0%, 100%, .15);
+    height: 12px;
+    width: 12px;
+    margin-top: 0px;
+}
+.guilds-wrapper .guilds .guild.selected.unread:before
+{
+  visibility: visible !important;
+  transform: translate(35px, 7px) scale(1.2);
+}
+.guilds-wrapper .guilds .guild.selected:before {
+  content: "" !important;
+  width: 4px;
+  height: 64px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  z-index: 100;
+  visibility: hidden;
+}
+
+.new-messages-indicator {
+    display:none;
+}
+
+.dms .guild .badge,
+.guilds .guild.unread .badge,
+.guilds .guild .badge {
+    -webkit-transform: translate(-4px, -34px)!important;
+    transform: translate(-4px, -34px)!important;
+    z-index: 100;
+}
+/* END: Notifications */
