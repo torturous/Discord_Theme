@@ -19,6 +19,10 @@
 .theme-light .messages-wrapper .messages .divider span {
   background-color: transparent;
 }
+::selection {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
 /* End GLOBAL */
 /* User Settings */
 /* BOTH */
@@ -1466,4 +1470,3 @@
 /* BOTH */
 .guilds-wrapper { background: var(--dark-highlight); }
 /* END: Server Section */
-
