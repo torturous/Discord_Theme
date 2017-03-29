@@ -1497,7 +1497,7 @@
     -webkit-transition: border-color .25s ease,color .25s ease;
     transition: border-color .25s ease,color .25s ease;
     position: relative !important;
-    left: 12px !important;
+    left: 2px !important;
     top: 4px;
 }
 .guilds-wrapper .guilds .guild-separator {

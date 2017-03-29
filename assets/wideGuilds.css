@@ -106,3 +106,8 @@
     transform: translate(-4px, -34px)!important;
     z-index: 100;
 }
+
+.guilds-wrapper .guild.guilds-add {
+    position: relative !important;
+    left: 12px !important;
+}
