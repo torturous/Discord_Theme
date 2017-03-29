@@ -1526,6 +1526,7 @@
     height: 12px;
     width: 12px;
     margin-top: 0px;
+    border-radius: 50%;
 }
 .guilds-wrapper .guilds .guild.selected.unread:before
 {
