@@ -1,5 +1,5 @@
 /* This is just a mess, but works! o.o */
-.search-bar, .friends-header, .chat>.title-wrap, .chat>.title-wrap>.title,
+.search-bar, .friends-header, .chat>.title-wrap, .chat>.title-wrap>.title, .theme-dark .chat form,
 .guild-header, .chat .title-wrap .private-channels .channel:active, .guild-channels .channel-text:active,
 .channel-members .member.popout-open, .private-channels .channel.selected, .guild-channels .channel-text.selected,
 .theme-dark .messages-wrapper, .guild-channels, .theme-dark .chat .title-wrap,
@@ -28,7 +28,14 @@
 }
 
 #voice-connection {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
+  border-top: none;
+}
+
+#voice-connection .btn, #voice-connection .btn-group, #voice-connection .btn-disconnect {
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 .message-group-blocked {
@@ -54,4 +61,10 @@
 
 .guilds-wrapper .guilds .guild.selected {
   background: rgba(255, 255, 255, 0.05);
+}
+
+/* Had to rework for the new styles */
+.theme-dark .chat form, .account{
+    background-color: rgba(0,0,0,0.0);
+    box-shadow: none;
 }

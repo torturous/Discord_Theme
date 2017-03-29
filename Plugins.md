@@ -1,7 +1,7 @@
+# Discord_Theme, Plugins
+
 Here you can find plugins that can be used on **autotheme.css** Example:<br>
 <img src="https://i.alexflipnote.xyz/0302s2U.png">
-
-# Plugins
 
 ### Discord Background
 [Click here for preview](https://i.alexflipnote.xyz/0319kiG.png)
