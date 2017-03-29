@@ -10,6 +10,7 @@
 	transition: 2s;
 	margin-left: 100%;
 	background: rgba(0, 0, 0, 0);
+	z-index: 1;
 }
 
 .channel-members-wrap .member .member-inner {
