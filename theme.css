@@ -1644,5 +1644,56 @@
 
 /* Upload Area */
 
+.channel-textarea-autocomplete-inner { background-color: var(--dark-secondary)!important; }
+.channel-textarea-autocomplete-inner header {font-size: 14px; color: var(--accent); background-color: var(--dark-highlight)!important; }
+.channel-textarea-autocomplete-inner ul li {color: #ffffff!important; }
+.channel-textarea-autocomplete-inner ul li.active { background-color: var(--dark-primary)!important; }
+.channel-textarea-autocomplete-inner ul { background-color: var(--dark-secondary)!important; }
+.channel-textarea-autocomplete-inner li.active { background-color: var(--dark-secondary)!important;}
+.channel-textarea-autocomplete-inner li { background-color: var(--dark-secondary)!important; }
+
+.upload-modal .inner .file .icon.image {
+    border: 0px;	
+    box-shadow: 0 0px 0px;
+}
+
+.upload-modal {
+    background-color: var(--dark-primary);
+}
+
+.upload-modal .inner {
+    border: 0px;
+}
+
+.upload-modal .footer {
+    background-color: var(--dark-primary);
+}
+
+.upload-modal .footer .button {
+    background-color: var(--dark-primary);
+	right: 25px;
+	width: 100px;
+}
+
+.upload-modal .inner .file .description .filename {
+    color: var(--accent);
+}
+
+.upload-modal .footer .button-primary {
+    color: var(--accent);
+}
+
+.channel-textarea {
+    background: none!important;
+}
+
+.upload-modal .inner .comment .channel-textarea .channel-textarea-inner {
+    border-color: var(--dark-secondary);
+    background-color: var(--dark-secondary);
+}
+
+.upload-modal .inner .comment .label {
+    font-size: 14px;
+}
 
 /* END: Upload Area */
