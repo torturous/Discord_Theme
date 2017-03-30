@@ -1,13 +1,13 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.0.01";
+  content: "Theme version: 1.0.2.12";
 }
 /* GLOBAL */
 :root {
   /*--<var>: <value>*/
-  --notif: mediumpurple;
-  --accent: mediumpurple;
+  --notif: #7A78BD;
+  --accent: #7A78BD;
   --dark-primary: #212121;
   --dark-secondary: #303030;
   --dark-highlight: #181818;
@@ -398,18 +398,28 @@
 
 /* Emoji picker */
 /* DARK */
-.theme-dark .popout .emoji-picker .header .search-bar { background-color: var(--dark-highlight); }
-.theme-dark .popout .emoji-picker .header { background-color: var(--dark-highlight); }
+
+.emoji-picker .category {
+    color: var(--accent);
+    font-size: 13px;
+}
+
+.emoji-picker .categories .item.selected {
+    border-bottom-color: var(--accent);
+}
+
+.theme-dark .popout .emoji-picker .header .search-bar { background-color: var(--dark-primary); }
+.theme-dark .popout .emoji-picker .header { border-bottom: 0px; background-color: var(--dark-primary); }
 .theme-dark .popout .emoji-picker {
-  background: var(--dark-highlight);
+  background: var(--dark-primary);
 }
 
 .theme-dark .popout .emoji-picker .scroller,.theme-dark .popout .emoji-picker .sticky-header {
-  background: var(--dark-secondary);
+  background: var(--dark-primary);
 }
 
 .theme-dark .popout .emoji-picker .scroller .emoji-item.selected {
-  background: var(--dark-highlight);
+  background: var(--dark-primary);
 }
 
 .theme-dark .popout .emoji-picker .scroller .emoji-item {
@@ -423,12 +433,16 @@
 }
 
 .theme-dark .popout.no-shadow .emoji-picker {
-  background: var(--dark-highlight)!important;
-  border: 1px solid #212121;
-  margin-right: 14px;
+  background: var(--dark-primary)!important;
+  border: 0px;
+  margin-right: 14px;	
   margin-bottom: -14px!important;
-  border-radius: 4px 4px 0 0!important;
+  border-radius: 0px 0px 0 0!important;
   margin-bottom: -20px;
+}
+
+.emoji-picker .categories {
+    border-top: 0px;
 }
 
 @-webkit-keyframes emoji-picker {
