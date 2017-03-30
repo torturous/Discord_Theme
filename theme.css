@@ -73,16 +73,6 @@
     background: var(--accent);
     height: 100%;
 }
-.ui-radiogroup .ui-card.ui-card-primary.flex-horizontal.margin-bottom-8.checked.editable
-{
-  border-color: var(--accent) !important;
-  background-color: var(--accent) !important;
-  padding: 10px;
-}
-.ui-radiogroup .ui-card.ui-card-primary.flex-horizontal.margin-bottom-8.checked.editable  .ui-checkbox-wrapper .ui-checkbox.box.checked svg g polyline
-{
-  stroke: var(--accent) !important;
-}
 .ui-button.link-color.link {
     color: var(--accent);
 }
