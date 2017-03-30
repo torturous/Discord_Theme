@@ -875,6 +875,7 @@
 
 /* Chat Messages */
 /* BOTH */
+.chat .jump-to-present-bar { left: inherit; }
 #app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup
 {
   color: white;
@@ -898,7 +899,6 @@
   background: #1A1C1F;
   color: #839496;
 }
-
 .message-group .edit-message .channel-textarea-inner {
   border: 1px solid var(--accent);
 }
