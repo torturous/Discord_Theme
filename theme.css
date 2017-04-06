@@ -197,7 +197,7 @@
 .note textarea:focus { background: var(--dark-highlight); }
 .user-popout .body { background: var(--dark-primary); }
 .user-popout .footer { background: var(--dark-secondary); border-top: none; }
-.quick-message {
+.quick-message, .quick-message.isBlocked {
   background: transparent;
   border: none;
   color: #fff;
