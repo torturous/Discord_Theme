@@ -956,9 +956,25 @@
   opacity: 1;
   padding-left: 20px;
 }
-
-.callout-backdrop { opacity: 0.6 !important; }
 /* END: Image Modal */
+
+
+/* Download modal */
+/* BOTH */
+.callout-backdrop { opacity: 1 !important; background-color: rgba(0, 0, 0, 0.8)!important; }
+.download-apps .header, .download-apps .footer { color: white; }
+.download-apps .platforms .platform { border: none; }
+.alert.form.has-icon:before {
+  background-image: url('/assets/1ac6fb17c60570343eec4e81fe1e4073.svg');
+  border-radius: 0;
+  background-color: transparent;
+}
+.download-apps .content-wrapper {
+  background: #141414;
+  border: none;
+  border-radius: 10px;
+}
+/* EMD: Download modal */
 
 
 /* Tool tip */
