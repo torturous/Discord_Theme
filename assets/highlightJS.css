@@ -4,7 +4,7 @@
 }
 
 :root{
-    --code-font: firacode;
+    --code-font: "firacode";
     --code-bg: #1D1F21;
     --code-default: #C5C8C6;
     --code-keyword: #E061C7;
@@ -48,17 +48,13 @@
     --code-diff-del: #C24848;
 }
 
-code{
-    color: black !important;
-}
-
 .hljs {
   display: block;
   font-family: var(--code-font), monospace !important;
   font-size: 10pt;
   overflow-y: hidden !important;
   background: var(--code-bg) !important;
-  color: var(--code-color) !important;
+  color: var(--code-default) !important;
   padding: 0.5em;
 }
 
