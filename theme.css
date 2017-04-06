@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.2.21";
+  content: "Theme version: 1.0.2.32";
 }
 /* GLOBAL */
 :root {
@@ -59,32 +59,32 @@
   background-color: var(--accent);
 }
 .ui-switch-checkbox:checked+.ui-switch {
-    background: var(--accent);
+  background: var(--accent);
 }
 .ui-button.brand.outlined {
-    color: var(--accent);
-    border-color: var(--accent);
+  color: var(--accent);
+  border-color: var(--accent);
 }
 .ui-button.brand.outlined:hover {
-    border-color: var(--accent);
-    opacity: 0.6;
+  border-color: var(--accent);
+  opacity: 0.6;
 }
 .ui-slider .slider-bar-fill {
-    background: var(--accent);
-    height: 100%;
+  background: var(--accent);
+  height: 100%;
 }
 .ui-button.link-color.link {
-    color: var(--accent);
+  color: var(--accent);
 }
 .user-settings-games .now-playing-add .link:hover {
-    color: var(--accent);
+  color: var(--accent);
 }
 .ui-button.link-color.link:not(:disabled):active .ui-button-contents, .ui-button.link-color.link:not(:disabled):hover .ui-button-contents {
-    background-image: none;
-    border-bottom: 1px solid var(--accent);
+  background-image: none;
+  border-bottom: 1px solid var(--accent);
 }
 .app a, .connecting a {
-    color: var(--accent);
+  color: var(--accent);
 }
 .ui-checkbox-wrapper .ui-checkbox.round.checked.inverted
 {
@@ -95,14 +95,14 @@
   color: grey;
 }
 .form .btn.green {
-    background-color: var(--accent);
+  background-color: var(--accent);
 }
 .form .btn.green:hover {
-    background-color: var(--accent);
+  background-color: var(--accent);
 }
 .ui-tab-bar.SIDE .ui-tab-bar-item.selected {
-    color: #fff !important;
-    background-color: var(--accent);
+  color: #fff !important;
+  background-color: var(--accent);
 }
 /* DARK */
 /* Emotes: https://material.io/icons/ */
@@ -184,11 +184,33 @@
 
 /* User Popout */
 /* BOTH */
-.user-popout .header { background: var(--dark-highlight); }
-.user-popout .avatar-wrapper .avatar-popout {
-  border: 0;
-  background-color: rgba(0, 0, 0, 0.01);
+.user-popout { width: 450px; }
+.user-popout .body { display: flex; padding-top: 14px; }
+.user-popout .avatar-wrapper { position: fixed; margin: 4px 0px 14px -150px; }
+.section.roles { max-width: 250px; width: 250px; }
+.section.notes, .section.roles { margin-left: 15px; }
+.user-popout .username-wrapper .nickname { margin-bottom: 2px; }
+.creation-date-wrapper { margin-left: -33px; }
+.user-popout .header { padding-top: 3em; background: var(--dark-highlight); }
+.user-popout .header.streaming { padding-top: 2.15em; }
+.user-popout .avatar-wrapper .avatar-popout { border: 0; background-color: rgba(0, 0, 0, 0.01); }
+.user-popout .username-wrapper .activity, .user-popout .username-wrapper .discord-tag, .user-popout .username-wrapper .nickname{
+  text-align: left;
+  margin-left: 138px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
+.bot-tag.bot-tag-invert { background-color: #7289da!important; color: #fff!important; }
+.user-popout .header.streaming .live-on-twitch {
+  border-top: 0px solid transparent;
+  text-decoration: none;
+  width: 150px;
+  margin-left: 129px;
+  border-radius: 3px;
+  padding: 4px 0;
+}
+.user-popout .header.streaming .activity { padding: 0; }
 .user-popout .avatar-wrapper .avatar-hint {
   margin: 0;
   background: rgba(0, 0, 0, 0.5);
@@ -210,7 +232,7 @@
 /* User Profile Modal */
 /* BOTH | This one can't be used on light and dark, must define both */
 .avatar-profile .status {
-    border-color: var(--dark-secondary);
+  border-color: var(--dark-secondary);
 }
 #user-profile-modal .header {
   background-color: var(--dark-highlight);
@@ -390,12 +412,12 @@
 /* DARK */
 
 .emoji-picker .category {
-    color: var(--accent);
-    font-size: 13px;
+  color: var(--accent);
+  font-size: 13px;
 }
 
 .emoji-picker .categories .item.selected {
-    border-bottom-color: var(--accent);
+  border-bottom-color: var(--accent);
 }
 
 .theme-dark .popout .emoji-picker .header .search-bar { background-color: var(--dark-primary); }
@@ -432,7 +454,7 @@
 }
 
 .emoji-picker .categories {
-    border-top: 0px;
+  border-top: 0px;
 }
 
 @-webkit-keyframes emoji-picker {
@@ -911,7 +933,7 @@
 .theme-dark .chat>.content, .theme-dark .friends-table, .theme-dark .messages-wrapper { background-color: var(--dark-secondary) !important; }
 .theme-dark .message-group .comment .markup { color: hsla(0,0%,100%,.7) !important; }
 .theme-dark .message-group .comment .markup code.inline, .theme-dark .message-group .comment .markup pre code {
-    background: #1A1C1F;
+  background: #1A1C1F;
 }
 /* LIGHT */
 .chat .messages-wrapper { background-color: var(--light-secondary); }
@@ -936,7 +958,7 @@
 }
 .chat>.title-wrap>.topic { color: rgba(128, 128, 128, .9); }
 .search-bar.search-bar-light {
-    background-color: var(--light-primary) !important;
+  background-color: var(--light-primary) !important;
 }
 /* END: Title Section */
 
@@ -1217,7 +1239,7 @@
 }
 
 .theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary {
-    background-color: var(--accent);
+  background-color: var(--accent);
 }
 
 /* LIGHT */
@@ -1384,8 +1406,8 @@
 .form .radio-group { color: white; }
 .settings .settings-header { background-color: var(--dark-highlight); margin-right: -7px; }
 .form .control-group input[type=email]:focus, .form .control-group input[type=number]:focus, .form .control-group input[type=password]:focus, .form .control-group input[type=text]:focus, .form .control-group textarea:focus {
-   border-bottom: 2px solid var(--accent);
-   background: transparent;
+  border-bottom: 2px solid var(--accent);
+  background: transparent;
 }
 .form .control-group input[type=password] { background: transparent; color: white;}
 .region-select button { color: var(--accent); }
@@ -1582,32 +1604,32 @@
 }
 
 .guilds-wrapper .guilds .guild.selected {
-    background: transparent;
+  background: transparent;
 }
 
 .guilds-wrapper .guilds .guild.selected .guild-inner {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 .guilds-wrapper .guilds .friends-online {
-    display: none;
+  display: none;
 }
 .guilds-wrapper .guild.guilds-add {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: var(--dark-primary);
-    color: var(--accent);
-    border: 1px dashed var(--accent);
-    padding: 0;
-    font-size: 40px;
-    font-weight: 200;
-    text-align: center;
-    -webkit-transition: border-color .25s ease,color .25s ease;
-    transition: border-color .25s ease,color .25s ease;
-    position: relative !important;
-    left: 0px !important;
-    top: 4px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--dark-primary);
+  color: var(--accent);
+  border: 1px dashed var(--accent);
+  padding: 0;
+  font-size: 40px;
+  font-weight: 200;
+  text-align: center;
+  -webkit-transition: border-color .25s ease,color .25s ease;
+  transition: border-color .25s ease,color .25s ease;
+  position: relative !important;
+  left: 0px !important;
+  top: 4px;
 }
 .guilds-wrapper .guilds .guild-separator {
   position: relative;
@@ -1627,23 +1649,23 @@
 
 /* Notifications */
 .badge {
-    background-color: var(--notif);
+  background-color: var(--notif);
 }
 .new-messages-indicator.new-messages-indicator-mention {
-    background-color: var(--notif);
+  background-color: var(--notif);
 }
 .guilds-wrapper .guilds .guild.selected:before,
 .guilds-wrapper .guilds .guild.selected.unread:before,
 .guilds-wrapper .guilds .guild.unread:before {
-    z-index: 100;
-    -webkit-transform: translate(50px, -20px) scale(1.2);
-    transform: translate(50px, -20px) scale(1.2);
-    background: var(--notif);
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3), inset 0 1px 0 hsla(0, 0%, 100%, .15);
-    height: 12px;
-    width: 12px;
-    margin-top: 0px;
-    border-radius: 50%;
+  z-index: 100;
+  -webkit-transform: translate(50px, -20px) scale(1.2);
+  transform: translate(50px, -20px) scale(1.2);
+  background: var(--notif);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3), inset 0 1px 0 hsla(0, 0%, 100%, .15);
+  height: 12px;
+  width: 12px;
+  margin-top: 0px;
+  border-radius: 50%;
 }
 .guilds-wrapper .guilds .guild.selected.unread:before
 {
@@ -1664,15 +1686,15 @@
 }
 
 .new-messages-indicator {
-    display:none;
+  display:none;
 }
 
 .dms .guild .badge,
 .guilds .guild.unread .badge,
 .guilds .guild .badge {
-    -webkit-transform: translate(-4px, -34px)!important;
-    transform: translate(-4px, -34px)!important;
-    z-index: 100;
+  -webkit-transform: translate(-4px, -34px)!important;
+  transform: translate(-4px, -34px)!important;
+  z-index: 100;
 }
 /* END: Notifications */
 
@@ -1687,44 +1709,44 @@
 .channel-textarea-autocomplete-inner li { background-color: var(--dark-secondary)!important; }
 
 .upload-modal .inner .file .icon.image {
-    border: 0px;
-    box-shadow: 0 0px 0px;
+  border: 0px;
+  box-shadow: 0 0px 0px;
 }
 
 .upload-modal {
-    background-color: var(--dark-primary);
+  background-color: var(--dark-primary);
 }
 
 .upload-modal .inner {
-    border: 0px;
+  border: 0px;
 }
 
 .upload-modal .footer {
-    background-color: var(--dark-primary);
+  background-color: var(--dark-primary);
 }
 
 .upload-modal .footer .button {
-    background-color: var(--dark-primary);
-	right: 25px;
-	width: 100px;
+  background-color: var(--dark-primary);
+  right: 25px;
+  width: 100px;
 }
 
 .upload-modal .inner .file .description .filename {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 .upload-modal .footer .button-primary {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 .upload-modal .inner .comment .channel-textarea .channel-textarea-inner {
-    border-color: var(--dark-secondary);
-    background-color: var(--dark-secondary);
-	padding: 10px 10px;
+  border-color: var(--dark-secondary);
+  background-color: var(--dark-secondary);
+  padding: 10px 10px;
 }
 
 .upload-modal .inner .comment .label {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 /* END: Upload Area */
@@ -1732,26 +1754,26 @@
 /* Upload Drop Area */
 
 .upload-drop-modal .bgScale {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 10px;
-    background: #7289da;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 10px;
+  background: #7289da;
 }
 
 .upload-drop-modal .bgScale {
-    background: #303030;
+  background: #303030;
 }
 
 .upload-modal-in .upload-drop-modal .instructions, .upload-modal-in .upload-drop-modal .title {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 .upload-drop-modal .inner {
-    border: 0px;
+  border: 0px;
 }
 
 /* END: Upload Drop Area */
