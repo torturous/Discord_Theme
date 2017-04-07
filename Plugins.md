@@ -111,11 +111,12 @@ this into your autotheme.css, rgb(a), hex, anything. Enjoy
     --status-idle-title: "Idle";
     --status-dnd-title: "Dungeons and Dragons";
     --status-invis-title: "Invisible";
-	
+
     /* Status descriptions */
 	--status-dnd: "Signifies that you are playing Dungeons and Dragons.";
 	--status-invis: "No one likes you so you decide to turn invisible because people don't notice you anyway.";
 }
+```
 
 ### Remove blocked messages
 ```css
