@@ -1,8 +1,3 @@
-# Discord_Theme, Plugins
-
-Here you can find plugins that can be used on **autotheme.css** Example:<br>
-<img src="https://i.alexflipnote.xyz/0302s2U.png">
-
 ### Discord Background
 [Click here for preview](https://i.alexflipnote.xyz/0319kiG.png)
 ```css
@@ -124,11 +119,12 @@ this into your autotheme.css, rgb(a), hex, anything. Enjoy
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/hideSearch.css";
 ```
 
-# [BETA] Status Popout
+### [BETA] Status Popout
 [Preview](https://light-theme-hurts.my-ey.es/2fe518.png)
 ```css
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/statusPopout.css";
 ```
+
 ### Remove blocked messages
 ```css
 .message-group-blocked-btn { display: none; }

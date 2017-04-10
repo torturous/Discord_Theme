@@ -3,9 +3,9 @@
 
 ---
 
-## Writing the theme
+## Contributing on theme
 Template for each object
-> Some stuff can't be separated like Server Settings.
+> Some stuff between dark and light theme can't be separated, like Server Settings.
 
 ```css
 /* Target */
@@ -17,6 +17,21 @@ Template for each object
 .theme-light .stuff
 /* END: Target */
 ```
+
+---
+
+## Installing plugins
+To install plugins to **autotheme.css**, you must use **@import**.
+More information can be found [Here](https://github.com/AlexFlipnote/Discord_Theme/blob/master/Plugins.md)
+<br>Example:<br>
+![Preview](https://i.alexflipnote.xyz/0302s2U.png)
+
+---
+
+## Making a plugin
+By making a plugin to **AlexFlipnote/Discord_Theme**, you agree that your file will be used and *owner* by **Discord_Theme**, you can by any will, add credits to your work. All plugins has to be in **.css** format, meaning you're not allowed to use anything else (We might support more like **SCSS** and **LESS**)
+
+Remember that everything you make **must** be documented in [Plugins.md](https://github.com/AlexFlipnote/Discord_Theme/blob/master/Plugins.md) to provide easier access for users who wish to use either our or your creation.
 
 ---
 
