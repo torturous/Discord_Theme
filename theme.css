@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.3.56";
+  content: "Theme version: 1.0.3.57";
 }
 /* GLOBAL */
 :root {
@@ -1487,6 +1487,7 @@
 #instant-invite-modal .form-actions { background-color: var(--dark-secondary); }
 .instant-invite-modal { background: transparent; }
 .instant-invites .instant-invites-list .instant-invite .channel { color: #fff; }
+.instant-invites .instant-invites-list .instant-invite .member { color: #fff; }
 .instant-invites .instant-invites-list .instant-invite+.instant-invite { border-top: none; }
 .instant-invites .instant-invites-list .instant-invite { color: #fff; }
 .instant-invites .instant-invites-list .instant-invite .countdown.countdown-never { color: var(--accent); }
@@ -1654,8 +1655,8 @@
   background: transparent !important;
 }
 
-.guilds-wrapper .guilds .guild.audio .guild-inner:after { 
-	top: 24px; 
+.guilds-wrapper .guilds .guild.audio .guild-inner:after {
+	top: 24px;
 }
 
 /* END: Server Section */
