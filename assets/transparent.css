@@ -11,7 +11,8 @@
 #voice-connection .btn-group, .account .btn-group, .account .btn-mute, .account .btn-deafen, .account .btn-settings,
 .channel-textarea, .comment, .scroller .guild-channels, .channels-wrap, .theme-dark .layers, .channel-members-wrap,
 .channel-members-wrap .scroller-wrap.fade.dark, .search-bar, .friends-header, .guild-header header, .chat>.title-wrap>.title, .chat .title-wrap,
-.chat .messages-wrapper, .chat .messages-wrapper .scroller-wrap, .chat form .typing:hover, .typing .text, .theme-dark .chat .private-channel-call {
+.chat .messages-wrapper, .chat .messages-wrapper .scroller-wrap, .chat form .typing:hover, .typing .text, .theme-dark .chat .private-channel-call,
+.theme-dark .layer, .theme-dark .layers, .theme-light .layer, .theme-light .layers {
   background: transparent!important;
   box-shadow: none;
   border-bottom: 0px solid #fff;
