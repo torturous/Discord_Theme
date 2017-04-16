@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.3.57";
+  content: "Theme version: 1.0.3.58";
 }
 /* GLOBAL */
 :root {
@@ -795,13 +795,13 @@
 .account .btn { background: none; }
 .account .btn-deafen, .account .btn-settings { box-shadow: none; }
 .account .btn-deafen, .account .btn-mute { border-right: none; }
-#voice-connection .btn, #voice-connection .btn-group, #voice-connection .btn-disconnect {
+#rtc-connection .btn, #rtc-connection .btn-group, #rtc-connection .btn-disconnect {
   background: transparent;
   border: none;
   box-shadow: none;
 }
 /* Get rid of the top border */
-.account, #voice-connection {
+.account, #rtc-connection {
   border: none;
   background-color: var(--dark-highlight);
 }
