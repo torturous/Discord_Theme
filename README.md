@@ -22,12 +22,12 @@ to change stuff, download the theme.css, however if you wish for a theme that up
 **I found a bug, what do I do?**<br>Make a **Pull Request / Issue**
 
 ## Screenshots
-![Preview 1](https://i.alexflipnote.xyz/0329N9C.png)
+![Preview 1](https://i.alexflipnote.xyz/2dafae.png)
 
-![Preview 2](https://i.alexflipnote.xyz/0329Hgl.png)
+![Preview 2](https://i.alexflipnote.xyz/9ae69b.png)
 
-![Preview 3](https://i.alexflipnote.xyz/0329wBu.png)
+![Preview 3](https://i.alexflipnote.xyz/794d0c.png)
 
-![Preview 4](https://i.alexflipnote.xyz/040689j.png)
+![Preview 4](https://i.alexflipnote.xyz/bbc297.png)
 
-![Preview 5](https://i.alexflipnote.xyz/0329mne.png)
+![Preview 5](https://i.alexflipnote.xyz/190934.png)
