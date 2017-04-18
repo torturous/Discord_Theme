@@ -8,7 +8,7 @@
 #friends, .account .btn-group, #friends .friends-table .friends-table-header,
 #friends .friends-table, .flex-horizontal>.flex-spacer, .chat .messages, .guild-header header,
 .friends-table .messages .message-group:not(.has-divider), .messages-wrapper .messages .message-group:not(.has-divider),
-#voice-connection .btn-group, .account .btn-group, .account .btn-mute, .account .btn-deafen, .account .btn-settings,
+#rtc-connection .btn-group, .account .btn-group, .account .btn-mute, .account .btn-deafen, .account .btn-settings,
 .channel-textarea, .comment, .scroller .guild-channels, .channels-wrap, .theme-dark .layers, .channel-members-wrap,
 .channel-members-wrap .scroller-wrap.fade.dark, .search-bar, .friends-header, .guild-header header, .chat>.title-wrap>.title, .chat .title-wrap,
 .chat .messages-wrapper, .chat .messages-wrapper .scroller-wrap, .chat form .typing:hover, .typing .text, .theme-dark .chat .private-channel-call,
@@ -28,12 +28,12 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-#voice-connection {
+#rtc-connection {
   background: rgba(0, 0, 0, 0.3);
   border-top: none;
 }
 
-#voice-connection .btn, #voice-connection .btn-group, #voice-connection .btn-disconnect {
+#rtc-connection .btn, #rtc-connection .btn-group, #rtc-connection .btn-disconnect {
   background: transparent;
   border: none;
   box-shadow: none;
