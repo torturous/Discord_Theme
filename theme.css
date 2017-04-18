@@ -35,7 +35,7 @@
 /* BOTH */
 .ui-tab-bar.SIDE .ui-tab-bar-item:before {
   margin-right: 10px;
-  vertical-align: -40%;
+  vertical-align: -25%;
 }
 
 .theme-light .ui-card-primary, .theme-dark .ui-card-primary {
