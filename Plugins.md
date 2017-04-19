@@ -1,11 +1,11 @@
 ### Discord Background
-[Click here for preview](https://i.alexflipnote.xyz/0319kiG.png)
+[Click here for preview](https://i.alexflipnote.xyz/9a565b.png)
 ```css
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/transparent.css";
 /* Settings */
 .app { background: rgba(0, 0, 0, 0.75); }
 body {
-  background: url("https://i.alexflipnote.xyz/nature%20tf2.jpg");
+  background: url("https://i.alexflipnote.xyz/1f9a3d.jpg");
   /* Advanced settings */
   background-size: cover; background-attachment: fixed;
   background-position: center; background-repeat: no-repeat;
@@ -30,13 +30,13 @@ this into your autotheme.css, rgb(a), hex, anything. Enjoy
 ```
 
 ### 2 Guilds/Line (Community made)
-[Click here for preview](https://i.alexflipnote.xyz/0319bqc.png)
+[Click here for preview](https://i.alexflipnote.xyz/60b9cb.png)
 ```css
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/wideGuilds.css";
 ```
 
 ### Auto-hide Member list in Guilds
-[Click here for preview](https://i.alexflipnote.xyz/0319Tfm.gif)
+[Click here for preview](https://i.alexflipnote.xyz/cc78b7.gif)
 ```css
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/autoMemberlist.css";
 ```
@@ -114,7 +114,7 @@ this into your autotheme.css, rgb(a), hex, anything. Enjoy
 ```
 
 ### Hidden search bar
-[Preview](https://i.alexflipnote.xyz/04082tk.gif)
+[Preview](https://i.alexflipnote.xyz/ec15b8.gif)
 ```css
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/hideSearch.css";
 ```
