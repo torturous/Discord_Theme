@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.3.59";
+  content: "Theme version: 1.0.4.02";
 }
 /* GLOBAL */
 :root {
@@ -230,6 +230,7 @@
   font-weight: bold;
   border-bottom-color: #fff;
 }
+#user-profile-modal .guilds .section .section-header { color: #fff; }
 #user-profile-modal .guilds .section .connected-accounts .connected-account {
   border: 0;
   background: var(--dark-primary);
@@ -499,13 +500,18 @@
   }
 }
 
-.theme-dark .status-picker.popout-menu {
+.theme-light .status-picker.popout-menu, .theme-dark .status-picker.popout-menu {
   background-color: var(--dark-highlight) !important;
   border-radius: 0;
   animation: status-picker 600ms ease-in-out!important;
 }
 
-.status-picker .popout-menu-item { color: #fff; }
+.popout-menu { border-radius: 0;}
+
+.status-picker .popout-menu-item {
+  background-color: var(--dark-primary);
+  color: #fff;
+}
 .status-picker .popout-menu-item:hover {
   background-color: var(--dark-secondary);
   color: #fff;
@@ -1357,15 +1363,24 @@
 .guild-channels .channel:hover .channel-name { -webkit-transform: translate(10px); transform: translate(10px); }
 .guild-channels .channel-text.selected { background: var(--dark-secondary); }
 .guild-channels .channel-text:hover { background: var(--dark-secondary); opacity: .75 }
-.popout.popout-bottom { margin: 0px; }
+.popout-menu { width: 320px; box-shadow: none; }
+.popout-menu .popout-menu-item { padding: 10px 30px 10px 20px; }
+.popout.popout-bottom {
+  margin: 0px!important;
+  width: 240px!important;
+  left: 190px!important;
+}
 .guild-header header:hover { background-color: var(--dark-secondary); }
 .guild-header.popout-open header { background-color: var(--dark-secondary); }
 .guild-header header { height: 57px; box-shadow: none; }
 /* DARK */
 .theme-dark .popout-menu .popout-menu-separator {
-  border-bottom: 1px solid var(--dark-primary);
+  display: none;
 }
-.theme-dark .popout-menu { background: var(--dark-secondary); }
+.theme-dark .popout-menu {
+  background: var(--dark-secondary);
+  border-radius: 0;
+}
 /* END: Channel Section */
 
 /* Server Settings */
@@ -1451,6 +1466,7 @@
 .guild-settings-modal-members h6 { color: grey; }
 .guild-settings-modal-members .guild-settings-modal-members-footer { border-top: 1px solid grey; }
 .popout header { background-color: var(--accent); color: #fff; }
+.popout header:last-child { padding-bottom: 53px; }
 .form .btn-clear { background: var(--accent); color: white; }
 .member-roles .manipulate:hover { border-color: var(--accent); }
 .guild-settings-modal-members .guild-settings-modal-members-footer a { color: var(--accent); }
@@ -1587,6 +1603,8 @@
 .guilds-wrapper .guilds .guild.active .guild-inner {
   background-color: transparent !important;
 }
+
+.guilds-wrapper .guilds .friends-icon { background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_forum_white_24px.svg')}
 
 .guilds-wrapper .guilds .guild.selected {
   background: transparent;
