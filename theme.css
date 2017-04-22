@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.02";
+  content: "Theme version: 1.0.4.03";
 }
 /* GLOBAL */
 :root {
@@ -502,7 +502,7 @@
 
 .theme-light .status-picker.popout-menu, .theme-dark .status-picker.popout-menu {
   background-color: var(--dark-highlight) !important;
-  border-radius: 0;
+  border-radius: 10px;
   animation: status-picker 600ms ease-in-out!important;
 }
 
@@ -1355,6 +1355,27 @@
 
 /* Channel Section */
 /* BOTH */
+@-webkit-keyframes status-picker {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes server-settings {
+  from {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 .guild-channels { background-color: var(--dark-primary); }
 .guild-header header { background-color: var(--dark-highlight); }
 .guild-channels .channel-text.selected:before { border-left: 2px solid var(--accent); }
@@ -1365,11 +1386,6 @@
 .guild-channels .channel-text:hover { background: var(--dark-secondary); opacity: .75 }
 .popout-menu { width: 320px; box-shadow: none; }
 .popout-menu .popout-menu-item { padding: 10px 30px 10px 20px; }
-.popout.popout-bottom {
-  margin: 0px!important;
-  width: 240px!important;
-  left: 190px!important;
-}
 .guild-header header:hover { background-color: var(--dark-secondary); }
 .guild-header.popout-open header { background-color: var(--dark-secondary); }
 .guild-header header { height: 57px; box-shadow: none; }
@@ -1379,7 +1395,9 @@
 }
 .theme-dark .popout-menu {
   background: var(--dark-secondary);
-  border-radius: 0;
+  animation: server-settings 500ms ease-in-out;
+  border-radius: 10px;
+  border: 3px solid var(--dark-highlight);
 }
 /* END: Channel Section */
 
