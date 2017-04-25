@@ -65,3 +65,37 @@
     background-color: rgba(0,0,0,0.0);
     box-shadow: none;
 }
+
+/* White Theme Support */
+.theme-light .chat form, .theme-light .messages-wrapper, .guild-channels, .theme-light .chat .title-wrap,
+.theme-light .chat>.content, .theme-light .friends-table, .theme-light .messages-wrapper,
+.theme-light .channel-textarea-inner, .theme-light .layers, .channel-members-wrap,
+.theme-light .chat .private-channel-call, .theme-light .layer, .theme-light .layers, .theme-light .layer, .theme-light .layers {
+  background: transparent!important;
+  box-shadow: none;
+  border-bottom: 0px solid #fff;
+  border-top: none;
+  opacity: 1;
+}
+
+.theme-light .search-results-wrap .search-result .hit { color: rgba(255, 255, 255, 0.8)!important; }
+.theme-light .chat .private-channel-call { border-bottom: 1px solid rgba(255, 255, 255, 0.6); }
+.message-group .comment .message-text .markup { color: hsla(0,0%,100%,.7) !important; }
+.channel-members h2 { color: #fff; }
+
+.theme-light #friends .friends-table .friends-row:hover
+.theme-light .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-thumb:active, .theme-light .search-results-wrap .search-result .hit {
+  background: rgba(255, 255, 255, 0.5)!important
+}
+
+.theme-light .search-results-wrap .search-result.expanded .search-result-message.hit {
+  background: rgba(255, 255, 255, 0.2)!important;
+}
+
+.theme-light .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-thumb { background: rgba(225, 225, 225, 0.3) !important; }
+
+/* Had to rework for the new styles */
+.theme-light .chat form, .account{
+  background-color: rgba(0,0,0,0.0);
+  box-shadow: none;
+}
