@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.05";
+  content: "Theme version: 1.0.4.07";
 }
 /* GLOBAL */
 :root {
@@ -212,15 +212,17 @@
 .avatar-profile .status {
   border-color: var(--dark-secondary);
 }
+#user-profile-modal { border-radius: 0; }
 #user-profile-modal .header {
   background-color: var(--dark-highlight);
+  border-radius: 0;
   background-image: none;
 }
 #user-profile-modal .header .header-info {
     margin-top: -30px;
 }
 #user-profile-modal .scroller {
-  background-color: var(--dark-secondary);
+  background: var(--dark-secondary);
   border-bottom: 0;
 }
 #user-profile-modal .tab-bar {
@@ -553,6 +555,16 @@
     opacity: 1;
   }
 }
+
+.small-popout-box {
+  border-radius: 0;
+  color: #fff;
+  background: var(--dark-primary);
+  border: 0;
+}
+
+.option-popout .btn-item { color: #fff; }
+.option-popout .btn-item:hover { background: var(--dark-secondary); color: #fff; }
 
 .context-menu {
   background: var(--dark-highlight)!important;
@@ -1101,6 +1113,7 @@
 }
 
 .need-help-modal .header {
+  border-radius: 0;
   background-color: var(--dark-highlight);
   color: var(--dark-highlight);
 }
@@ -1112,6 +1125,7 @@
 .need-help-modal .footer {
   background-color: var(--dark-highlight);
   border-top: none;
+  border-radius: 0;
   color: white;
 }
 
@@ -1306,9 +1320,11 @@
 
 /* Markdown */
 /* BOTH */
+.markdown-modal .markdown-modal-header { text-align: center; }
 .markdown-modal, .markdown-modal .markdown-modal-header {
   background-color: var(--dark-highlight);
   color: #fff;
+  border-radius: 0;
   border-bottom: none;
 }
 .markdown-modal .scroller-wrap { background-color: var(--dark-primary); }
@@ -1486,6 +1502,10 @@
 .guild-settings-modal-emoji .emoji-uploader .emoji-uploader-username { color: white; }
 .checkbox .checkbox-inner+span { color: white; }
 .form .control-group label { color: grey; }
+.form .control-groups>.control-group { color: #fff; }
+.settings .settings-inner .settings-panel { color: #fff; }
+#rtc-debug-modal #users-section .selected-user .scroller { color: #fff; }
+#rtc-debug-modal #users-section .user-list li.selected { background: var(--dark-primary); }
 .form hr { border-bottom: 1px solid grey; }
 .form .Select.is-open .Select-control:hover { border-color: grey; }
 .Select-option { color: white !important; }
