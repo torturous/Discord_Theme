@@ -135,7 +135,7 @@
 
 /* NSFW */
 /* BOTH */
-.flex-justify-center {
+.theme-dark .chat > .content > .flex-justify-center {
   background-color: var(--dark-primary);
 }
 .theme-dark .ui-guild-nsfw .image, .theme-light .ui-guild-nsfw .image {
@@ -1709,7 +1709,9 @@
 /* DARK */
 .theme-dark .popout section { background-color: var(--dark-secondary); }
 /* LIGHT */
-
+/* BOTH */
+.ui-flex.flex-horizontal-reverse>.ui-flex, .ui-flex.flex-horizontal-reverse>.ui-flex-child,
+.ui-flex.flex-horizontal>.ui-flex, .ui-flex.flex-horizontal>.ui-flex-child { background: transparent; }
 /* END: Server Settings */
 
 /* Server Section */
