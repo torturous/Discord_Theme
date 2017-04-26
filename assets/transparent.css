@@ -24,8 +24,8 @@
   color: rgba(255, 255, 255, 0.8)!important;
 }
 
-.flex-justify-center {
-  background-color: rgba(0, 0, 0, 0);
+.theme-dark .chat > .content > .flex-justify-center {
+  background:transparent;
 }
 
 .theme-dark .chat .private-channel-call {
