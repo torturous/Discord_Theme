@@ -24,6 +24,10 @@
   color: rgba(255, 255, 255, 0.8)!important;
 }
 
+.flex-justify-center {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .theme-dark .chat .private-channel-call {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
