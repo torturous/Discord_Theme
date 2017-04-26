@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.07";
+  content: "Theme version: 1.0.4.12";
 }
 /* GLOBAL */
 :root {
@@ -133,6 +133,56 @@
 /* END: User Settings */
 
 
+/* Header */
+/* BOTH */
+.private-channel-recipients-invite,
+.messages-popout-wrap {
+  -webkit-animation: popout-content 400ms cubic-bezier(.3, .3, 0, 1);
+  animation: popout-content 400ms cubic-bezier(.3, .3, 0, 1)
+}
+
+.popout.popout-bottom-right.no-arrow.no-shadow {
+  margin-top: 27px!important;
+  margin-left: 10px!important;
+  z-index: 10!important;
+}
+
+@-webkit-keyframes popout-content {
+  from {
+    -webkit-transform: translate(0, -65px);
+    transform: translate(0, -65px);
+    opacity: 0;
+  }
+}
+
+@keyframes popout-content {
+  from {
+    -webkit-transform: translate(0, -65px);
+    transform: translate(0, -65px);
+    opacity: 0;
+  }
+}
+
+.header-toolbar button.popout-open span, .header-toolbar button.active {
+  opacity: 1;
+  z-index: 20;
+}
+
+.header-toolbar button.popout-open {
+  -webkit-transform: translate(0, 65px);
+  transform: translate(0, 65px);
+  transition: all 500ms cubic-bezier(.3, .3, 0, 1);
+  -webkit-transition: all 500ms cubic-bezier(.3, .3, 0, 1);
+}
+
+.header-toolbar button {
+  -webkit-transition: all 300ms cubic-bezier(.23, .23, 0, 1);
+  transition: all 300ms cubic-bezier(.23, .23, 0, 1);
+  display: block;
+}
+/* END: Header */
+
+
 /* Scroller */
 /* BOTH | This one can't be used on light and dark, must define both */
 .scroller-wrap .scroller::-webkit-scrollbar { width: 14px; }
@@ -206,8 +256,8 @@
 /* User Profile Modal */
 /* BOTH | This one can't be used on light and dark, must define both */
 .avatar-profile {
-    background-size: 128px 128px;
-    margin-top: -29px;
+  background-size: 128px 128px;
+  margin-top: -29px;
 }
 .avatar-profile .status {
   border-color: var(--dark-secondary);
@@ -219,15 +269,15 @@
   background-image: none;
 }
 #user-profile-modal .header .header-info {
-    margin-top: -30px;
+  margin-top: -30px;
 }
 #user-profile-modal .scroller {
   background: var(--dark-secondary);
   border-bottom: 0;
 }
 #user-profile-modal .tab-bar {
-    margin-left: -185px;
-    margin-top: 0px;
+  margin-left: -185px;
+  margin-top: 0px;
 }
 #user-profile-modal .tab-bar-container {
   background-color: var(--dark-primary);
@@ -1304,11 +1354,11 @@
 }
 
 .form .btn-default, .form .btn-default:hover {
-    background-color: var(--dark-secondary);
+  background-color: var(--dark-secondary);
 }
 
 .form .btn.red {
-    background-color: var(--dark-secondary);
+  background-color: var(--dark-secondary);
 }
 
 /* END: Form */
@@ -1412,16 +1462,22 @@
 .guild-channels .channel-text.selected { background: var(--dark-secondary); }
 .guild-channels .channel-text:hover { background: var(--dark-secondary); opacity: .75 }
 .popout-menu { width: 320px; box-shadow: none; }
-.popout-menu .popout-menu-item { padding: 10px 30px 10px 20px; }
+.popout-menu .popout-menu-item, .popout-menu .popout-menu-item:hover { transition: all 200ms ease-in-out; }
+.popout-menu .popout-menu-item { color: #fff; padding: 10px 30px 10px 20px; }
+.popout-menu .popout-menu-item:hover { transform: translateX(0.5em); background: transparent; }
 .guild-header header:hover { background-color: var(--dark-secondary); }
 .guild-header.popout-open header { background-color: var(--dark-secondary); }
 .guild-header header { height: 57px; box-shadow: none; }
+
+.popout-menu .popout-menu-icon[src^="/assets/9a93097ab591379729c68f15a17b26af.svg"] {
+  background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_build_white_24px.svg')!important;
+}
 /* DARK */
 .theme-dark .popout-menu .popout-menu-separator {
   display: none;
 }
 .theme-dark .popout-menu {
-  background: var(--dark-secondary);
+  background: var(--dark-primary);
   animation: server-settings 500ms ease-in-out;
   border-radius: 10px;
   border: 3px solid var(--dark-highlight);
@@ -1698,7 +1754,7 @@
 }
 
 .guilds-wrapper .guilds .guild.audio .guild-inner:after {
-	top: 30px;
+  top: 30px;
 }
 
 /* END: Server Section */
