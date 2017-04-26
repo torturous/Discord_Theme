@@ -24,7 +24,7 @@ Template for each object
 To install plugins to **autotheme.css**, you must use **@import**.
 More information can be found [Here](https://github.com/AlexFlipnote/Discord_Theme/blob/master/Plugins.md)
 <br>Example:<br>
-![Preview](https://i.alexflipnote.xyz/0302s2U.png)
+![Preview](https://i.alexflipnote.xyz/b8f707.png)
 
 ---
 
