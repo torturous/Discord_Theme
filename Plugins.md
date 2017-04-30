@@ -14,7 +14,7 @@ body {
 
 ### Changing colours
 You can actually change any colours of backgrounds and such by just implementing
-this into your autotheme.css, rgb(a), hex, anything. 
+this into your autotheme.css, rgb(a), hex, anything.
 You can also change the background image in NSFW channels. Enjoy!
 [Custom NSFW Preview](https://light-theme-hurts.my-ey.es/4bbd82.png)
 ```css
@@ -36,6 +36,12 @@ You can also change the background image in NSFW channels. Enjoy!
 [Click here for preview](https://i.alexflipnote.xyz/60b9cb.png)
 ```css
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/wideGuilds.css";
+```
+
+### Use Default Discord Dark Theme Colors and Notifications (Community made)
+[Click here for preview](https://i.alexflipnote.xyz/cf921f.png)
+```css
+@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/defDarkColors.css";
 ```
 
 ### Auto-hide Member list in Guilds
