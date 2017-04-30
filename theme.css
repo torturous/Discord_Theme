@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.30";
+  content: "Theme version: 1.0.4.32";
 }
 /* GLOBAL */
 :root {
@@ -251,7 +251,28 @@
 
 /* User Popout */
 /* BOTH */
-.user-popout { width: 450px; }
+@-webkit-keyframes user-popout-anim {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes user-popout-anim {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.user-popout { width: 450px; animation: user-popout-anim 350ms ease-in-out; }
 .user-popout .body { display: flex; padding-top: 14px; }
 .user-popout .avatar-wrapper { position: fixed; margin: 4px 0px 14px -150px; }
 .section.roles { max-width: 250px; width: 250px; }
@@ -881,8 +902,8 @@
   box-shadow: none;
 }
 /* DARK */
-.quickswitcher.dark { background-color: var(--dark-secondary); }
-.quickswitcher.dark .result.selected, .quickswitcher.dark .result .result-action { background-color: var(--dark-highlight); }
+.quickswitcher.dark { background-color: var(--dark-highlight); }
+.quickswitcher.dark .result.selected, .quickswitcher.dark .result .result-action { background-color: var(--dark-primary); }
 /* LIGHT | Empty to now, can be edited! */
 /* END: Quick Switcher */
 
