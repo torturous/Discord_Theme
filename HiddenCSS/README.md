@@ -1,4 +1,4 @@
-# CSS_Code
+# HiddenCSS
 Here you can find some of the CSS around Discord, which is hard to collect
 
 If you find anything that is missing here, please share the ideas and codes, remember that it needs to be full
