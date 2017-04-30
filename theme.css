@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.24";
+  content: "Theme version: 1.0.4.30";
 }
 /* GLOBAL */
 :root {
@@ -32,6 +32,32 @@
   color: #fff;
 }
 /* End GLOBAL */
+/* Loading/Connecting */
+.connecting { background: var(--dark-highlight); }
+
+.connecting video , .connecting video.ready { visibility: hidden; }
+.connecting .quote { visibility: hidden; }
+.connecting img, .connecting video { visibility: hidden; }
+.connecting .attribution { visibility: hidden; }
+
+.connecting .attribution, .connecting .connection-status, .connecting .quote {
+  margin-bottom: -122px;
+  color: #fff;
+  font-size: 40px;
+  text-transform: none;
+  text-align: center;
+  -webkit-animation: pulse 1.5s infinite;
+  animation: pulse 1.5s infinite;
+}
+
+@-webkit-keyframes pulse { 0% { -webkit-transform: scale(1); }
+  50% { -webkit-transform: scale(1.1); }
+  100% { -webkit-transform: scale(1); } }
+
+@keyframes pulse { 0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); } }
+/* END: Loading/Connecting */
 /* User Settings */
 /* BOTH */
 .ui-tab-bar.SIDE .ui-tab-bar-item:before {
