@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.19";
+  content: "Theme version: 1.0.4.20";
 }
 /* GLOBAL */
 :root {
@@ -973,26 +973,42 @@
 /* BOTH */
 .divider.divider-red + .divider { display: none; }
 .chat .jump-to-present-bar { left: inherit; }
-#app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup
-{
+@-webkit-keyframes blocked-appear {
+  from {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes blocked-appear {
+  from {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+#app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup {
   color: white;
 }
-.confirm-message-modal .form-inner .message-group.hide-overflow .comment .message-first .body .message-text .markup code.inline
-{
+.confirm-message-modal .form-inner .message-group.hide-overflow .comment .message-first .body .message-text .markup code.inline {
   background: var(--dark-highlight) !important;
 }
-#app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup > code
-{
+#app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup > code {
   background: var(--dark-highlight);
 }
-#app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup > pre
-{
+#app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup > pre {
   color: rgb(0, 0, 0);
   background: #1A1C1F;
   border: 2px solid #1A1C1F;
 }
-#app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup > pre > code.hljs
-{
+#app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup > pre > code.hljs {
   background: #1A1C1F;
   color: #839496;
 }
@@ -1003,6 +1019,31 @@
 /* DARK */
 .theme-dark .chat>.content, .theme-dark .friends-table, .theme-dark .messages-wrapper { background-color: var(--dark-secondary) !important; }
 .theme-dark .message-group .comment .markup { color: hsla(0,0%,100%,.7) !important; }
+
+.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn,
+.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn:hover {
+  transition: all 250ms ease;
+  border: 0;
+  box-shadow: transparent;
+}
+
+.theme-dark .messages-wrapper .messages .message-group-blocked.revealed > .message-group:not(.has-divider) {
+  animation: blocked-appear 500ms ease-in-out;
+}
+
+.theme-dark .messages-wrapper .messages .message-group-blocked.revealed {
+  background: var(--dark-primary);
+}
+
+.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn {
+  background: var(--dark-primary);
+  color: #ccc;
+}
+
+.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn:hover {
+  background: var(--dark-primary);
+  color: #ccc;
+}
 /* LIGHT */
 .chat .messages-wrapper { background-color: var(--light-secondary); }
 .message-group .comment .markup { color: #2e3136; }
