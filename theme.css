@@ -1824,7 +1824,10 @@
 .theme-dark .ui-color-picker-custom { background: var(--dark-primary); }
 /* LIGHT */
 /* BOTH */
-.ui-flex.flex-horizontal-reverse>.ui-flex, .ui-flex.flex-horizontal-reverse>.ui-flex-child,
+.ui-flex.flex-horizontal-reverse>.ui-flex-child:first-child,
+.ui-flex.flex-horizontal-reverse>.ui-flex-child:last-child {
+  background: transparent;
+}
 /* END: Server Settings */
 
 /* Server Section */
