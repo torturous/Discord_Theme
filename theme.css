@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.39";
+  content: "Theme version: 1.0.4.41";
 }
 /* GLOBAL */
 :root {
@@ -51,12 +51,12 @@
 }
 
 @-webkit-keyframes pulse { 0% { -webkit-transform: scale(1); }
-  50% { -webkit-transform: scale(1.1); }
-  100% { -webkit-transform: scale(1); } }
+50% { -webkit-transform: scale(1.1); }
+100% { -webkit-transform: scale(1); } }
 
 @keyframes pulse { 0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); } }
+50% { transform: scale(1.1); }
+100% { transform: scale(1); } }
 /* END: Loading/Connecting */
 /* User Settings */
 /* BOTH */
@@ -997,6 +997,13 @@
 .channel-textarea-autocomplete-inner:after {
   border: none;
 }
+.invite-button {
+  background: rgba(0, 0, 0, 0.2);
+  border: 0;
+}
+.invite-button-header {
+  color: #fff;
+}
 
 /* DARK */
 .theme-dark .channel-textarea-inner { background-color: transparent; }
@@ -1532,6 +1539,9 @@
 
 /* Ban and Kick */
 /* BOTH */
+.user-popout-banned-video {
+  display: none;
+}
 .alert.form.has-icon:before {
   background-image: url('/assets/1ac6fb17c60570343eec4e81fe1e4073.svg');
   border-radius: 0;
