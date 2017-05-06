@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.42";
+  content: "Theme version: 1.0.4.43";
 }
 /* GLOBAL */
 :root {
@@ -1620,6 +1620,20 @@
 .settings .settings-inner, .settings .settings-right { background: var(--dark-secondary) !important; }
 .roles-list-popout { background-color: var(--dark-primary) }
 .channel-notification-settings .content label { color: #fff; }
+.notification-settings-modal .settings-section,
+.form .control-groups+.control-groups {
+  background: var(--dark-highlight);
+  margin-top: 0;
+}
+
+.notification-settings-modal .notification-settings-modal-channel-settings-header,
+.notification-settings-modal .notification-settings-modal-channel-settings-list  {
+  background: var(--dark-primary);
+}
+.deprecated-settings-modal .settings-actions {
+  border-top: 0;
+  background-color: var(--dark-secondary);
+}
 .channel-mute-button { opacity: 0.7; }
 .channel-notification-settings { border-bottom: 0; }
 .channel-mute-button:hover { opacity: 1; }
