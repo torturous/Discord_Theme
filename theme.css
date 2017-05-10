@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.45";
+  content: "Theme version: 1.0.4.47";
 }
 /* GLOBAL */
 :root {
@@ -522,14 +522,27 @@
   border-bottom-color: var(--accent);
 }
 
+.emoji-picker .dimmer.visible {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.emoji-picker .dimmer {
+  border-radius: 0;
+}
+
+.diversity-selector .popout {
+  background: var(--dark-secondary);
+  border: 0;
+}
+
 .theme-dark .popout .emoji-picker .header .search-bar { background-color: var(--dark-highlight); }
 .theme-dark .popout .emoji-picker .header { border-bottom: 0px; background-color: var(--dark-highlight); }
 .theme-dark .popout .emoji-picker {
   background: var(--dark-primary);
 }
 
-.theme-dark .popout .emoji-picker .scroller,.theme-dark .popout .emoji-picker .sticky-header {
-  background: var(--dark-primary);
+.theme-dark .popout .emoji-picker .scroller, .theme-dark .popout .emoji-picker .sticky-header {
+  background: transparent;
 }
 
 .theme-dark .popout .emoji-picker .scroller .emoji-item.selected {
