@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.49";
+  content: "Theme version: 1.0.4.53";
 }
 /* GLOBAL */
 :root {
@@ -1509,8 +1509,28 @@
 
 /* END: Form */
 
+/* Webhook */
+/* BOTH */
+.theme-light .ui-form-title.h5, .theme-light .ui-select .Select-value-label { color: #fff; }
+.theme-light .ui-text-input .input, .theme-light .ui-text-input .input.editable:focus, .theme-light .ui-text-input .input.editable:hover {
+  color: #fff;
+}
+.ui-button .ui-button-contents > .file-input, .theme-light .ui-button.primary.outlined { color: #fff!important; }
+.theme-light .ui-input-button .input { color: #fff; }
+.ui-button.grey.ghost {
+  color: #fff;
+  background-color: var(--accent);
+}
+.ui-input-button .layout { background: var(--dark-secondary); }
+.theme-light .ui-form-text.style-description { color: rgba(255, 255, 255, 0.55); }
+.webkhook-modal-header.ui-form-title.h5 { background: var(--dark-highlight); }
+.webhook-modal-body { background: var(--dark-primary); }
+/* END: Webhook */
+
 /* Modal */
 /* BOTH */
+.modal .modal-inner > .flex-nowrap { background: transparent; }
+.ui-flex > .flex-nowrap { background: var(--dark-secondary); }
 .modal-content { background-color: transparent; }
 .modal-content .form-inner p { color: #fff; }
 /* END: Modal */
@@ -1571,6 +1591,9 @@
 }
 .form .form-inner:last-child { background-color: var(--dark-highlight); }
 .alert.form .form-inner h4 { color: #fff; }
+.form .form-inner {
+  background-color: var(--dark-primary);
+}
 .alert.form .form-inner .cancel {
   background-color: #e74c3c;
   border-color: transparent;
