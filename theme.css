@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.55";
+  content: "Theme version: 1.0.4.57";
 }
 /* GLOBAL */
 :root {
@@ -165,8 +165,13 @@
 
 /* NSFW */
 /* BOTH */
+.ui-flex > .flex-nowrap { background: var(--dark-secondary); }
+.ui-guild-nsfw > .flex-nowrap { background: transparent; }
 .theme-dark .chat > .content > .flex-justify-center {
   background-color: var(--dark-primary);
+}
+.theme-dark .chat > .content > .flex-justify-center > .ui-guild-nsfw {
+  background: transparent;
 }
 .theme-dark .ui-guild-nsfw .image, .theme-light .ui-guild-nsfw .image {
   background-image: var(--nsfw-image);
@@ -1530,7 +1535,6 @@
 /* Modal */
 /* BOTH */
 .modal .modal-inner > .flex-nowrap { background: transparent; }
-.ui-flex > .flex-nowrap { background: var(--dark-secondary); }
 .modal-content { background-color: transparent; }
 .modal-content .form-inner p { color: #fff; }
 /* END: Modal */
@@ -1658,6 +1662,7 @@
 /* END: Channel Section */
 
 /* Server Settings */
+.ui-audit-log .title-time-wrap { background: transparent; }
 .settings .settings-inner, .settings .settings-right { background: var(--dark-secondary) !important; }
 .roles-list-popout { background-color: var(--dark-primary) }
 .channel-notification-settings .content label { color: #fff; }
