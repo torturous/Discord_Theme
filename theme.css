@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.57";
+  content: "Theme version: 1.0.4.58";
 }
 /* GLOBAL */
 :root {
@@ -165,7 +165,6 @@
 
 /* NSFW */
 /* BOTH */
-.ui-flex > .flex-nowrap { background: var(--dark-secondary); }
 .ui-guild-nsfw > .flex-nowrap { background: transparent; }
 .theme-dark .chat > .content > .flex-justify-center {
   background-color: var(--dark-primary);
@@ -1914,6 +1913,10 @@ div[class="ui-tab-bar-item guild-role selected"] > .ui-flex > .flex-nowrap {
 /* DARK */
 .theme-dark .popout section { background-color: var(--dark-secondary); }
 .theme-dark .ui-color-picker-custom { background: var(--dark-primary); }
+.theme-dark .ui-search-bar { background-color: var(--dark-primary); }
+.theme-dark .elevation-border-low { background: var(--dark-highlight); }
+.theme-dark .ui-selectable-item + .ui-flex > .flex-nowrap { background: transparent; }
+.theme-dark .ui-selectable-item:hover { background: var(--dark-secondary); }
 /* LIGHT */
 /* BOTH */
 .ui-flex.flex-horizontal-reverse>.ui-flex-child:first-child,
