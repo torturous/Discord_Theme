@@ -49,7 +49,7 @@ Better Animations, with huge animation improvement.
 
 [Click here to preview animations](https://maxie-pad.is-pretty.sexy/84f776.gif)
 ```css
-@import "https://rawgit.com/Maxie01/Discord_Theme/master/assets/BA-D.css";
+@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/BA-D.css";
 ```
 
 ### Auto-hide Member list in Guilds
