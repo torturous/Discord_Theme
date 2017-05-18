@@ -1068,27 +1068,6 @@
 /* BOTH */
 .divider.divider-red + .divider { display: none; }
 .chat .jump-to-present-bar { left: inherit; }
-@-webkit-keyframes blocked-appear {
-  from {
-    transform: translateX(150px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes blocked-appear {
-  from {
-    transform: translateX(150px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
 #app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup {
   color: white;
 }
@@ -1120,10 +1099,6 @@
   transition: all 250ms ease;
   border: 0;
   box-shadow: transparent;
-}
-
-.theme-dark .messages-wrapper .messages .message-group-blocked.revealed > .message-group:not(.has-divider) {
-  animation: blocked-appear 500ms ease-in-out;
 }
 
 .theme-dark .messages-wrapper .messages .message-group-blocked.revealed {
