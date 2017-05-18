@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.58";
+  content: "Theme version: 1.0.4.59";
 }
 /* GLOBAL */
 :root {
@@ -162,6 +162,24 @@
 .theme-light .ui-tab-bar.SIDE .ui-tab-bar-header { color: #000000; }
 .theme-light .theme-light .ui-tab-bar-item:hover { background-color: var(--dark-secondary); color: var(--light-primary); }
 /* END: User Settings */
+
+/* Reaction */
+/* BOTH */
+.message-reactions-modal { background: transparent; }
+.message-reactions-modal .message-reactions-reactors .reactor .name,
+.message-reactions-modal .message-reactions-list-inner .reaction .count {
+  color: #fff;
+}
+.message-reactions-modal .message-reactions-reactors .reactor { box-shadow: none; }
+.message-reactions-modal .message-reactions-list .scroller,
+.message-reactions-modal .message-reactions-list-inner {
+  background-color: var(--dark-highlight);
+  border-radius: 0;
+}
+.message-reactions-modal .message-reactions-reactors {
+  background-color: var(--dark-primary);
+}
+/* END: Reaction */
 
 /* NSFW */
 /* BOTH */
@@ -1475,10 +1493,6 @@
   background: var(--dark-highlight);
   color: #fff;
   border-bottom: none;
-}
-.form .form-inner strong {
-  color: var(--accent);
-  font-weight: bold;
 }
 .form .form-actions {
   background: var(--dark-secondary);
