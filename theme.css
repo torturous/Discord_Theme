@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.63";
+  content: "Theme version: 1.0.4.64";
 }
 /* GLOBAL */
 :root {
@@ -999,6 +999,19 @@
 .channel-textarea-upload:hover {
   background-color: transparent;
   border: none;
+}
+.theme-dark .channel-textarea-upload, .theme-dark .channel-textarea-upload:hover {
+  transition: all 300ms ease;
+}
+.theme-dark .channel-textarea-upload {
+  background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_file_upload_white_24px.svg) 50% no-repeat;
+  opacity: 0.5;
+}
+
+.theme-dark .channel-textarea-upload:hover {
+  background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_file_upload_white_24px.svg) 50% no-repeat;
+  opacity: 1;
+  transform: translateY(-5px);
 }
 
 .channel-textarea-inner, .channel-textarea.has-results .channel-textarea-inner {
