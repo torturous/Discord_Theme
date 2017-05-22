@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.64";
+  content: "Theme version: 1.0.4.67";
 }
 /* GLOBAL */
 :root {
@@ -1381,6 +1381,9 @@
   border: none;
   border-radius: 0;
   background-color: var(--dark-secondary);
+}
+.theme-dark .search-results-wrap .search-result.expanded .search-result-message.hit {
+  background-color: var(--dark-highlight);
 }
 .theme-dark .search-results-wrap .search-header { background-color: var(--dark-highlight); }
 .theme-dark .search-results-wrap .scroller-wrap .scroller { background-color: var(--dark-primary); }

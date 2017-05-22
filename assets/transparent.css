@@ -20,6 +20,13 @@
   opacity: 1;
 }
 
+.theme-dark .friends-table .messages .divider:before,
+.theme-dark .friends-table .messages .divider span,
+.theme-dark .messages-wrapper .messages .divider:before,
+.theme-dark .messages-wrapper .messages .divider span {
+  background-color: transparent;
+}
+
 .channel-textarea-inner textarea, .chat .title-wrap .topic, .theme-dark .search-results-wrap .search-result .hit {
   color: rgba(255, 255, 255, 0.8)!important;
 }
