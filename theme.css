@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.67";
+  content: "Theme version: 1.0.4.68";
 }
 /* GLOBAL */
 :root {
@@ -714,7 +714,7 @@
 .small-popout-box {
   border-radius: 0;
   color: #fff;
-  background: var(--dark-primary);
+  background: var(--dark-highlight);
   border: 0;
 }
 
@@ -1675,6 +1675,10 @@
 .form .control-groups+.control-groups {
   background: var(--dark-highlight);
   margin-top: 0;
+}
+
+.delete-server-modal > .form-inner {
+  color: #fff;
 }
 
 .ui-standard-sidebar-view .custom-scroller>div {
