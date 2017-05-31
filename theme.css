@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.68";
+  content: "Theme version: 1.0.4.72";
 }
 /* GLOBAL */
 :root {
@@ -75,9 +75,9 @@
   background: rgba(0, 0, 0, 0);
 }
 
-.ui-standard-sidebar-view .sidebar-region .sidebar {
+/*.ui-standard-sidebar-view .sidebar-region .sidebar {
   width: 260px;
-}
+}*/
 .ui-text-input .input:focus {
   border-color: var(--accent) !important;
 }
@@ -140,6 +140,19 @@
 .ui-tab-bar.SIDE .ui-tab-bar-item.selected {
   color: #fff !important;
   background-color: var(--accent);
+}
+
+.ui-standard-sidebar-view .content-column, .ui-standard-sidebar-view .custom-column {
+	max-width: 100%;
+}
+
+.ui-sidebar-scrollable+.ui-content {
+	max-width: 100%;
+}
+
+.ui-standard-sidebar-view .notice-region {
+	top:0;
+	padding:20px 20px 20px;
 }
 /* DARK */
 /* Emotes: https://material.io/icons/ */
@@ -1145,6 +1158,10 @@
   background: var(--dark-primary);
   color: #ccc;
 }
+
+.theme-dark .friends-table .messages .divider:before, .theme-dark .friends-table .messages .divider span, .theme-dark .messages-wrapper .messages .divider:before, .theme-dark .messages-wrapper .messages .divider span {
+    background-color: #303030;
+}
 /* LIGHT */
 .chat .messages-wrapper { background-color: var(--light-secondary); }
 .message-group .comment .markup { color: #2e3136; }
@@ -2121,3 +2138,4 @@ div[class="ui-tab-bar-item guild-role selected"] > .ui-flex > .flex-nowrap {
 }
 
 /* END: Upload Drop Area */
+
