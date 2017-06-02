@@ -1660,6 +1660,13 @@
 .content-2mSKOj:hover {
   background: var(--dark-secondary);
 }
+.unread-23Kvxk {
+  background-color: var(--accent);
+  border-radius: 0;
+  width: 8px;
+  margin-left: 3px;
+  border-radius: 100%;
+}
 .guild-channels { background-color: var(--dark-primary); }
 .guild-header header { background-color: var(--dark-highlight); }
 .guild-channels .channel-text.selected:before { border-left: 2px solid var(--accent); }
