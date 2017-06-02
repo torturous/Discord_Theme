@@ -1648,6 +1648,18 @@
     opacity: 1;
   }
 }
+.container-RYiLUQ {
+  margin-top: -1px;
+  background-color: var(--dark-primary);
+}
+
+.content-2mSKOj, .content-2mSKOj:hover {
+  transition: all 250ms ease;
+}
+
+.content-2mSKOj:hover {
+  background: var(--dark-secondary);
+}
 .guild-channels { background-color: var(--dark-primary); }
 .guild-header header { background-color: var(--dark-highlight); }
 .guild-channels .channel-text.selected:before { border-left: 2px solid var(--accent); }
