@@ -20,6 +20,12 @@
   opacity: 1;
 }
 
+.container-RYiLUQ {
+  position: relative;
+  background-color: transparent;
+  min-height: 0;
+}
+
 .theme-dark .friends-table .messages .divider:before,
 .theme-dark .friends-table .messages .divider span,
 .theme-dark .messages-wrapper .messages .divider:before,
