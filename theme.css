@@ -1660,12 +1660,52 @@
 .content-2mSKOj:hover {
   background: var(--dark-secondary);
 }
-.unread-23Kvxk {
+.contentSelectedText-3j5CXt {
+  background-color: var(--dark-secondary);
+  border-radius: 0px 5px 5px 0px;
+}
+
+@-webkit-keyframes current-channel {
+  from { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes current-channel {
+  from { opacity: 0; }
+  100% { opacity: 1; }
+}
+.contentSelectedText-3j5CXt:before {
+  animation: current-channel 300ms ease-in-out;
+}
+
+.contentSelectedText-3j5CXt:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  content: " ";
+  border-left: 8px solid var(--accent);
+  opacity: 1!important;
+}
+
+.container-37-TX2 {
+  color: #ccc;
+}
+
+.wrapper-2xO9RX {
   background-color: var(--accent);
-  border-radius: 0;
-  width: 8px;
-  margin-left: 3px;
-  border-radius: 100%;
+}
+
+.unread-23Kvxk {
+  content: " ";
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background: #fff;
+  opacity: 1;
+  position: absolute;
+  top: 15px;
+  left: -10px;
 }
 .guild-channels { background-color: var(--dark-primary); }
 .guild-header header { background-color: var(--dark-highlight); }
