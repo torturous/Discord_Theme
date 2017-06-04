@@ -37,6 +37,11 @@
   color: rgba(255, 255, 255, 0.8)!important;
 }
 
+/* NEW CHANNELS FIX  [Thanks Maxie]*/
+div[class*="container-"], div[class*="content-"]:not([class="content-region"]) {
+    background-color: rgba(0,0,0,0) !important;
+}
+
 .theme-dark .chat > .content > .flex-justify-center {
   background:transparent;
 }
