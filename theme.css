@@ -32,6 +32,12 @@
   color: #fff;
 }
 /* End GLOBAL */
+
+/* TEMP. FIX, thanks Discord :( */
+.channels-wrap div[class*="container-"] + div[class*="container-"], .private-channels + div[class*="container-"] {
+  background-color: var(--dark-highlight);
+}
+
 /* Loading/Connecting */
 .connecting { background: var(--dark-highlight); }
 
@@ -1448,6 +1454,8 @@
 .private-channels { background-color: var(--dark-primary); }
 .private-channels .channel:hover:before { border-left: 2px inset var(--accent); }
 .private-channels .channel.selected .icon-friends { background-color: var(--accent); }
+.theme-dark .private-channel-call, .theme-dark .ui-video { background-color: var(--dark-highlight); }
+
 
 #friends .friends-table {
   margin-top: 0px;
