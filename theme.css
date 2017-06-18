@@ -1885,6 +1885,8 @@ div[class="ui-tab-bar-item guild-role selected"] > .ui-flex > .flex-nowrap {
 #instant-invite-modal .blurb { color: #ccc; }
 #instant-invite-modal .form-actions { background-color: var(--dark-secondary); }
 .instant-invite-modal { background: transparent; }
+#instant-invite-modal .form-header { background-color: var(--dark-highlight); }
+.form.deprecated .form-inner { background-color: var(--dark-primary); }
 .instant-invites .instant-invites-list .instant-invite .channel { color: #fff; }
 .instant-invites .instant-invites-list .instant-invite .member { color: #fff; }
 .instant-invites .instant-invites-list .instant-invite+.instant-invite { border-top: none; }
