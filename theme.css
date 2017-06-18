@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.72";
+  content: "Theme version: 1.0.4.78";
 }
 /* GLOBAL */
 :root {
@@ -1453,7 +1453,7 @@
 .private-channels .channel:hover { background: var(--dark-secondary); opacity: .75; }
 .private-channels { background-color: var(--dark-primary); }
 .private-channels .channel:hover:before { border-left: 2px inset var(--accent); }
-.private-channels .channel.selected .icon-friends { background-color: var(--accent); }
+.private-channels .channel.selected .icon-friends { background-color: transparent; }
 .theme-dark .private-channel-call, .theme-dark .ui-video { background-color: var(--dark-highlight); }
 
 
@@ -2201,3 +2201,16 @@ div[class="ui-tab-bar-item guild-role selected"] > .ui-flex > .flex-nowrap {
 }
 
 /* END: Upload Drop Area */
+
+/* Random CSS Meme */
+.create-guild-container.deprecated { background-color: var(--dark-highlight); }
+.create-guild-container.deprecated .form.deprecated .form-inner { background-color: transparent; }
+.create-guild-container.deprecated .action { background-color: var(--dark-primary); }
+div[class*="modal-"] div[class*="header-"] { background-color: var(--dark-highlight); }
+.theme-dark div[class*="footer-"] { background-color: var(--dark-secondary); }
+video[autoplay] { display: none; }
+div[class*="modal-"] div[class*="header-"] + div[class*="scrollerWrap-"] {
+  background-color: var(--dark-primary);
+  border-radius: 0;
+  padding-top: 5px;
+}
