@@ -1908,6 +1908,7 @@ div[class="ui-tab-bar-item guild-role selected"] > .ui-flex > .flex-nowrap {
 }
 
 .guild-settings-modal-emoji .emoji-row { border-bottom: none; }
+.theme-dark .ui-video { background: transparent!important; }
 
 .clipboard-input-inner {
   border: none;
