@@ -205,12 +205,8 @@
 .theme-dark .chat > .content > .flex-justify-center > .ui-guild-nsfw {
   background: transparent;
 }
-.theme-dark .ui-guild-nsfw .image, .theme-light .ui-guild-nsfw .image {
-  background-image: var(--nsfw-image);
-}
+.theme-dark div[class*="image-"] { background-image: var(--nsfw-image); }
 
-.theme-dark .ui-guild-nsfw .title, .theme-light .ui-guild-nsfw .title { font-size: 0; }
-.theme-dark .ui-guild-nsfw .title::before, .theme-light .ui-guild-nsfw .title::before { content: "Oh nose... NSFW!"; font-size: 30px; }
 /* END: NSFW */
 
 /* Header */
