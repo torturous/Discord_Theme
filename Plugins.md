@@ -12,6 +12,12 @@ body {
 }
 ```
 
+### DiscordInjections Support
+[Click here to know more](https://github.com/DiscordInjections/Plugins)
+```css
+@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/DiscordInjections.css";
+```
+
 ### Changing colours
 You can actually change any colours of backgrounds and such by just implementing
 this into your autotheme.css, rgb(a), hex, anything.

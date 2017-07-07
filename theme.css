@@ -2232,11 +2232,3 @@ div[class*="modal-"] div[class*="header-"] + div[class*="scrollerWrap-"] {
   color: #fff;
   font-weight: bold;
 }
-
-/* DiscordInjections Plugin Support / Ask me if you want your plugin supported too! */
-
-/* Snazzah - DiscordBots */
-.with-background .header-info { background-color: rgba(0,0,0,0.4)!important; }
-.with-background .header-info:before { background-color: rgba(0,0,0,0.4); }
-.db-prefix { color: rgba(255,255,255,0.8)!important; }
-.user-popout .header .member-roles { width: 100%; padding-left: 272px; }
