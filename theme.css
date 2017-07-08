@@ -38,6 +38,11 @@
   background-color: var(--dark-highlight);
 }
 
+.channels-wrap > div[class*="container-"] {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 0;
+}
+
 /* Loading/Connecting */
 .connecting { background: var(--dark-highlight); }
 
@@ -1093,11 +1098,12 @@
 .channel-text-area-default { margin: 0 0 0; }
 .theme-dark .channel-text-area-default div[class*="inner-"] {
   border-radius: 0;
-  padding-top: 4px;
+  padding-top: 5px;
   padding-bottom: 4px;
   background-color: var(--dark-primary);
   border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
+
 
 .theme-dark .channel-text-area-default div[class*="autocomplete-"] { background: var(--dark-primary); }
 
