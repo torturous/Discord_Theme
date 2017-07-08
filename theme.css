@@ -1090,6 +1090,17 @@
 .theme-dark .invite-button { background-color: rgba(0, 0, 0, 0.2); border-color: rgba(0, 0, 0, 0); }
 .theme-dark .message-group .embed { background-color: rgba(0, 0, 0, 0.2); border-color: rgba(0, 0, 0, 0); }
 
+.channel-text-area-default { margin: 0 0 0; }
+.theme-dark .channel-text-area-default div[class*="inner-"] {
+  border-radius: 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: var(--dark-secondary);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.theme-dark .channel-text-area-default div[class*="autocomplete-"] { background: var(--dark-primary); }
+
 /* LIGHT */
 .chat form { background-color: var(--light-primary); box-shadow: none; }
 .chat form .typing { background-color: rgba(236, 240, 241, .9); }
