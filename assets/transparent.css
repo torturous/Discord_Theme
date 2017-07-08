@@ -86,6 +86,10 @@ div[class*="container-"], div[class*="content-"]:not(.content-region) {
   background: rgba(225, 225, 225, 0.2) !important;
 }
 
+.theme-dark .channel-text-area-default div[class*="inner-"] { background-color: transparent; }
+.theme-dark .channel-text-area-default div[class*="autocomplete-"] { background: rgba(0, 0, 0, 0.75); }
+.theme-dark .search-results-wrap .scroller-wrap .scroller { background-color: transparent; }
+
 /* Had to rework for the new styles */
 .theme-dark .chat form, .account{
   background-color: rgba(0,0,0,0.0);
