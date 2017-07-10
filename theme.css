@@ -1049,6 +1049,7 @@
   bottom: 100%;
   left: 10px;
   width: auto;
+  position: absolute;
 }
 
 .channel-textarea-autocomplete-inner {
