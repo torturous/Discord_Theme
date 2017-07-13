@@ -11,3 +11,9 @@
 .theme-dark .quote-msg{background-color:var(--dark-primary);border-top:1px solid rgba(255,255,255,0.25);}
 .theme-dark .quote-msg+.innerEnabled-gLHeOL{border-top:1px solid rgba(255,255,255,0.1)!important;}
 .theme-light .quote-msg{background-color:var(--light-primary);}
+
+/* Snazzah - DiscordCardsDashboard */
+.theme-dark .dc-user-options,.theme-dark .dc-inv{background:var(--dark-primary);}
+.dc-user-options,.dc-inv{-webkit-box-shadow:inset 0 1px 3px rgba(0,0,0,.16);box-shadow:inset 0 1px 3px rgba(0,0,0,.16);}
+.theme-dark .dc-flex .message-group-blocked-btn{background:var(--dark-primary);color:#ccc;transition:all 250ms ease;border:0;box-shadow:transparent;}
+.theme-dark .dc-flex .message-group-blocked:hover{-webkit-box-shadow:0 1px 3px rgba(0,0,0,.16);box-shadow:0 1px 3px rgba(0,0,0,.16);}
