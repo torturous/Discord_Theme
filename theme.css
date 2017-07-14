@@ -1106,10 +1106,14 @@
   border-radius: 0;
   padding-top: 5px;
   padding-bottom: 4px;
-  background-color: var(--dark-primary);
+  background-color: var(--dark-secondary);
   border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
+.emoji, .emoji.jumboable{
+  border-radius: 4px;
+  filter: drop-shadow(5px 5px 0px rgba(0,0,0,0.3));
+}
 
 .theme-dark .channel-text-area-default div[class*="autocomplete-"] { background: var(--dark-primary); }
 
