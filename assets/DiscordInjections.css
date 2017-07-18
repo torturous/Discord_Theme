@@ -17,3 +17,6 @@
 .dc-user-options,.dc-inv{-webkit-box-shadow:inset 0 1px 3px rgba(0,0,0,.16);box-shadow:inset 0 1px 3px rgba(0,0,0,.16);}
 .theme-dark .dc-flex .message-group-blocked-btn{background:var(--dark-primary);color:#ccc;transition:all 250ms ease;border:0;box-shadow:transparent;}
 .theme-dark .dc-flex .message-group-blocked:hover{-webkit-box-shadow:0 1px 3px rgba(0,0,0,.16);box-shadow:0 1px 3px rgba(0,0,0,.16);}
+
+/* Snazzah - DiscodInjections CommandHandler */
+.theme-dark .channel-text-area-default .di-autocomplete-commandinfo {background:transparent!important;}
