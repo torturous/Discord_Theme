@@ -37,17 +37,12 @@
   color: rgba(255, 255, 255, 0.8)!important;
 }
 
-/* NEW CHANNELS FIX  [Thanks Maxie and Charles]*/
-div[class*="container-"], div[class*="content-"]:not(.content-region) {
-    background-color: rgba(0,0,0,0) !important;
-}
-
-.theme-dark .chat > .content > .flex-justify-center {
-  background:transparent;
-}
-
-.ui-flex > .flex-nowrap {
-  background: transparent;
+div[class*="container-"], div[class*="content-"]:not(.content-region),
+.theme-dark .chat > .content > .flex-justify-center, .ui-flex > .flex-nowrap,
+#rtc-connection .btn, #rtc-connection .btn-group, #rtc-connection .btn-disconnect {
+  background: transparent!important;
+  border: none;
+  box-shadow: none;
 }
 
 .theme-dark .chat .private-channel-call {
@@ -57,12 +52,6 @@ div[class*="container-"], div[class*="content-"]:not(.content-region) {
 #rtc-connection {
   background: rgba(0, 0, 0, 0.3);
   border-top: none;
-}
-
-#rtc-connection .btn, #rtc-connection .btn-group, #rtc-connection .btn-disconnect {
-  background: transparent;
-  border: none;
-  box-shadow: none;
 }
 
 .message-group-blocked {
