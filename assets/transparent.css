@@ -26,6 +26,11 @@
   min-height: 0;
 }
 
+div[class*="scrollerWrap-"],
+div[class*="container-"] div[class*="scrollerWrap-"] div[class*="scroller"] {
+  background: transparent !important;
+}
+
 .theme-dark .friends-table .messages .divider:before,
 .theme-dark .friends-table .messages .divider span,
 .theme-dark .messages-wrapper .messages .divider:before,
