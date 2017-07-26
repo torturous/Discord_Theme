@@ -1434,6 +1434,9 @@ div[class*="scrollerWrap-"] {
 .theme-dark .search-results-wrap .channel-separator .channel-name {
   margin-left: 15px;
 }
+div[class*="container-"] div[class*="scrollerWrap-"] div[class*="scroller"] {
+  background: var(--dark-primary);
+}
 .theme-dark .search-results-wrap .search-result.expanded .search-result-message.hit {
   background-color: var(--dark-highlight);
 }
