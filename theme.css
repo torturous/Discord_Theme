@@ -40,6 +40,7 @@
 
 .channels-wrap > div[class*="container-"] {
   border-top: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: var(--dark-primary);
   border-bottom: 0;
 }
 
