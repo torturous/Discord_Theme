@@ -20,3 +20,6 @@
 
 /* Snazzah - DiscodInjections CommandHandler */
 .theme-dark .channel-text-area-default .di-autocomplete-commandinfo {background:transparent!important;}
+
+/* Snazzah - BetterFormattingRedux */
+.bf-toolbar:before{background:var(--dark-highlight)!important;}
