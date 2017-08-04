@@ -23,3 +23,30 @@
 
 /* Snazzah - BetterFormattingRedux */
 .bf-toolbar:before{background:var(--dark-highlight)!important;}
+
+/* Snazzah - LineStickers */
+.theme-dark #bda-qem-line-container, .theme-dark #bda-qem-line-container .preview-container .preview-wrapper {
+    background-color: var(--dark-primary)!important;
+    border-color: var(--dark-highlight)!important;
+}
+.theme-dark #bda-qem-line-container .emote-container:hover {
+    background-color: var(--dark-secondary)!important;
+    border-color: var(--dark-secondary)!important;
+}
+.theme-dark #bda-qem-line-container .scroller::-webkit-scrollbar,
+.theme-dark #bda-qem-line-container .scroller::-webkit-scrollbar-track,
+.theme-dark #bda-qem-line-container .scroller::-webkit-scrollbar-track-piece {
+    background-color: var(--dark-primary) !important;
+    border-color: var(--dark-primary) !important; 
+}
+.theme-dark #bda-qem-line-container .scroller::-webkit-scrollbar-thumb {
+    border-color: var(--dark-highlight) !important;
+    background-color: var(--dark-highlight) !important;
+}
+.theme-dark #bda-qem-line-container .add-pack {
+    opacity: 0.2 !important;
+    filter: invert(1);
+}
+.theme-dark #bda-qem-line-container .item:hover .add-pack {
+    opacity: 0.5 !important;
+}
