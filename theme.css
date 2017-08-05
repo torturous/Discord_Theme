@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.88";
+  content: "Theme version: 1.0.4.92";
 }
 /* GLOBAL */
 :root {
@@ -1102,6 +1102,11 @@
 .theme-dark .invite-button { background-color: rgba(0, 0, 0, 0.2); border-color: rgba(0, 0, 0, 0); }
 .theme-dark .message-group .embed { background-color: rgba(0, 0, 0, 0.2); border-color: rgba(0, 0, 0, 0); }
 
+.upload-modal div[class*="autocomplete-"] {
+  background: var(--dark-primary);
+  color: #fff;
+}
+
 .channel-text-area-default { margin: 0 0 0; }
 .theme-dark .channel-text-area-default div[class*="inner-"] {
   border-radius: 0;
@@ -1358,6 +1363,14 @@
   border-radius: 0;
   border-bottom: 2px solid #696969;
   background: transparent;
+}
+
+.need-help-modal.deprecated .header { background-color: var(--dark-highlight); }
+.need-help-modal.deprecated .footer { background-color: var(--dark-secondary); border-top: 0; }
+.need-help-modal.deprecated .header input[type=text] {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .need-help-modal .header input[type=text]:focus {
@@ -1812,6 +1825,19 @@ div[class="ui-tab-bar-item guild-role selected"] > .ui-flex > .flex-nowrap {
   background: transparent;
 }
 
+div[class*="side-"] div[class*="item-"], div[class*="side-"] div[class*="item-"]:hover { transition: all 200ms ease; }
+div[class*="side-"] div[class*="item-"]:hover { transform: translateX(0.4em); }
+.ui-standard-sidebar-view div[class*="itemDefaultSelected-"] {
+  background: #2ecc71;
+  transform: translateX(0.4em);
+}
+
+.theme-dark div[class*="cardPrimaryEditable-"] {
+  background: var(--dark-highlight);
+  border-radius: 5px;
+  transition: all 350ms ease;
+}
+
 .notification-settings-modal .notification-settings-modal-channel-settings-header,
 .notification-settings-modal .notification-settings-modal-channel-settings-list  {
   background: var(--dark-primary);
@@ -2256,6 +2282,7 @@ div[class*="modal-"] div[class*="header-"] + div[class*="scrollerWrap-"] {
 }
 
 /* Selfish part xD */
+/*
 #user-profile-modal .avatar-wrapper div[style*="background-image: url(\"https://cdn.discordapp.com/avatars/86477779717066752"] .status {
   position: absolute;
   z-index: 10000;
@@ -2273,3 +2300,4 @@ div[class*="modal-"] div[class*="header-"] + div[class*="scrollerWrap-"] {
   color: #fff;
   font-weight: bold;
 }
+*/
