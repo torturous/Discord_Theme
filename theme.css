@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.92";
+  content: "Theme version: 1.0.4.94";
 }
 /* GLOBAL */
 :root {
@@ -266,6 +266,19 @@
   -webkit-transition: all 300ms cubic-bezier(.23, .23, 0, 1);
   transition: all 300ms cubic-bezier(.23, .23, 0, 1);
   display: block;
+}
+
+div[class*="modal-"] h4[class*="defaultColor-"] {
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: none;
+  text-align: center;
+}
+
+div[class*="modal-"] div[class*="scroller-"] > div[class*="primary-"] {
+  color: #fff;
+  padding-top: 5px;
+  font-size: 14px;
 }
 /* END: Header */
 
@@ -2276,7 +2289,7 @@ div[class*="modal-"] div[class*="header-"] { background-color: var(--dark-highli
 .theme-dark div[class*="footer-"] { background-color: var(--dark-secondary); }
 video[autoplay] { display: none; }
 div[class*="modal-"] div[class*="header-"] + div[class*="scrollerWrap-"] {
-  background-color: var(--dark-primary);
+  background-color: var(--dark-primary)!important;
   border-radius: 0;
   padding-top: 5px;
 }
