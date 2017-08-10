@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.98";
+  content: "Theme version: 1.0.4.99";
 }
 /* GLOBAL */
 :root {
@@ -374,7 +374,7 @@ div[class*="modal-"] div[class*="scroller-"] > div[class*="primary-"] {
 
 /* Canary shit */
 div[class*="userPopout-"] { animation: user-popout-anim 350ms ease-in-out; }
-div[class*="userPopout-"] div[class*="body-"] { border-bottom: 0; }
+div[class*="userPopout-"] div[class*="body-"] { border-bottom: 0; background: var(--dark-primary); }
 div[class*="userPopout-"] div[class*="headerNormal-"] { background: var(--dark-highlight); }
 div[class*="userPopout-"] div[class*="avatarWrapperNormal-"] div[class*="avatarNormal-"] { border: 0; background-color: rgba(0, 0, 0, 0.01); }
 div[class*="avatarStatusNormal-"] { border: 0; }
