@@ -1,7 +1,7 @@
 .theme-dark .user-settings-account:after,
 .theme-light .user-settings-account:after {
   color: var(--accent); font-weight: bold;
-  content: "Theme version: 1.0.4.94";
+  content: "Theme version: 1.0.4.98";
 }
 /* GLOBAL */
 :root {
@@ -364,6 +364,28 @@ div[class*="modal-"] div[class*="scroller-"] > div[class*="primary-"] {
 .note textarea:focus { background: var(--dark-highlight); }
 .user-popout .body { background: var(--dark-primary); }
 .user-popout .footer { background: var(--dark-secondary); border-top: none; }
+.quick-message, .quick-message.isBlocked {
+  background: transparent;
+  border: none;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  border-radius: 0;
+}
+
+/* Canary shit */
+div[class*="userPopout-"] { animation: user-popout-anim 350ms ease-in-out; }
+div[class*="userPopout-"] div[class*="body-"] { border-bottom: 0; }
+div[class*="userPopout-"] div[class*="headerNormal-"] { background: var(--dark-highlight); }
+div[class*="userPopout-"] div[class*="avatarWrapperNormal-"] div[class*="avatarNormal-"] { border: 0; background-color: rgba(0, 0, 0, 0.01); }
+div[class*="avatarStatusNormal-"] { border: 0; }
+div[class*="userPopout-"] div[class*="avatarWrapperNormal-"] div[class*="avatarHint-"] {
+  margin: 0;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: none;
+}
+.note textarea:focus { background: var(--dark-highlight); }
+div[class*="userPopout-"] .body { background: var(--dark-primary); }
+div[class*="userPopout-"] .footer { background: var(--dark-secondary); border-top: none; }
 .quick-message, .quick-message.isBlocked {
   background: transparent;
   border: none;
