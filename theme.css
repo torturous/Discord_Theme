@@ -402,8 +402,9 @@ div[class*="userPopout-"] .footer { background: var(--dark-secondary); border-to
   background-size: 128px 128px;
   margin-top: -29px;
 }
-.avatar-profile .status {
-  border-color: var(--dark-secondary);
+.avatar-profile .status, #user-profile-modal .guilds .guild .status, .channel-members .member .status, .container-iksrDt .status, .private-channels .status {
+    border-color: transparent!important;
+    transform: scale(1.3);
 }
 #user-profile-modal { border-radius: 0; }
 #user-profile-modal .header {
@@ -870,7 +871,7 @@ div[class*="userPopout-"] .footer { background: var(--dark-secondary); border-to
 
 .create-guild-container .form-actions .btn-default:hover {
   transition: all 500ms ease;
-  box-shadow: inset 6.5em 0 0 0 #e74c3c;
+  box-shadow: inset 8.5em 0 0 0 #e74c3c;
 }
 
 @-webkit-keyframes server-create-enter {
@@ -1010,6 +1011,7 @@ div[class*="userPopout-"] .footer { background: var(--dark-secondary); border-to
 .account .btn:after { background-size: 20px 20px; }
 #rtc-connection .btn-disconnect:after { background-image: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_call_end_white_24px.svg"); }
 #rtc-connection .btn-info:after { background-image: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_info_white_24px.svg"); }
+.theme-dark #rtc-connection-popout hr { border-color: var(--dark-primary); }
 
 .account .btn-mute, .account .btn-deafen { opacity: 0.25; }
 .account .btn-settings { opacity: 1; }
@@ -1263,17 +1265,19 @@ div[class*="userPopout-"] .footer { background: var(--dark-secondary); border-to
 /* Image Modal */
 /* BOTH */
 /* Contributed by Snazzah (https://github.com/SnazzyPine25 , Discord Snazzah#0371) */
-.modal .modal-inner .modal-image a {
+.modal-image a {
   background: var(--dark-highlight);
   padding-left: 10px;
+  width: calc(100% - 20px);
   border-top: 2px solid rgba(0,0,0,0.2);
 }
 
-.modal .modal-inner .modal-image a:hover {
+.modal-image a:hover {
   background: var(--dark-highlight);
   color: #2196F3;
   opacity: 1;
   padding-left: 20px;
+  width: calc(100% - 30px);
 }
 /* END: Image Modal */
 
@@ -1833,9 +1837,19 @@ div[class*="container-"] div[class*="scrollerWrap-"] div[class*="scroller"] {
 
 /* Server Settings */
 .ui-audit-log .title-time-wrap { background: transparent; }
+.dark-elevation-border-high, .theme-dark .elevation-border-high { background-color: var(--dark-highlight); }
+.theme-dark .scrollerThemed-19vinI.themeGhostHairline-2H8SiW .scroller-fzNley::-webkit-scrollbar-thumb { background-color: var(--dark-primary); }
+.theme-dark .scrollerThemed-19vinI.themeGhostHairline-2H8SiW .scroller-fzNley::-webkit-scrollbar-track { background-color: var(--dark-secondary); }
 .settings .settings-inner, .settings .settings-right { background: var(--dark-secondary) !important; }
 .roles-list-popout { background-color: var(--dark-primary) }
 .channel-notification-settings .content label { color: #fff; }
+.theme-dark .ui-region-selector {
+    background-color: transparent;
+    border-color: rgba(0,0,0,.3);
+}
+.theme-dark .ui-region-selector .layout {
+    background-color: rgba(0,0,0,.1);
+}
 .notification-settings-modal .settings-section,
 .form .control-groups+.control-groups {
   background: var(--dark-highlight);
