@@ -848,6 +848,31 @@ div[class*="userPopout-"] .footer { background: var(--dark-secondary); border-to
   transition: all 0ms;
   background: rgba(225, 225, 225, 0.1)!important;
 }
+
+.context-menu .item-subMenu:after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    z-index: 1001;
+    opacity: 0.5;
+    background-size: contain;
+    transform: translateY(-4px);
+}
+
+.context-menu .item-subMenu:hover:after {
+    opacity: 0.75;
+}
+
+.theme-dark .context-menu .item-subMenu:after, .context-menu.theme-dark .item-subMenu:after {
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_arrow_right_white_18px.svg);
+}
+
+.theme-light .context-menu .item-subMenu:after, .context-menu.theme-light .item-subMenu:after {
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_arrow_right_white_18px.svg);
+}
 /* END: Right-click Popout */
 
 
