@@ -14,7 +14,7 @@ to change stuff, download the **theme.css**, however if you wish for a theme tha
 
 **How do I use plugins?**<br>Read the [Documentation](https://github.com/AlexFlipnote/Discord_Theme/blob/master/Documentation.md), then get some plugins [here](https://github.com/AlexFlipnote/Discord_Theme/blob/master/Plugins.md)
 
-**How do I use the theme?**<br>[BeautifulDiscord](https://github.com/beautiful-discord-community/resources/wiki/Installing-BeautifulDiscord) should be useful to use the skin
+**How do I use the theme?**<br>[BeautifulDiscord](https://github.com/DTinker/discord-resources/wiki/Installing-Modifications) should be useful to use the skin
 
 **Does it support BetterDiscord?**<br>Yes, however I do highly recommended to use **BeautifulDiscord**<br>
 ( You can find BetterDiscord version [here](https://github.com/AlexFlipnote/Discord_Theme/blob/master/assets/BetterDiscord.theme.css) )
