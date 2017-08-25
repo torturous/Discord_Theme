@@ -1044,6 +1044,14 @@ div[class*="userPopout-"] .footer { background: var(--dark-secondary); border-to
 /* DARK */
 .quickswitcher.dark { background-color: var(--dark-highlight); }
 .quickswitcher.dark .result.selected, .quickswitcher.dark .result .result-action { background-color: var(--dark-primary); }
+
+.theme-dark div[class*="quickswitcher-"] { background: var(--dark-primary); }
+div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] { background: var(--dark-primary); }
+.theme-dark div[class*="quickswitcher-"] div[class*="resultFocused-"] { background: var(--dark-highlight); }
+.theme-dark div[class*="quickswitcher-"] input[class*="input-"] {
+  box-shadow: none;
+  background: var(--dark-secondary);
+}
 /* LIGHT | Empty to now, can be edited! */
 /* END: Quick Switcher */
 
