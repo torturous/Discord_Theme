@@ -2402,3 +2402,29 @@ div[class*="modal-"] div[class*="header-"] + div[class*="scrollerWrap-"] {
   font-weight: bold;
 }
 */
+
+/* Rich Presence */
+
+.details-3Qyqn3, #user-profile-modal .headerText-1wl24E, .name-2ZHm1Q {
+    color: #fff;
+}
+
+.content-3AMrS- {
+    color: #aaa;
+}
+
+#user-profile-modal .headerIconForeground-3KIzwH {
+    fill: #fff;
+}
+
+.userPopout-4pfA0d .assetsSmallImage-2F5lSV {
+    border: none;
+    transform: scale(1.2);
+}
+
+#user-profile-modal .assetsSmallImage-2F5lSV {
+    border: none;
+    transform: scale(1.2) translate(-5px, -5px);
+}
+
+/* Rich Presence END */
