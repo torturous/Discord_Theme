@@ -1427,13 +1427,35 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] { backgr
   }
 }
 
-.tooltip.tooltip-right.tooltip-normal, .tooltip.tooltip-bottom.tooltip-normal, .tooltip.tooltip-top.tooltip-normal {
+@-webkit-keyframes tooltip-left-anim {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes tooltip-left-anim {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.tooltip {
   background: rgba(22,22,22,0.6);
   color: #fff;
   box-shadow: 0 0 5px rgba(0,0,0,0.9);
 }
 
-.tooltip.tooltip-right.tooltip-normal:after, .tooltip.tooltip-bottom:after, .tooltip.tooltip-top:after {
+.tooltip:after {
   opacity: 0;
 }
 
@@ -1450,6 +1472,11 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] { backgr
 .tooltip.tooltip-right {
   -webkit-animation: tooltip-right-anim 200ms ease-in-out;
   animation: tooltip-right-anim 200ms ease-in-out;
+}
+
+.tooltip.tooltip-left {
+  -webkit-animation: tooltip-left-anim 200ms ease-in-out;
+  animation: tooltip-left-anim 200ms ease-in-out;
 }
 /* END: Tool tip */
 
@@ -2436,3 +2463,9 @@ div[class*="modal-"] div[class*="header-"] + div[class*="scrollerWrap-"] {
 }
 
 /* Rich Presence END */
+
+/* https://github.com/Snazzah/BeautifulDiscordSnippets/tree/master/TitleBlocks */
+
+.markup .hljs::before {
+	border-radius: 5px 5px 0 0;
+}
