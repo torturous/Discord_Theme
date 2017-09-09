@@ -1,5 +1,3 @@
-![Banner](https://i.mify.pw/7458a1.png)
-
 ## About theme
 ***Discord_Theme*** theme is made by **AlexFlipnote#0021** & **CyberRonin#5517**<br>
 This was made to let everyone who wants, able to have a more good-looking style. It supports any plugins (almost, depends if the import URL is custom made for 1 theme).
@@ -22,12 +20,10 @@ to change stuff, download the **theme.css**, however if you wish for a theme tha
 **I found a bug, what do I do?**<br>Make a **Pull Request / Issue**
 
 ## Screenshots
-![Preview 1](https://i.alexflipnote.xyz/2dafae.png)
+![Preview 1](https://i.alexflipnote.xyz/0db23d.png)
 
-![Preview 2](https://i.alexflipnote.xyz/9ae69b.png)
+![Preview 2](https://i.alexflipnote.xyz/e2953c.png)
 
-![Preview 3](https://i.alexflipnote.xyz/794d0c.png)
+![Preview 3](https://i.alexflipnote.xyz/c7607e.png)
 
-![Preview 4](https://i.alexflipnote.xyz/bbc297.png)
-
-![Preview 5](https://i.alexflipnote.xyz/190934.png)
+![Preview 4](https://i.alexflipnote.xyz/921234.png)
