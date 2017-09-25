@@ -2476,3 +2476,19 @@ div[class*="modal-"] div[class*="header-"] + div[class*="scrollerWrap-"] {
 .markup .hljs::before {
 	border-radius: 5px 5px 0 0;
 }
+
+/* Channel Notices */
+
+.theme-dark .channel-notices .channel-notice {
+    background-color: var(--dark-highlight);
+}
+
+.theme-dark .channel-notices .channel-notice .message div {
+    color: #fff;
+}
+
+.theme-dark .channel-notices .channel-notice .message button {
+    background-color: var(--dark-primary);
+}
+
+/* Channel Notices END */
