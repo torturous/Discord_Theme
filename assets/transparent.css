@@ -153,6 +153,16 @@ div[class*="container-"], div[class*="content-"]:not(.content-region),
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAAyCAYAAADm1uYqAAAACXBIWXMAACTpAAAk6QFQJOf4AAAAIGNIUk0AAHonAACAgwAA+mQAAIDSAAB2hgAA7OkAADmeAAAV/sZ+0zoAAAOrSURBVHja7N1NaxVXHMfx75irSUylQVwK+g7ULgLtwlKwaa2J4gtwIQrqplgXUtS22lYtFVQoKoIPC1+BJmqNuNBNwEUfyAuwghuhWMWHPJh0XJypoCVmMpl750z4fmBWN3Pn3HP/+d07d845k6RpiiTVwQK7QJKBJUkGliQDS5IMLEkqRyPGRq1a01N014+BhcBa4MO3HpsETgFjwAjw0LdfM/nz97t2goFVut4srHZmgbXkHYE2CQwDt4HTwGPLQPKUsFVBdSPb9gFL3xFWAJ3Z473AYeAecBDothQkA6tZuoHBLKh65/g832XB1W85SAZW2dYDfwEbSg7AK8CAJSEZWGWG1TXg/SY9fx9w3bKQDKyywqrZPm/RcSTN08D6oMUhsp7wG5kkA2sGyRtbAzhfQSs2ABstEcnAmo3vgdUVHfsysNgykQys6aWvt2Wk7K24Nd9YJpKBlcdXQFsEbeiyVKTqxTw1ZynwZQTtaAf2EkbEl7U86xJLL8rv9c/sBgOrqK3Ae5G0ZQ/wI/Byjs+zj3AFcpWlF2VgXSCMwxuyOwys/BLagBXEs9x8B2Gw6t8F9/8UOMT/V5BQXHZn2yCwmTBRXhGJ9Uf3taRsiSzYdxTctzP7xDas6qOPMMdUBlYu7dk/ekyKnJ4m2Tcr1c/XwHK7wcDKYxKYiKxNYwX26SKOCwcq9q16u91gYOXRFmHbGgVfR2KZ1Va7XWBgSdK8Cqwp4N8IT1OLvA5vrV1f43aBgZX39GtRZG3qKLDPc+AXy6yWJoBzdoOBlfeTbTSyNhUZBZ0C31pmtXQUeGA3GFgzS7hDwqXITgfPFtx3lLDu/LDlVhs/E25SoghPveKTMgXcj6hFY8CTOex/M9ucmhMvp+YYWHNykTDhOIb5hMcpZ5rGkWxz8nOcgeXkZwOrsEfASeBAxe0YB45R7tW+p5aeNHuxj8M6TvWXlk/4ySsZWHn8A/xUcRt+sEwkAyuvw8AfFR17E/DCMpEMrLxeAtsqOO5Vwt2gJRlYs/Ib8EULj3edsCaSJAOrcIi0IrR+bXE4SpqHgfVfaK2jeaPGBwkDOyUZWKW4BXxE+I2pLE8Id3nutyQkA6sZ+oDPCNMoit7N5hFhCeOVwIDlIMWtUfP2D2XbcmAXsBNYyPRTX8YJy4YMA2eyfR22IBlYLfUA2E+YYNwAPgF63vqbqSykngMjwEPffqlekjR1QUxJ9eCa7pIMLEkysCQZWJJkYElSSV4BAAD//wMApoKZxcqbQ9oAAAAASUVORK5CYII=');
 }
 
+div[class*="appMount-"], div[class*="channels-"], .theme-dark .chat, .theme-dark div[class*="title-"],
+.theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"] {
+  background: transparent;
+}
+
+.message-group-blocked { border: 0; }
+.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 /* Keyframes */
 @keyframes opacity {
   0% { opacity: 1; }
