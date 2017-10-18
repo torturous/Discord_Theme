@@ -31,6 +31,10 @@
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
 }
+
+#app-mount div[class*="titleBar-"] {
+  background: var(--dark-highlight);
+}
 /* End GLOBAL */
 
 /* TEMP. FIX, thanks Discord :( */
@@ -310,6 +314,10 @@ div[class*="modal-"] div[class*="scroller-"] > div[class*="primary-"] {
   color: #fff;
   padding-top: 5px;
   font-size: 14px;
+}
+
+div[class*="channels-"] div[class*="container-"] + div[class*="container-"] {
+  background: var(--dark-primary);
 }
 /* END: Header */
 
@@ -1209,12 +1217,12 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] { backgr
 }
 
 .channel-text-area-default { margin: 0 0 0; }
-.theme-dark .channel-text-area-default div[class*="inner-"] {
+.theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"] {
   border-radius: 0;
+  margin-bottom: -30px;
   padding-top: 5px;
   padding-bottom: 4px;
   background-color: var(--dark-secondary);
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .theme-brand div[class*="inner-"] {
@@ -1247,6 +1255,9 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] { backgr
 /* Chat Messages */
 /* BOTH */
 .divider.divider-red + .divider { display: none; }
+.theme-dark div[class*="title-"] {
+  background: var(--dark-primary);
+}
 .chat .jump-to-present-bar { left: inherit; }
 #app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup {
   color: white;
@@ -1621,6 +1632,8 @@ div[class*="container-"] div[class*="scrollerWrap-"] div[class*="scroller"] {
 
 .private-channels .search-bar {
   border-radius: 0px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   background-color: var(--dark-highlight);
 }
 .search-bar .search-bar-inner { background: rgba(47,47,47,.9); }
