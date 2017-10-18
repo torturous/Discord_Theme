@@ -1162,27 +1162,27 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] { backgr
   position: absolute;
 }
 
-.channel-textarea-autocomplete-inner {
+div[class*="autocomplete-"] {
   border: 0!important;
   border-radius: 0px;
   border-bottom: 0px;
   box-shadow: 0;
 }
-.channel-textarea-autocomplete-inner header {
+div[class*="autocomplete-"] header {
   border-bottom: 0px;
   margin-bottom: 5px;
 }
-.channel-textarea-autocomplete-inner ul {
+div[class*="autocomplete-"] ul {
   margin-left: 10px;
   margin-right: 10px;
   border-bottom: 0px!important;
 }
-.channel-textarea-autocomplete-inner li.active { border-radius: 0px; }
-.channel-textarea-autocomplete-inner li {
+div[class*="autocomplete-"] li.active { border-radius: 0px; }
+div[class*="autocomplete-"] li {
   border-radius: 0px;
   margin-bottom: 2px;
 }
-.channel-textarea-autocomplete-inner:after {
+div[class*="autocomplete-"]:after {
   border: none;
 }
 .invite-button {
@@ -1201,11 +1201,11 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] { backgr
 .theme-dark #autocomplete-popout .row.selected, #autocomplete-popout .row:hover { background: #181818 }
 .theme-dark #autocomplete-popout .row { -webkit-transition: all 50ms ease; transition: all 50ms ease; }
 .theme-dark #autocomplete-popout .scroller::-webkit-scrollbar { display: none }
-.theme-dark .channel-textarea-autocomplete-inner { background-color: var(--dark-primary)!important; }
-.theme-dark .channel-textarea-autocomplete-inner header { background-color: var(--dark-highlight)!important; }
-.theme-dark .channel-textarea-autocomplete-inner ul { background-color: var(--dark-primary)!important; }
-.theme-dark .channel-textarea-autocomplete-inner li.active { background-color: var(--dark-secondary)!important;}
-.theme-dark .channel-textarea-autocomplete-inner li { background-color: var(--dark-primary)!important; }
+.theme-dark div[class*="autocomplete-"] { background-color: var(--dark-primary)!important; }
+.theme-dark div[class*="autocomplete-"] header { background-color: var(--dark-highlight)!important; }
+.theme-dark div[class*="autocomplete-"] ul { background-color: var(--dark-primary)!important; }
+.theme-dark div[class*="autocomplete-"] li.active { background-color: var(--dark-secondary)!important;}
+.theme-dark div[class*="autocomplete-"] li { background-color: var(--dark-primary)!important; }
 .theme-dark .message-group .comment .markup pre code { background: rgba(0, 0, 0, 0.1); }
 .theme-dark .message-group .comment .markup pre { background: rgba(0, 0, 0, 0.2); border-color: rgba(0, 0, 0, 0.1); }
 .theme-dark .invite-button { background-color: rgba(0, 0, 0, 0.2); border-color: rgba(0, 0, 0, 0); }
@@ -1244,12 +1244,12 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] { backgr
   background-color: transparent;
   color: var(--light-dark-text);
 }
-.channel-textarea-autocomplete-inner { background-color: var(--light-highlight)!important; }
-.channel-textarea-autocomplete-inner header { background-color: var(--light-dark-text)!important; }
-.channel-textarea-autocomplete-inner ul { background-color: var(--light-highlight)!important; }
-.channel-textarea-autocomplete-inner li.active { background-color: var(--light-highlight)!important; }
-.channel-textarea-autocomplete-inner li { background-color: var(--light-highlight)!important; }
-.channel-textarea-autocomplete-inner li:hover { background-color: var(--light-primary)!important; }
+div[class*="autocomplete-"] { background-color: var(--light-highlight)!important; }
+div[class*="autocomplete-"] header { background-color: var(--light-dark-text)!important; }
+div[class*="autocomplete-"] ul { background-color: var(--light-highlight)!important; }
+div[class*="autocomplete-"] li.active { background-color: var(--light-highlight)!important; }
+div[class*="autocomplete-"] li { background-color: var(--light-highlight)!important; }
+div[class*="autocomplete-"] li:hover { background-color: var(--light-primary)!important; }
 /* END: Message Textarea */
 
 /* Chat Messages */
@@ -2345,13 +2345,13 @@ div[class*="side-"] div[class*="item-"]:hover { transform: translateX(0.4em); }
 
 /* Upload Area */
 
-.channel-textarea-autocomplete-inner { background-color: var(--dark-secondary)!important; }
-.channel-textarea-autocomplete-inner header {font-size: 14px; color: var(--accent); background-color: var(--dark-highlight)!important; }
-.channel-textarea-autocomplete-inner ul li {color: #ffffff!important; }
-.channel-textarea-autocomplete-inner ul li.active { background-color: var(--dark-primary)!important; }
-.channel-textarea-autocomplete-inner ul { background-color: var(--dark-secondary)!important; }
-.channel-textarea-autocomplete-inner li.active { background-color: var(--dark-secondary)!important;}
-.channel-textarea-autocomplete-inner li { background-color: var(--dark-secondary)!important; }
+div[class*="autocomplete-"] { background-color: var(--dark-secondary)!important; }
+div[class*="autocomplete-"] header {font-size: 14px; color: var(--accent); background-color: var(--dark-highlight)!important; }
+div[class*="autocomplete-"] ul li {color: #ffffff!important; }
+div[class*="autocomplete-"] ul li.active { background-color: var(--dark-primary)!important; }
+div[class*="autocomplete-"] ul { background-color: var(--dark-secondary)!important; }
+div[class*="autocomplete-"] li.active { background-color: var(--dark-secondary)!important;}
+div[class*="autocomplete-"] li { background-color: var(--dark-secondary)!important; }
 
 .upload-modal .inner .file .icon.image {
   border: 0px;
