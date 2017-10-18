@@ -1222,7 +1222,7 @@ div[class*="autocomplete-"]:after {
   margin-bottom: -30px;
   padding-top: 5px;
   padding-bottom: 4px;
-  background-color: var(--dark-secondary);
+  background-color: var(--dark-primary);
 }
 
 .theme-brand div[class*="inner-"] {
