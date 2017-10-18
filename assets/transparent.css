@@ -158,6 +158,8 @@ div[class*="appMount-"], div[class*="channels-"], .theme-dark .chat, .theme-dark
   background: transparent;
 }
 
+.private-channels .channel:hover a { background: rgba(0, 0, 0, 0.1); }
+
 .message-group-blocked { border: 0; }
 .theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn {
   background: rgba(0, 0, 0, 0.5);
