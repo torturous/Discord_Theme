@@ -1220,7 +1220,7 @@ div[class*="autocomplete-"]:after {
 .theme-dark textarea[class*="textArea-"], .theme-dark div[class*="inner-"] { background: transparent; }
 .theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"], div[class*="channelTextAreaEnabledNoAttach"] {
   border-radius: 0;
-  margin-bottom: -30px;
+  margin-bottom: 0px;
   padding-top: 5px;
   padding-bottom: 4px;
   background-color: var(--dark-primary);
