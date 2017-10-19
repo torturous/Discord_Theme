@@ -1,5 +1,9 @@
 /* DiscordInjections Plugin Support / Ask me if you want your plugin supported too! */
 
+/* DiscordInjections Main CSS */
+
+.theme-dark .ellipsis-1MzbWB.primary400-1OkqpL.di-autocomplete-commandinfo { background-color: transparent !important; }
+
 /* Snazzah - DiscordBots */
 .with-background .header-info { background-color: rgba(0,0,0,0.4)!important; }
 .with-background .header-info:before { background-color: rgba(0,0,0,0.4); }
