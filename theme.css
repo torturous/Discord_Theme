@@ -929,13 +929,7 @@ div[class*="userPopout-"] .footer { background: var(--dark-secondary); border-to
   color: #fff;
   background-color: transparent;
   border-bottom: none;
-  padding: 10px;
   transition: all 500ms ease;
-}
-
-.create-guild-container .form-actions .btn-default:hover {
-  transition: all 500ms ease;
-  box-shadow: inset 8.5em 0 0 0 #e74c3c;
 }
 
 @-webkit-keyframes server-create-enter {
@@ -1727,13 +1721,10 @@ div[class*="container-"] div[class*="scrollerWrap-"] div[class*="scroller"] {
   position: relative;
   cursor: pointer;
 }
-.form .btn-default:hover {
-  background-color: #606060;
-  color: #fff;
-}
 
 .form .btn-default, .form .btn-default:hover {
   background-color: var(--dark-secondary);
+  color: #fff;
 }
 
 .form .btn.red {
@@ -2186,6 +2177,10 @@ div[class*="side-"] div[class*="item-"]:hover { transform: translateX(0.4em); }
   background: rgba(128,128,128, .5)!important;
   color: white!important;
 }
+
+.has-value.Select--single>.Select-control .Select-value .Select-value-label { color: #fff; }
+.Select-menu-outer, .Select-option { background-color: var(--dark-primary); }
+.is-open>.Select-control { background: var(--dark-highlight); }
 
 .search-bar.search-bar-light .search-bar-inner {
   background-color: transparent;
