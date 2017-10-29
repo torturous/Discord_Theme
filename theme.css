@@ -34,6 +34,8 @@
 
 #app-mount div[class*="titleBar-"] {
   background: var(--dark-highlight);
+  padding-top: 4px;
+  margin-top: 0;
 }
 /* End GLOBAL */
 
@@ -1260,7 +1262,9 @@ div[class*="autocomplete-"] li:hover { background-color: var(--light-primary)!im
 /* BOTH */
 .divider.divider-red + .divider { display: none; }
 .theme-dark div[class*="title-"] { background: var(--dark-primary); }
+.theme-dark .Select-control div[class*="title-"] { background: transparent; }
 .theme-dark div[class*="info-"] div[class*="title-"] { background: transparent; }
+.theme-dark div[class*="headerBar-"] { background: var(--dark-highlight); }
 
 .chat .jump-to-present-bar { left: inherit; }
 #app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup {
@@ -1636,8 +1640,8 @@ div[class*="container-"] div[class*="scrollerWrap-"] div[class*="scroller"] {
 
 .private-channels .search-bar {
   border-radius: 0px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
   background-color: var(--dark-highlight);
 }
 .search-bar .search-bar-inner { background: rgba(47,47,47,.9); }
@@ -2090,6 +2094,7 @@ div[class*="side-"] div[class*="item-"]:hover { transform: translateX(0.4em); }
 .has-value>.Select-control>.Select-placeholder { color: white!important; }
 .search-bar.search-bar-light { background-color: var(--dark-primary); }
 .search-bar .search-bar-inner { background: transparent; }
+.private-channels .search-bar .search-bar-inner { background: var(--dark-secondary); }
 .search-bar.search-bar-light input { color: grey; }
 .guild-settings-modal-members h6 { color: grey; }
 .guild-settings-modal-members .guild-settings-modal-members-footer { border-top: 1px solid grey; }
