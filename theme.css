@@ -2310,7 +2310,7 @@ div[class*="side-"] div[class*="item-"]:hover { transform: translateX(0.4em); }
 .badge {
   background-color: var(--notif);
 }
-.new-messages-indicator.new-messages-indicator-mention {
+.unread-mentions-bar {
   background-color: var(--notif);
 }
 .guilds-wrapper .guilds .guild.selected:before,
